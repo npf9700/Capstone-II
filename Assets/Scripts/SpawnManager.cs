@@ -38,7 +38,7 @@ public class SpawnManager : MonoBehaviour
 
     void SpawnBubbles()
     {
-        spawnPos = new Vector3(Random.Range(0, cameraWidth), cameraHeight, 0);
+        spawnPos = new Vector2(Random.Range(0, cameraWidth), cameraHeight);
         GameObject b = Instantiate(bubblePrefab, spawnPos, Quaternion.identity);
         bubbles.Add(b);
         movement.FloatUp();
