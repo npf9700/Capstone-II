@@ -10,6 +10,8 @@ public class Movement : MonoBehaviour
     float cameraHeight;
     public Vector3 currentPos;
     SpawnManager spm;
+
+    public GameObject animalMgr;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +49,8 @@ public class Movement : MonoBehaviour
         //}
 
         Debug.Log("Hi!");
-      
+
+        //Spawning animal after popping bubble
+        animalMgr.GetComponent<AnimalManager>().FreeAnimal(transform.position);
    }
 }
