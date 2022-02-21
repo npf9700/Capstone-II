@@ -14,6 +14,7 @@ public class SpawnManager : MonoBehaviour
     float cameraHeight;
     GameObject local;
     Movement movement;
+    public GameObject animalMgr;
 
     public bool spawned = false;
 
@@ -48,10 +49,13 @@ public class SpawnManager : MonoBehaviour
 
     public void Despawn(GameObject bubble)
     {
-      //  local = Instantiate(bubble, bubble.transform.position, Quaternion.identity);
+        //  local = Instantiate(bubble, bubble.transform.position, Quaternion.identity);
+
+        //Spawns the animal sprite before the location is lost
+        animalMgr.GetComponent<AnimalManager>().FreeAnimal(bubble.transform.position);
+
         Destroy(bubble);
         bubbles.Remove(bubble);
-        
     }
 
     public void Respawn()
