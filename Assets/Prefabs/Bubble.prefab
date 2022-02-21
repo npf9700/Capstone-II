@@ -54,7 +54,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: -0.00002615642, y: 0.0049999314, z: 0}
   currentPos: {x: 0, y: 0, z: 0}
-  animalMgr: {fileID: 1565063983602856303, guid: e43cd89b222ff874ebc4e15dddd9cfa0, type: 3}
+  spm: {fileID: 6952456094374347626, guid: e9aabae5585511242b14237609303a21, type: 3}
 --- !u!222 &7682001888031642652
 CanvasRenderer:
   m_ObjectHideFlags: 0
