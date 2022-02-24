@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SpawnManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Vector3 spawnPos;
+    public Vector2 spawnPos;
     public GameObject bubblePrefab;
     public List<GameObject> bubbles;
     Camera cam;
@@ -31,18 +31,15 @@ public class SpawnManager : MonoBehaviour
         bubbles = new List<GameObject>();
 
         //this is to avoid overlap but it's not working, idk why.
-        while(!canSpawn)
-        {
-            canSpawn = PreventOverlap();
-            if(canSpawn)
-            {
-                break;
-            }
-        }
-        for (int i = 0; i < 5; i++)
-        {
-            SpawnBubbles();
-        }
+        //while(!canSpawn)
+        //{
+        //    canSpawn = PreventOverlap();
+        //    if(canSpawn)
+        //    {
+        //        break;
+        //    }
+        //}
+        InvokeRepeating("SpawnBubbles", 0.0f, 2.0f);
 
 
 
@@ -99,13 +96,13 @@ public class SpawnManager : MonoBehaviour
         bubbleRadius = GameObject.Find("Bubble").GetComponent<CircleCollider2D>().radius;
         Debug.Log(bubbleRadius);
         colliders = Physics2D.OverlapCircleAll(spawnPos, bubbleRadius);
-        foreach (Collider2D c in colliders)
+        for(int i = 0; i < colliders.Length; i++)
         {
-            Vector3 center = c.bounds.center;
-            float xPosLeft = center.x - c.bounds.extents.x;
-            float xPosRight = center.x + c.bounds.extents.x;
-            float upperYPos = center.y - c.bounds.extents.y;
-            float lowerYPos = center.y + c.bounds.extents.y;
+            Vector3 center = colliders[i].bounds.center;
+            float xPosLeft = center.x - colliders[i].bounds.extents.x;
+            float xPosRight = center.x + colliders[i].bounds.extents.x;
+            float lowerYPos = center.y - colliders[i].bounds.extents.y;
+            float upperYPos = center.y + colliders[i].bounds.extents.y;
             if (spawnPos.x >= xPosLeft && spawnPos.x <= xPosRight)
             {
                 if (spawnPos.y >= lowerYPos && spawnPos.y <= upperYPos)

@@ -20,14 +20,15 @@ public class Movement : MonoBehaviour
         cam = Camera.main;
         cameraHeight = cam.orthographicSize * 2f;
         cameraWidth = cameraHeight * cam.aspect;
-        speed = new Vector3(0f, Random.Range(0f, cameraHeight)) * Time.deltaTime;
-        speed = Vector3.ClampMagnitude(speed, 0.005f);
+        speed = new Vector2(0f, Random.Range(0f, cameraHeight)) * Time.deltaTime;
+        speed = Vector2.ClampMagnitude(speed, 0.005f);
         currentPos = new Vector2(Random.Range(cam.transform.position.x - cameraWidth / 2, cam.transform.position.x + cameraWidth / 2), cam.transform.position.y - cameraHeight / 2 - 1);
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         //spawned boolean is set to true after initial call to FloatUp() method in SpawnManager.cs
         if (spm.spawned)
         {
@@ -42,6 +43,7 @@ public class Movement : MonoBehaviour
 
    public void FloatUp()
    {
+        
         float time = Mathf.PingPong(Time.time * pingPongSpeed, 1);
         currentPos.y += speed.y; //change y coordinate based on speed
         Vector2 newPos = new Vector2(currentPos.x + 2, currentPos.y);
