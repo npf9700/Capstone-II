@@ -29,6 +29,8 @@ public class SpawnManager : MonoBehaviour
         cameraHeight = cam.orthographicSize * 2f;
         cameraWidth = cameraHeight * cam.aspect;
         bubbles = new List<GameObject>();
+
+        //this is to avoid overlap but it's not working, idk why.
         while(!canSpawn)
         {
             canSpawn = PreventOverlap();
@@ -84,6 +86,14 @@ public class SpawnManager : MonoBehaviour
         SpawnBubbles();
     }
 
+
+    /// <summary>
+    /// This entire method does not work yet. 
+    /// I tried looking at tutorials and found this video to help, 
+    /// but I don't get why it's not working.
+    /// https://www.youtube.com/watch?v=t2Cs71rDlUg
+    /// </summary>
+    /// <returns></returns>
     bool PreventOverlap()
     {
         bubbleRadius = GameObject.Find("Bubble").GetComponent<CircleCollider2D>().radius;
