@@ -11,7 +11,7 @@ public class Movement : MonoBehaviour
     float cameraHeight;
     public Vector2 currentPos;
     public SpawnManager spm;
-    float pingPongSpeed = 1.19f;
+    float pingPongSpeed = 1.05f;
     // Start is called before the first frame update
     void Start()
     {
