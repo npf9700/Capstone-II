@@ -23,7 +23,6 @@ public class SpawnManager : MonoBehaviour
 
     void Start()
     {
-        bool canSpawn = false;
         movement = GameObject.FindObjectOfType(typeof(Movement)) as Movement;
         cam = Camera.main;
         cameraHeight = cam.orthographicSize * 2f;
@@ -39,7 +38,7 @@ public class SpawnManager : MonoBehaviour
         //        break;
         //    }
         //}
-        InvokeRepeating("SpawnBubbles", 0.0f, 2.0f);
+        InvokeRepeating("SpawnBubbles", 0.0f, 3.0f);
 
 
 
@@ -54,7 +53,7 @@ public class SpawnManager : MonoBehaviour
 
     public void SpawnBubbles()
     {
-        spawnPos = new Vector2(Random.Range(70, (cameraWidth - 70)), cameraHeight);
+        spawnPos = new Vector2(Random.Range(20, (cameraWidth - 90)), cameraHeight);
         local = Instantiate(bubblePrefab, spawnPos, Quaternion.identity);
         bubbles.Add(local);
         movement.FloatUp();
