@@ -9,8 +9,9 @@ public class Movement : MonoBehaviour
     Camera cam;
     float cameraWidth;
     float cameraHeight;
-    public Vector3 currentPos;
+    public Vector2 currentPos;
     public SpawnManager spm;
+    public float pingPongSpeed = 0.05f;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,7 @@ public class Movement : MonoBehaviour
         cameraWidth = cameraHeight * cam.aspect;
         speed = new Vector3(0f, Random.Range(0f, cameraHeight)) * Time.deltaTime;
         speed = Vector3.ClampMagnitude(speed, 0.005f);
-        currentPos = new Vector3(Random.Range(cam.transform.position.x - cameraWidth / 2, cam.transform.position.x + cameraWidth / 2), cam.transform.position.y - cameraHeight / 2 - 1, 0);
+        currentPos = new Vector2(Random.Range(cam.transform.position.x - cameraWidth / 2, cam.transform.position.x + cameraWidth / 2), cam.transform.position.y - cameraHeight / 2 - 1);
     }
 
     // Update is called once per frame
@@ -32,7 +33,7 @@ public class Movement : MonoBehaviour
         {
             FloatUp();
         }
-
+        DespawnAtTop();
        
 
 
@@ -41,19 +42,40 @@ public class Movement : MonoBehaviour
 
    public void FloatUp()
    {
+        float time = Mathf.PingPong(Time.time * pingPongSpeed, 1);
         currentPos.y += speed.y; //change y coordinate based on speed
-        transform.position = currentPos;
+        Vector2 newPos = new Vector2(currentPos.x + 2, currentPos.y);
+        transform.position = Vector2.Lerp(currentPos, newPos, time);
    }
+
+   public void DespawnAtTop()
+   {
+        if (transform.position.y > cam.transform.position.y + cameraHeight / 2 + 1)
+        {
+            for (int j = 0; j < spm.bubbles.Count; j++)
+            {
+                if (spm.bubbles[j] == gameObject)
+                {
+                    spm.Despawn(spm.bubbles[j]);
+                    if (spm.bubbles.Count == 0)
+                    {
+                        for (int i = 0; i < 5; i++)
+                        {
+                            spm.SpawnBubbles();
+                        }
+                    }
+                }
+            }
+        }
+    }
 
    void OnMouseDown()
    {
-      
-        for(int j = 0; j < spm.bubbles.Count; j++)
+        for (int j = 0; j < spm.bubbles.Count; j++)
         {
             if(spm.bubbles[j] == gameObject)
             {
-                spm.Despawn(spm.bubbles[j]);
-                Debug.Log("Hey!");
+                spm.SpawnAnimal(spm.bubbles[j]);
                 if (spm.bubbles.Count == 0)
                 {
                     for (int i = 0; i < 5; i++)

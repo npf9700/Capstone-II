@@ -15,21 +15,36 @@ public class SpawnManager : MonoBehaviour
     GameObject local;
     Movement movement;
     public GameObject animalMgr;
+    public float spawnDistance = 10f;
+    float bubbleRadius;
+    Collider2D[] colliders;
 
     public bool spawned = false;
 
     void Start()
     {
+        bool canSpawn = false;
         movement = GameObject.FindObjectOfType(typeof(Movement)) as Movement;
         cam = Camera.main;
         cameraHeight = cam.orthographicSize * 2f;
         cameraWidth = cameraHeight * cam.aspect;
-       
         bubbles = new List<GameObject>();
+        while(!canSpawn)
+        {
+            canSpawn = PreventOverlap();
+            if(canSpawn)
+            {
+                break;
+            }
+        }
         for (int i = 0; i < 5; i++)
         {
             SpawnBubbles();
         }
+
+
+
+
     }
 
     // Update is called once per frame
@@ -40,7 +55,7 @@ public class SpawnManager : MonoBehaviour
 
     public void SpawnBubbles()
     {
-        spawnPos = new Vector2(Random.Range(0, cameraWidth), cameraHeight);
+        spawnPos = new Vector2(Random.Range(70, (cameraWidth - 70)), cameraHeight);
         local = Instantiate(bubblePrefab, spawnPos, Quaternion.identity);
         bubbles.Add(local);
         movement.FloatUp();
@@ -49,8 +64,14 @@ public class SpawnManager : MonoBehaviour
 
     public void Despawn(GameObject bubble)
     {
-        //  local = Instantiate(bubble, bubble.transform.position, Quaternion.identity);
+        Destroy(bubble);
+        Debug.Log(bubbles.Count);
+        bubbles.Remove(bubble);
+       
+    }
 
+    public void SpawnAnimal(GameObject bubble)
+    {
         //Spawns the animal sprite before the location is lost
         animalMgr.GetComponent<AnimalManager>().FreeAnimal(bubble.transform.position);
 
@@ -61,5 +82,28 @@ public class SpawnManager : MonoBehaviour
     public void Respawn()
     {
         SpawnBubbles();
+    }
+
+    bool PreventOverlap()
+    {
+        bubbleRadius = GameObject.Find("Bubble").GetComponent<CircleCollider2D>().radius;
+        Debug.Log(bubbleRadius);
+        colliders = Physics2D.OverlapCircleAll(spawnPos, bubbleRadius);
+        foreach (Collider2D c in colliders)
+        {
+            Vector3 center = c.bounds.center;
+            float xPosLeft = center.x - c.bounds.extents.x;
+            float xPosRight = center.x + c.bounds.extents.x;
+            float upperYPos = center.y - c.bounds.extents.y;
+            float lowerYPos = center.y + c.bounds.extents.y;
+            if (spawnPos.x >= xPosLeft && spawnPos.x <= xPosRight)
+            {
+                if (spawnPos.y >= lowerYPos && spawnPos.y <= upperYPos)
+                {
+                    return (false);
+                }
+            }
+        }
+        return (true);
     }
 }
