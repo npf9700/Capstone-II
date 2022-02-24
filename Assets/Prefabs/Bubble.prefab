@@ -54,11 +54,7 @@ MonoBehaviour:
   speed: {x: -0.00002615642, y: 0.0049999314, z: 0}
   currentPos: {x: 0, y: 0}
   spm: {fileID: 6952456094374347626, guid: e9aabae5585511242b14237609303a21, type: 3}
-<<<<<<< HEAD
-  pingPongSpeed: 1.5
-=======
   pingPongSpeed: 0.05
->>>>>>> 3aafecbe4be3ae026e9ff1521b5c8fe760d89ed9
 --- !u!222 &7682001888031642652
 CanvasRenderer:
   m_ObjectHideFlags: 0
