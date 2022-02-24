@@ -76,6 +76,7 @@ public class SpawnManager : MonoBehaviour
 
         Destroy(bubble);
         bubbles.Remove(bubble);
+        
     }
 
     public void Respawn()
