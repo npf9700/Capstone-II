@@ -17,6 +17,7 @@ public class SpawnManager : MonoBehaviour
     public GameObject animalMgr;
     public float spawnDistance = 10f;
     float bubbleRadius;
+    public float spawnTime;
     Collider2D[] colliders;
 
     public bool spawned = false;
@@ -28,7 +29,8 @@ public class SpawnManager : MonoBehaviour
         cameraHeight = cam.orthographicSize * 2f;
         cameraWidth = cameraHeight * cam.aspect;
         bubbles = new List<GameObject>();
-
+        spawnTime = Random.Range(2f, 3f);
+        
         //this is to avoid overlap but it's not working, idk why.
         //while(!canSpawn)
         //{
@@ -38,7 +40,7 @@ public class SpawnManager : MonoBehaviour
         //        break;
         //    }
         //}
-        InvokeRepeating("SpawnBubbles", 0.0f, 3.0f);
+        InvokeRepeating("SetPingPongSpeed", 0.0f, spawnTime);
 
 
 
@@ -51,12 +53,18 @@ public class SpawnManager : MonoBehaviour
 
     }
 
-    public void SpawnBubbles()
+    public void SetPingPongSpeed()
+    {
+        float pingPongSpeed = Random.Range(1.05f, 1.1f);
+        SpawnBubbles(pingPongSpeed);
+    }
+
+    public void SpawnBubbles(float pingPongSpeed)
     {
         spawnPos = new Vector2(Random.Range(20, (cameraWidth - 90)), cameraHeight);
         local = Instantiate(bubblePrefab, spawnPos, Quaternion.identity);
         bubbles.Add(local);
-        movement.FloatUp();
+        movement.FloatUp(pingPongSpeed);
         spawned = true;
     }
 
@@ -78,10 +86,10 @@ public class SpawnManager : MonoBehaviour
         
     }
 
-    public void Respawn()
-    {
-        SpawnBubbles();
-    }
+    //public void Respawn()
+    //{
+    //    SpawnBubbles();
+    //}
 
 
     /// <summary>

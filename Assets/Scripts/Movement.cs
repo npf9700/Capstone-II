@@ -11,7 +11,7 @@ public class Movement : MonoBehaviour
     float cameraHeight;
     public Vector2 currentPos;
     public SpawnManager spm;
-    float pingPongSpeed = 1.05f;
+    float pingPongSpeed;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +23,7 @@ public class Movement : MonoBehaviour
         speed = new Vector3(0f, Random.Range(0f, cameraHeight)) * Time.deltaTime;
         speed = Vector3.ClampMagnitude(speed, 0.005f);
         currentPos = new Vector2(Random.Range(cam.transform.position.x - cameraWidth / 2, cam.transform.position.x + cameraWidth / 2), cam.transform.position.y - cameraHeight / 2 - 1);
+        pingPongSpeed = Random.Range(1.05f, 1.5f);
     }
 
     // Update is called once per frame
@@ -32,7 +33,7 @@ public class Movement : MonoBehaviour
         //spawned boolean is set to true after initial call to FloatUp() method in SpawnManager.cs
         if (spm.spawned)
         {
-            FloatUp();
+            FloatUp(pingPongSpeed);
         }
         DespawnAtTop();
        
@@ -41,7 +42,7 @@ public class Movement : MonoBehaviour
     }
 
 
-   public void FloatUp()
+   public void FloatUp(float pingPongSpeed)
    {
         float time = Mathf.PingPong(Time.time * pingPongSpeed, 1);
         currentPos.y += speed.y; //change y coordinate based on speed
@@ -60,9 +61,10 @@ public class Movement : MonoBehaviour
                     spm.Despawn(spm.bubbles[j]);
                     if (spm.bubbles.Count == 0)
                     {
-                        
-                       InvokeRepeating("spm.SpawnBubbles()", 0.0f, 2.0f);
-                       
+
+                        InvokeRepeating("spm.SetPingPongSpeed", 0.0f, spm.spawnTime);
+
+
                     }
                 }
             }
@@ -78,7 +80,7 @@ public class Movement : MonoBehaviour
                 spm.SpawnAnimal(spm.bubbles[j]);
                 if (spm.bubbles.Count == 0)
                 {
-                    InvokeRepeating("spm.SpawnBubbles()", 0.0f, 2.0f);
+                    InvokeRepeating("spm.SetPingPongSpeed", 0.0f, spm.spawnTime);
                 }
             }
             
