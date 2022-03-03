@@ -50,10 +50,19 @@ public class TrashManager : MonoBehaviour
 
     public void DespawnTrash(GameObject trashPiece)
     {
-        
+        //Despawns trash at the bottom of the screen
         if (trashPiece.transform.position.y < cam.transform.position.y - (cameraHeight / 2) - 1)
         {
-            Debug.Log("Trash should be removed");
+            gameMgr.GetComponent<GameManager>().DecrementScore(200);
+            trashPile.Remove(trashPiece);
+            Destroy(trashPiece);//Trash is removed from the list and hierarchy
+        }
+
+        //Despawns trash at the side of the screen, which increments the player's score
+        if(trashPiece.transform.position.x < cam.transform.position.x - (cameraWidth / 2) - 0.5 || trashPiece.transform.position.x > cam.transform.position.x + (cameraWidth / 2) + 0.5)
+        {
+            Debug.Log("Trash was removed by the player");
+            gameMgr.GetComponent<GameManager>().IncrementScore(50);
             trashPile.Remove(trashPiece);
             Destroy(trashPiece);//Trash is removed from the list and hierarchy
         }

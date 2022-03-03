@@ -15,6 +15,7 @@ public class SpawnManager : MonoBehaviour
     GameObject local;
     Movement movement;
     public GameObject animalMgr;
+    public GameManager gameMgr;
     public float spawnDistance = 10f;
     float bubbleRadius;
     public float spawnTime;
@@ -73,7 +74,7 @@ public class SpawnManager : MonoBehaviour
         Destroy(bubble);
         Debug.Log(bubbles.Count);
         bubbles.Remove(bubble);
-       
+        
     }
 
     public void SpawnAnimal(GameObject bubble)
@@ -81,9 +82,13 @@ public class SpawnManager : MonoBehaviour
         //Spawns the animal sprite before the location is lost
         animalMgr.GetComponent<AnimalManager>().FreeAnimal(bubble.transform.position);
 
+        //Gets rid of bubble
         Destroy(bubble);
         bubbles.Remove(bubble);
-        
+
+        //Increments score
+        gameMgr.GetComponent<GameManager>().IncrementScore(100);
+
     }
 
     //public void Respawn()
