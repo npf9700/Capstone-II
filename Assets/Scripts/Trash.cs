@@ -17,7 +17,10 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
     private float startPosX;
     private float startPosY;
 
-
+    public Vector2 Position
+    {
+        get { return position; }
+    }
     // Start is called before the first frame update
     void Start()
     {
