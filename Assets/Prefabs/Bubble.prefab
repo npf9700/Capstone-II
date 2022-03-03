@@ -37,7 +37,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1, y: 1}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7682001888031642643
 MonoBehaviour:
@@ -54,7 +54,7 @@ MonoBehaviour:
   speed: {x: -0.00002615642, y: 0.0049999314, z: 0}
   currentPos: {x: 0, y: 0}
   spm: {fileID: 6952456094374347626, guid: e9aabae5585511242b14237609303a21, type: 3}
-  pingPongSpeed: 0.05
+  pingPongSpeed: 1.05
 --- !u!222 &7682001888031642652
 CanvasRenderer:
   m_ObjectHideFlags: 0

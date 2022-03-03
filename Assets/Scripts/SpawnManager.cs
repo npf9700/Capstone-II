@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SpawnManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Vector3 spawnPos;
+    public Vector2 spawnPos;
     public GameObject bubblePrefab;
     public List<GameObject> bubbles;
     Camera cam;
@@ -17,32 +17,30 @@ public class SpawnManager : MonoBehaviour
     public GameObject animalMgr;
     public float spawnDistance = 10f;
     float bubbleRadius;
+    public float spawnTime;
     Collider2D[] colliders;
 
     public bool spawned = false;
 
     void Start()
     {
-        bool canSpawn = false;
         movement = GameObject.FindObjectOfType(typeof(Movement)) as Movement;
         cam = Camera.main;
         cameraHeight = cam.orthographicSize * 2f;
         cameraWidth = cameraHeight * cam.aspect;
         bubbles = new List<GameObject>();
-
+        spawnTime = Random.Range(2f, 3f);
+        
         //this is to avoid overlap but it's not working, idk why.
-        while(!canSpawn)
-        {
-            canSpawn = PreventOverlap();
-            if(canSpawn)
-            {
-                break;
-            }
-        }
-        for (int i = 0; i < 5; i++)
-        {
-            SpawnBubbles();
-        }
+        //while(!canSpawn)
+        //{
+        //    canSpawn = PreventOverlap();
+        //    if(canSpawn)
+        //    {
+        //        break;
+        //    }
+        //}
+        InvokeRepeating("SetPingPongSpeed", 0.0f, spawnTime);
 
 
 
@@ -55,12 +53,18 @@ public class SpawnManager : MonoBehaviour
 
     }
 
-    public void SpawnBubbles()
+    public void SetPingPongSpeed()
     {
-        spawnPos = new Vector2(Random.Range(70, (cameraWidth - 70)), cameraHeight);
+        float pingPongSpeed = Random.Range(1.05f, 1.1f);
+        SpawnBubbles(pingPongSpeed);
+    }
+
+    public void SpawnBubbles(float pingPongSpeed)
+    {
+        spawnPos = new Vector2(Random.Range(20, (cameraWidth - 90)), cameraHeight);
         local = Instantiate(bubblePrefab, spawnPos, Quaternion.identity);
         bubbles.Add(local);
-        movement.FloatUp();
+        movement.FloatUp(pingPongSpeed);
         spawned = true;
     }
 
@@ -82,10 +86,10 @@ public class SpawnManager : MonoBehaviour
         
     }
 
-    public void Respawn()
-    {
-        SpawnBubbles();
-    }
+    //public void Respawn()
+    //{
+    //    SpawnBubbles();
+    //}
 
 
     /// <summary>
@@ -100,13 +104,13 @@ public class SpawnManager : MonoBehaviour
         bubbleRadius = GameObject.Find("Bubble").GetComponent<CircleCollider2D>().radius;
         Debug.Log(bubbleRadius);
         colliders = Physics2D.OverlapCircleAll(spawnPos, bubbleRadius);
-        foreach (Collider2D c in colliders)
+        for(int i = 0; i < colliders.Length; i++)
         {
-            Vector3 center = c.bounds.center;
-            float xPosLeft = center.x - c.bounds.extents.x;
-            float xPosRight = center.x + c.bounds.extents.x;
-            float upperYPos = center.y - c.bounds.extents.y;
-            float lowerYPos = center.y + c.bounds.extents.y;
+            Vector3 center = colliders[i].bounds.center;
+            float xPosLeft = center.x - colliders[i].bounds.extents.x;
+            float xPosRight = center.x + colliders[i].bounds.extents.x;
+            float lowerYPos = center.y - colliders[i].bounds.extents.y;
+            float upperYPos = center.y + colliders[i].bounds.extents.y;
             if (spawnPos.x >= xPosLeft && spawnPos.x <= xPosRight)
             {
                 if (spawnPos.y >= lowerYPos && spawnPos.y <= upperYPos)
