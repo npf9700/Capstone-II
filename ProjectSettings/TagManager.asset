@@ -42,3 +42,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: OilSlick
+    uniqueID: 2229389957
+    locked: 0

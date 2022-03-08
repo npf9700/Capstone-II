@@ -54,6 +54,7 @@ public class TrashManager : MonoBehaviour
         if (trashPiece.transform.position.y < cam.transform.position.y - (cameraHeight / 2) - 1)
         {
             gameMgr.GetComponent<GameManager>().DecrementScore(200);
+            gameMgr.GetComponent<GameManager>().TrashNotCaught();
             trashPile.Remove(trashPiece);
             Destroy(trashPiece);//Trash is removed from the list and hierarchy
         }
