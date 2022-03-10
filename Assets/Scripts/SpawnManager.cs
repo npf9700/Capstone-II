@@ -51,7 +51,7 @@ public class SpawnManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        BubbleBehindOil();
     }
 
     public void SetPingPongSpeed()
@@ -125,5 +125,20 @@ public class SpawnManager : MonoBehaviour
             }
         }
         return (true);
+    }
+
+    public void BubbleBehindOil()
+    {
+        for (int i = 0; i < bubbles.Count; i++)
+        {
+            if (gameMgr.GetComponent<GameManager>().IsBehindOilSlick())
+            {
+                bubbles[i].GetComponent<Movement>().IsBehindOil = true;
+            }
+            else
+            {
+                bubbles[i].GetComponent<Movement>().IsBehindOil = false;
+            }
+        }
     }
 }

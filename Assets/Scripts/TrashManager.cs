@@ -37,6 +37,7 @@ public class TrashManager : MonoBehaviour
         {
             DespawnTrash(trashPile[i]);
         }
+        TrashBehindOil();
     }
 
     public void SpawnTrash()
@@ -66,6 +67,22 @@ public class TrashManager : MonoBehaviour
             gameMgr.GetComponent<GameManager>().IncrementScore(50);
             trashPile.Remove(trashPiece);
             Destroy(trashPiece);//Trash is removed from the list and hierarchy
+        }
+    }
+
+    //Checking if the trash in the trashPile is behind the oil and changing their respective bool values to show that
+    public void TrashBehindOil()
+    {
+        for(int i = 0; i < trashPile.Count; i++)
+        {
+            if (gameMgr.GetComponent<GameManager>().IsBehindOilSlick())
+            {
+                trashPile[i].GetComponent<Trash>().IsBehindOil = true;
+            }
+            else
+            {
+                trashPile[i].GetComponent<Trash>().IsBehindOil = false;
+            }
         }
     }
 }

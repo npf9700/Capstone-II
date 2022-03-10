@@ -229,6 +229,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2782947822820187574, guid: 973f042c6cffd9e42b4c4d8a7d39f18a, type: 3}
+      propertyPath: oilRend
+      value: 
+      objectReference: {fileID: 1032092664}
+    - target: {fileID: 2782947822820187574, guid: 973f042c6cffd9e42b4c4d8a7d39f18a, type: 3}
       propertyPath: oilSlick
       value: 
       objectReference: {fileID: 1032092663}
@@ -236,6 +240,10 @@ PrefabInstance:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 1127477424}
+    - target: {fileID: 2782947822820187574, guid: 973f042c6cffd9e42b4c4d8a7d39f18a, type: 3}
+      propertyPath: trashRend
+      value: 
+      objectReference: {fileID: 8127382987359142655, guid: 6d191049fc292274ba1ae3703a85b006, type: 3}
     - target: {fileID: 5447947530285330576, guid: 973f042c6cffd9e42b4c4d8a7d39f18a, type: 3}
       propertyPath: m_RootOrder
       value: 7

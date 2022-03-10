@@ -13,6 +13,7 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
     private float accelRate = 0.0005f;
     private Vector2 acceleration = Vector2.zero;
     private bool isHeld;
+    private bool isBehindOil;
 
     private float startPosX;
     private float startPosY;
@@ -21,6 +22,12 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
     {
         get { return position; }
     }
+
+    public bool IsBehindOil
+    {
+        get { return isBehindOil; }
+        set { isBehindOil = value; }
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +35,7 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
         position = transform.position;
         direction = new Vector2(0, -1);
         maxSpeed = 0.01f;
-
+        isBehindOil = false;
     }
 
     // Update is called once per frame
@@ -48,13 +55,18 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
 
     public void OnMouseDown()
     {
+        //Getting mouse position in world
         Vector3 mousePos = Input.mousePosition;
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
-        startPosX = mousePos.x - transform.position.x;
-        startPosY = mousePos.y - transform.position.y;
 
-        isHeld = true;
+        if (isBehindOil == false)
+        {
+            startPosX = mousePos.x - transform.position.x;
+            startPosY = mousePos.y - transform.position.y;
+
+            isHeld = true;
+        }
     }
 
     public void OnMouseUp()
@@ -62,32 +74,6 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
         isHeld = false;
 
     }
-    //Events
-
-    //public void OnBeginDrag(PointerEventData eventData)
-    //{
-    //    Debug.Log("Change cursor icon here");
-
-    //}
-
-    //public void OnEndDrag(PointerEventData eventData)
-    //{
-    //    Debug.Log("Change cursor back to original");
-    //    MoveTrash();
-    //}
-
-    //public void OnPointerDown(PointerEventData eventData)
-    //{
-    //    Debug.Log("Click");
-    //    StopTrash();
-    //}
-
-    //public void OnDrag(PointerEventData eventData)
-    //{
-    //    position = transform.position;
-    //    position += eventData.delta;
-    //    transform.position = position;
-    //}
 
     public void MoveTrash()
     {

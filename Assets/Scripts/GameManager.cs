@@ -12,7 +12,13 @@ public class GameManager : MonoBehaviour
     private int trashNotCollected;
     public GameObject oilSlick;
     private Vector2 oilPos;
-
+    public SpriteRenderer trashRend;
+    public SpriteRenderer oilRend;
+    private float halfTrashHeight;
+    private float halfTrashWidth;
+    private float halfOilHeight;
+    private float halfOilWidth;
+    private Rect oilRect;
 
     public int PlayerScore
     {
@@ -27,6 +33,11 @@ public class GameManager : MonoBehaviour
         trashNotCollected = 0;
         scoreText.text = "Score: " + playerScore;
         oilPos = oilSlick.transform.position;
+        halfTrashHeight = trashRend.bounds.size.x / 2;
+        halfOilHeight = oilRend.bounds.size.y / 2;
+        halfTrashWidth = trashRend.bounds.size.y / 2;
+        halfOilWidth = oilRend.bounds.size.x / 2;
+        oilRect = new Rect(oilPos.x - halfOilWidth, oilPos.y - halfOilHeight, oilRend.bounds.size.x, oilRend.bounds.size.y);
     }
 
     // Update is called once per frame
@@ -47,6 +58,8 @@ public class GameManager : MonoBehaviour
         scoreText.text = "Score: " + playerScore;
     }
 
+    //Keeps track of the trash that falls to the bottom and moves the oil box 
+    //farther down in accordance with the amount of trash
     public void TrashNotCaught()
     {
         trashNotCollected++;
@@ -63,4 +76,16 @@ public class GameManager : MonoBehaviour
 
     //Implement collision detection with oil slick to check if 
     //GameObjects should be interactable
+
+    public bool IsBehindOilSlick()
+    {
+        //Getting mouse position in world
+        Vector3 mousePos = Input.mousePosition;
+        mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+
+        //Updating the oil Rectangle
+        oilRect = new Rect(oilPos.x - halfOilWidth, oilPos.y - halfOilHeight, oilRend.bounds.size.x, oilRend.bounds.size.y);
+
+        return oilRect.Contains(mousePos);
+    }
 }

@@ -12,9 +12,18 @@ public class Movement : MonoBehaviour
     public Vector2 currentPos;
     public SpawnManager spm;
     float pingPongSpeed;
+    private bool isBehindOil;
+
+    public bool IsBehindOil
+    {
+        get { return isBehindOil; }
+        set { isBehindOil = value; }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
+        isBehindOil = false;
         spm = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
        // spm = GameObject.FindObjectOfType(typeof(SpawnManager)) as SpawnManager;
         cam = Camera.main;
@@ -75,7 +84,7 @@ public class Movement : MonoBehaviour
    {
         for (int j = 0; j < spm.bubbles.Count; j++)
         {
-            if(spm.bubbles[j] == gameObject)
+            if(spm.bubbles[j] == gameObject && isBehindOil == false)
             {
                 spm.SpawnAnimal(spm.bubbles[j]);
                 if (spm.bubbles.Count == 0)
