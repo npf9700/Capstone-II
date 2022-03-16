@@ -218,8 +218,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49012d6fb5715bd4fb9e036951c6d1d6, type: 3}
 --- !u!1001 &615792432
 PrefabInstance:
@@ -453,7 +452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1032092665}
   - component: {fileID: 1032092664}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Oil
   m_TagString: Untagged
   m_Icon: {fileID: 0}

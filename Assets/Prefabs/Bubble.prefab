@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7682001888031642652}
   - component: {fileID: 7682001888031642653}
   - component: {fileID: 3840190034655794553}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Bubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,6 @@ MonoBehaviour:
   speed: {x: -0.00002615642, y: 0.0049999314, z: 0}
   currentPos: {x: 0, y: 0}
   spm: {fileID: 6952456094374347626, guid: e9aabae5585511242b14237609303a21, type: 3}
-  pingPongSpeed: 1.05
 --- !u!222 &7682001888031642652
 CanvasRenderer:
   m_ObjectHideFlags: 0

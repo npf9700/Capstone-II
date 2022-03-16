@@ -30,34 +30,31 @@ public class SpawnManager : MonoBehaviour
         cameraHeight = cam.orthographicSize * 2f;
         cameraWidth = cameraHeight * cam.aspect;
         bubbles = new List<GameObject>();
-        spawnTime = Random.Range(2f, 3f);
         
-        //this is to avoid overlap but it's not working, idk why.
-        //while(!canSpawn)
-        //{
-        //    canSpawn = PreventOverlap();
-        //    if(canSpawn)
-        //    {
-        //        break;
-        //    }
-        //}
+        spawnTime = Random.Range(1.5f, 2.5f);
+        Debug.Log("Spawn time: " + spawnTime);
         InvokeRepeating("SetPingPongSpeed", 0.0f, spawnTime);
-
-
-
-
     }
 
     // Update is called once per frame
     void Update()
     {
         BubbleBehindOil();
+      //  maxSpawnTime += 0.03f;
+
+    }
+    public void IncreaseSpawnTime(float increment)
+    {
+        float newSpawnTime = spawnTime + increment;
+        Debug.Log("New Spawn Time: " + newSpawnTime);
+        InvokeRepeating("SetPingPongSpeed", 0.0f, newSpawnTime);
     }
 
     public void SetPingPongSpeed()
     {
-        float pingPongSpeed = Random.Range(1.05f, 1.1f);
+        float pingPongSpeed = Random.Range(1f, 1.1f);
         SpawnBubbles(pingPongSpeed);
+        
     }
 
     public void SpawnBubbles(float pingPongSpeed)
@@ -91,41 +88,6 @@ public class SpawnManager : MonoBehaviour
 
     }
 
-    //public void Respawn()
-    //{
-    //    SpawnBubbles();
-    //}
-
-
-    /// <summary>
-    /// This entire method does not work yet. 
-    /// I tried looking at tutorials and found this video to help, 
-    /// but I don't get why it's not working.
-    /// https://www.youtube.com/watch?v=t2Cs71rDlUg
-    /// </summary>
-    /// <returns></returns>
-    bool PreventOverlap()
-    {
-        bubbleRadius = GameObject.Find("Bubble").GetComponent<CircleCollider2D>().radius;
-        Debug.Log(bubbleRadius);
-        colliders = Physics2D.OverlapCircleAll(spawnPos, bubbleRadius);
-        for(int i = 0; i < colliders.Length; i++)
-        {
-            Vector3 center = colliders[i].bounds.center;
-            float xPosLeft = center.x - colliders[i].bounds.extents.x;
-            float xPosRight = center.x + colliders[i].bounds.extents.x;
-            float lowerYPos = center.y - colliders[i].bounds.extents.y;
-            float upperYPos = center.y + colliders[i].bounds.extents.y;
-            if (spawnPos.x >= xPosLeft && spawnPos.x <= xPosRight)
-            {
-                if (spawnPos.y >= lowerYPos && spawnPos.y <= upperYPos)
-                {
-                    return (false);
-                }
-            }
-        }
-        return (true);
-    }
 
     public void BubbleBehindOil()
     {
