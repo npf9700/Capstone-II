@@ -34,6 +34,7 @@ public class SpawnManager : MonoBehaviour
         spawnTime = Random.Range(1.5f, 2.5f);
         Debug.Log("Spawn time: " + spawnTime);
         InvokeRepeating("SetPingPongSpeed", 0.0f, spawnTime);
+        InvokeRepeating("IncreaseSpawnTime", 20.0f, 15f);
     }
 
     // Update is called once per frame
@@ -43,10 +44,11 @@ public class SpawnManager : MonoBehaviour
       //  maxSpawnTime += 0.03f;
 
     }
-    public void IncreaseSpawnTime(float increment)
+    public void IncreaseSpawnTime()
     {
+        float increment = 0.0003f;
         float newSpawnTime = spawnTime + increment;
-        Debug.Log("New Spawn Time: " + newSpawnTime);
+        Debug.Log("Spawn Time Increased from " + spawnTime + "to " + newSpawnTime);
         InvokeRepeating("SetPingPongSpeed", 0.0f, newSpawnTime);
     }
 
@@ -59,11 +61,18 @@ public class SpawnManager : MonoBehaviour
 
     public void SpawnBubbles(float pingPongSpeed)
     {
-        spawnPos = new Vector2(Random.Range(20, (cameraWidth - 90)), cameraHeight);
-        local = Instantiate(bubblePrefab, spawnPos, Quaternion.identity);
-        bubbles.Add(local);
-        movement.FloatUp(pingPongSpeed);
-        spawned = true;
+        if (bubbles.Count > 7)
+        {
+            return;
+        }
+        else
+        {
+            spawnPos = new Vector2(Random.Range(20, (cameraWidth - 90)), cameraHeight);
+            local = Instantiate(bubblePrefab, spawnPos, Quaternion.identity);
+            bubbles.Add(local);
+            movement.FloatUp(pingPongSpeed);
+            spawned = true;
+        }
     }
 
     public void Despawn(GameObject bubble)

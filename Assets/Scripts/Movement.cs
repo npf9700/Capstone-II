@@ -68,26 +68,6 @@ public class Movement : MonoBehaviour
                 if (spm.bubbles[j] == gameObject)
                 {
                     spm.Despawn(spm.bubbles[j]);
-                    
-                    if(spm.bubbles.Count < 2)
-                    {
-                        float spawnIncrement = 0.0003f;
-                        spm.IncreaseSpawnTime(spawnIncrement);
-                    } 
-                    else
-                    {
-                        break;
-                    }
-                   
-                    
-                    
-                    //if (spm.bubbles.Count == 0)
-                    //{
-
-
-                    //    InvokeRepeating("spm.Respawn", 0.0f, spm.spawnTime);
-
-                    //}
                 }
             }
         }
@@ -100,12 +80,6 @@ public class Movement : MonoBehaviour
             if(spm.bubbles[j] == gameObject && isBehindOil == false)
             {
                 spm.SpawnAnimal(spm.bubbles[j]);
-
-                if (spm.bubbles.Count == 0)
-                {
-                    float spawnIncrement = 0.0003f;
-                    spm.IncreaseSpawnTime(spawnIncrement);
-                }
             }
             
         }
