@@ -65,6 +65,8 @@ public class TrashManager : MonoBehaviour
         {
             Debug.Log("Trash was removed by the player");
             gameMgr.GetComponent<GameManager>().IncrementScore(50);
+            gameMgr.GetComponent<GameManager>().ammoSlider.value += 1;
+            //gameMgr.GetComponent<GameManager>().ammoText.text = "Ammo: " + gameMgr.GetComponent<GameManager>().ammoSlider.value;
             trashPile.Remove(trashPiece);
             Destroy(trashPiece);//Trash is removed from the list and hierarchy
         }

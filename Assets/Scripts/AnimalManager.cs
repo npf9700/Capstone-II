@@ -7,6 +7,7 @@ public class AnimalManager : MonoBehaviour
     //Fields
     public GameObject animal;
     private List<GameObject> animals;
+
     // Start is called before the first frame update
     void Start()
     {

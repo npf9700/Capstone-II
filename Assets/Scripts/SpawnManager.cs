@@ -20,7 +20,7 @@ public class SpawnManager : MonoBehaviour
     float bubbleRadius;
     public float spawnTime;
     Collider2D[] colliders;
-
+    public GameManager gmr;
     public bool spawned = false;
 
     void Start()
@@ -30,7 +30,7 @@ public class SpawnManager : MonoBehaviour
         cameraHeight = cam.orthographicSize * 2f;
         cameraWidth = cameraHeight * cam.aspect;
         bubbles = new List<GameObject>();
-        
+        gmr = GameObject.Find("GameManager").GetComponent<GameManager>();
         spawnTime = Random.Range(1.5f, 2.5f);
         Debug.Log("Spawn time: " + spawnTime);
         InvokeRepeating("SetPingPongSpeed", 0.0f, spawnTime);
@@ -85,16 +85,24 @@ public class SpawnManager : MonoBehaviour
 
     public void SpawnAnimal(GameObject bubble)
     {
-        //Spawns the animal sprite before the location is lost
-        animalMgr.GetComponent<AnimalManager>().FreeAnimal(bubble.transform.position);
+        if(gmr.ammoSlider.value == 0)
+        {
+            return;
+        } 
+        else
+        {
+            //Spawns the animal sprite before the location is lost
+            animalMgr.GetComponent<AnimalManager>().FreeAnimal(bubble.transform.position);
 
-        //Gets rid of bubble
-        Destroy(bubble);
-        bubbles.Remove(bubble);
+            //Gets rid of bubble
+            Destroy(bubble);
+            bubbles.Remove(bubble);
 
-        //Increments score
-        gameMgr.GetComponent<GameManager>().IncrementScore(100);
-
+            //Increments score
+            gameMgr.GetComponent<GameManager>().IncrementScore(100);
+            gmr.ammoSlider.value -= 1;
+        }
+       
     }
 
 

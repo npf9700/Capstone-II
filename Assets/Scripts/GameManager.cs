@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 public class GameManager : MonoBehaviour
 {
     //Fields
-    private int playerScore;
+    public int playerScore;
     public Text scoreText;
     private int trashNotCollected;
     public GameObject oilSlick;
@@ -19,7 +19,8 @@ public class GameManager : MonoBehaviour
     private float halfOilHeight;
     private float halfOilWidth;
     private Rect oilRect;
-
+    public Slider ammoSlider;
+    public Canvas GUICanvas;
     public int PlayerScore
     {
         get { return playerScore; }
@@ -38,12 +39,14 @@ public class GameManager : MonoBehaviour
         halfTrashWidth = trashRend.bounds.size.y / 2;
         halfOilWidth = oilRend.bounds.size.x / 2;
         oilRect = new Rect(oilPos.x - halfOilWidth, oilPos.y - halfOilHeight, oilRend.bounds.size.x, oilRend.bounds.size.y);
+        GUICanvas = GameObject.Find("GUICanvas").GetComponent<Canvas>();
+        ammoSlider = GUICanvas.GetComponentInChildren<Slider>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void IncrementScore(int scoreAdd)
@@ -54,8 +57,19 @@ public class GameManager : MonoBehaviour
 
     public void DecrementScore(int decScore)
     {
-        playerScore -= decScore;
-        scoreText.text = "Score: " + playerScore;
+        if (playerScore <= 0 || (playerScore - decScore) <= 0)
+        {
+            playerScore = 0;
+            scoreText.text = "Score: " + playerScore;
+            return;
+        }
+        else
+        {
+            playerScore -= decScore;
+            scoreText.text = "Score: " + playerScore;
+
+        }
+
     }
 
     //Keeps track of the trash that falls to the bottom and moves the oil box 
