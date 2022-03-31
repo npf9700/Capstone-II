@@ -3,7 +3,14 @@ guid: 14ccfa489a84be742a9a945e75622b4e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - scoreText: {instanceID: 0}
+  - oilSlick: {instanceID: 0}
+  - trashRend: {instanceID: 0}
+  - oilRend: {instanceID: 0}
+  - ammoSlider: {instanceID: 0}
+  - GUICanvas: {fileID: 8489339830347395430, guid: 572e16b452470364b959aad2d810bb20, type: 3}
+  - ammoText: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
