@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9C5F074C-2E27-44F9-8A88-7B077FBB530B}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{9C5F074C-2E27-44F9-8A88-7B077FBB530B}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="GameStart" ID="{4606DAE8-CD2D-4640-8A9E-5D1767832129}">
+					<ChildrenList>
+						<Action Name="" ID="{898FF170-B4D0-415D-8D2E-4CB6E9E46AA1}" ShortID="443165410">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainGameLoopContainer" ID="{08370254-C982-4D86-A02C-1B33C19EE973}" WorkUnitID="{D413CACA-AF7F-4D5C-B245-A7ABC8656A3F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PopBubble" ID="{EF1589B7-C024-4E6B-9562-FF575DA96736}">
+					<ChildrenList>
+						<Action Name="" ID="{3CECEAE0-5507-48AA-B5C3-D7F7749B293C}" ShortID="933270786">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PopSoundsContainer" ID="{E271BAE8-0C7D-404B-87C3-EE4BA27709C5}" WorkUnitID="{D413CACA-AF7F-4D5C-B245-A7ABC8656A3F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="RemoveTrash" ID="{C6ED70DF-5AA5-41F2-8F6B-7FCF5D2A34DC}">
+					<ChildrenList>
+						<Action Name="" ID="{0D700FAC-6050-4F3C-B50D-62D466553537}" ShortID="757307165">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TrashRemoveSoundsContainer" ID="{2DB54EDD-DEE9-4A6F-9D3F-866D5D9CDEC3}" WorkUnitID="{D413CACA-AF7F-4D5C-B245-A7ABC8656A3F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

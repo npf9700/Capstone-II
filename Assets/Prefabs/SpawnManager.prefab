@@ -43,9 +43,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 752031e2bf74c1b40bff743569c4efb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPos: {x: 0, y: 0, z: 0}
+  spawnPos: {x: 0, y: 0}
   bubblePrefab: {fileID: 7682001888031642654, guid: 49012d6fb5715bd4fb9e036951c6d1d6, type: 3}
+  medBubble: {fileID: 7974850589614642557, guid: 2b761d72bbd8d164c9d66ec45ccee71d, type: 3}
+  largeBubble: {fileID: 98226963823688373, guid: 0f029ef401ca6af4faa2c4c8d6043647, type: 3}
   bubbles: []
   animalMgr: {fileID: 1565063983602856303, guid: e43cd89b222ff874ebc4e15dddd9cfa0, type: 3}
+  gameMgr: {fileID: 2782947822820187574, guid: 973f042c6cffd9e42b4c4d8a7d39f18a, type: 3}
   spawnDistance: 5
+  spawnTime: 0
   spawned: 0

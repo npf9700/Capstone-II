@@ -6,13 +6,16 @@ using UnityEngine.SceneManagement;
 public class Movement : MonoBehaviour
 {
     public Vector3 speed;
-    Camera cam;
-    float cameraWidth;
-    float cameraHeight;
+    protected Camera cam;
+    protected float cameraWidth;
+    protected float cameraHeight;
     public Vector2 currentPos;
     public SpawnManager spm;
-    float pingPongSpeed;
+    protected float pingPongSpeed;
     private bool isBehindOil;
+    private float size;
+    private int hitsLeft;
+    private Vector3 newScale = new Vector3(1f, 1f, 1f);
 
     public bool IsBehindOil
     {
@@ -23,6 +26,9 @@ public class Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        size = DetermineSize();
+        ScaleBubble();
+        hitsLeft = (int)size;
         isBehindOil = false;
         spm = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
        // spm = GameObject.FindObjectOfType(typeof(SpawnManager)) as SpawnManager;
@@ -61,7 +67,7 @@ public class Movement : MonoBehaviour
 
    public void DespawnAtTop()
    {
-        if (transform.position.y > cam.transform.position.y + cameraHeight / 2 + 1)
+        if (this.transform.position.y > cam.transform.position.y + cameraHeight / 2 + 1)
         {
             for (int j = 0; j < spm.bubbles.Count; j++)
             {
@@ -95,9 +101,10 @@ public class Movement : MonoBehaviour
 
    void OnMouseDown()
    {
+        hitsLeft--;
         for (int j = 0; j < spm.bubbles.Count; j++)
         {
-            if(spm.bubbles[j] == gameObject && isBehindOil == false)
+            if(spm.bubbles[j] == gameObject && isBehindOil == false && hitsLeft <= 0)
             {
                 spm.SpawnAnimal(spm.bubbles[j]);
 
@@ -110,5 +117,33 @@ public class Movement : MonoBehaviour
             
         }
         
+    }
+
+    //Randomly determines if the bubble should be small, medium, or large
+    //(Randomness is weighted towards the smaller bubbles)
+    private float DetermineSize()
+    {
+        float scaleRank = Random.Range(0f, 10f);
+        float bubbleSize = 0;
+        if(scaleRank <= 5f)
+        {
+            bubbleSize = 1f;
+        }
+        else if(scaleRank <= 8.5f)
+        {
+            bubbleSize = 2f;
+        }
+        else
+        {
+            bubbleSize = 3f;
+        }
+        return bubbleSize;
+    }
+
+    //Changes the scale value of the bubble accordingly
+    private void ScaleBubble()
+    {
+        newScale = new Vector3(size, size, 1f);
+        transform.localScale = newScale;
     }
 }

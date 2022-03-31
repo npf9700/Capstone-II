@@ -1,0 +1,13 @@
+Event	ID	Name			Wwise Object Path	Notes
+	951753125	RemoveTrash			\Default Work Unit\RemoveTrash	
+	1027931564	PopBubble			\Default Work Unit\PopBubble	
+	4058101365	GameStart			\Default Work Unit\GameStart	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3888953723	TrashFallen			\Default Work Unit\TrashFallen	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	277128003	WAGWoodlandsMusic	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Windows\SFX\WAGWoodlandsMusic_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainGameLoopContainer\MainGameLoopSegment\WAGWoodlandsMusic		22532644
+	904211516	TTTListOfX	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Windows\SFX\TTTListOfX_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\PopSoundsContainer\PopSound_00\TTTListOfX		3969064
+	1044557662	TTTListOfO	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Windows\SFX\TTTListOfO_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\TrashRemoveSoundsContainer\TrashSound_00\TTTListOfO		3439864
+

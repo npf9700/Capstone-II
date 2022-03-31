@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1697501A-3853-454A-96FC-8951D76F7A7C}" SchemaVersion="97">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{1697501A-3853-454A-96FC-8951D76F7A7C}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="TrashFallen" ID="{112F2B36-49D4-4077-870B-9EE9C8B59F17}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="27"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

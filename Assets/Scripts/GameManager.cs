@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     private float halfOilHeight;
     private float halfOilWidth;
     private Rect oilRect;
+    private int ammo;
 
     public int PlayerScore
     {
@@ -38,6 +39,12 @@ public class GameManager : MonoBehaviour
         halfTrashWidth = trashRend.bounds.size.y / 2;
         halfOilWidth = oilRend.bounds.size.x / 2;
         oilRect = new Rect(oilPos.x - halfOilWidth, oilPos.y - halfOilHeight, oilRend.bounds.size.x, oilRend.bounds.size.y);
+        ammo = 3;
+    }
+
+    public int Ammo
+    {
+        get { return ammo; }
     }
 
     // Update is called once per frame
@@ -63,11 +70,12 @@ public class GameManager : MonoBehaviour
     public void TrashNotCaught()
     {
         trashNotCollected++;
+        AkSoundEngine.SetRTPCValue("TrashFallen", trashNotCollected);
         if(trashNotCollected == 1)
         {
             oilPos.y -= 0.5f;
         }
-        else if(trashNotCollected % 2 == 1)
+        else if(trashNotCollected % 2 == 1 && trashNotCollected < 28)
         {
             oilPos.y -= 0.75f;
         }

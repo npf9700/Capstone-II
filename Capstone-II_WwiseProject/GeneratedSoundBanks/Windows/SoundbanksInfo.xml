@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="1747052466">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2859421969" Language="SFX" Hash="2631917607">
+			<ObjectPath>\SoundBanks\Default Work Unit\GameScene</ObjectPath>
+			<ShortName>GameScene</ShortName>
+			<Path>GameScene.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4058101365" Name="GameStart" ObjectPath="\Events\Default Work Unit\GameStart" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="277128003" Language="SFX">
+							<ShortName>WAGWoodlandsMusic.wav</ShortName>
+							<Path>SFX\WAGWoodlandsMusic_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1027931564" Name="PopBubble" ObjectPath="\Events\Default Work Unit\PopBubble" DurationType="OneShot" DurationMin="1." DurationMax="1.">
+					<IncludedMemoryFiles>
+						<File Id="904211516" Language="SFX">
+							<ShortName>TTTListOfX.wav</ShortName>
+							<Path>SFX\TTTListOfX_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="951753125" Name="RemoveTrash" ObjectPath="\Events\Default Work Unit\RemoveTrash" DurationType="OneShot" DurationMin="1." DurationMax="1.">
+					<IncludedMemoryFiles>
+						<File Id="1044557662" Language="SFX">
+							<ShortName>TTTListOfO.wav</ShortName>
+							<Path>SFX\TTTListOfO_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="3888953723" Name="TrashFallen" ObjectPath="\Game Parameters\Default Work Unit\TrashFallen"/>
+			</GameParameters>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

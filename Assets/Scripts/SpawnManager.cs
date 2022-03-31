@@ -20,8 +20,8 @@ public class SpawnManager : MonoBehaviour
     float bubbleRadius;
     public float spawnTime;
     Collider2D[] colliders;
-
     public bool spawned = false;
+    private int playerAmmo;
 
     void Start()
     {
@@ -30,7 +30,7 @@ public class SpawnManager : MonoBehaviour
         cameraHeight = cam.orthographicSize * 2f;
         cameraWidth = cameraHeight * cam.aspect;
         bubbles = new List<GameObject>();
-        
+
         spawnTime = Random.Range(1.5f, 2.5f);
         Debug.Log("Spawn time: " + spawnTime);
         InvokeRepeating("SetPingPongSpeed", 0.0f, spawnTime);
@@ -88,7 +88,7 @@ public class SpawnManager : MonoBehaviour
 
     }
 
-
+    //Checks if the bubble collides with the oil slick rect
     public void BubbleBehindOil()
     {
         for (int i = 0; i < bubbles.Count; i++)
