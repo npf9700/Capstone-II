@@ -23,14 +23,6 @@ public class AnimalManager : MonoBehaviour
     {
         animals = new List<GameObject>();
         creatures = new List<GameObject>();
-        creatures.Add(turtle);
-        creatures.Add(dolphin);
-        creatures.Add(humphead);
-        creatures.Add(penguin);
-        creatures.Add(seal);
-        creatures.Add(whaleShark);
-        creatures.Add(vaquita);
-        //AddCreatures();
     }
 
     // Update is called once per frame
@@ -41,7 +33,10 @@ public class AnimalManager : MonoBehaviour
 
     public void FreeAnimal(Vector2 bubbleSpot)
     {
-        
+        if(creatures.Count == 0)
+        {
+            AddCreatures();
+        }
         randAnim = Random.Range(0, creatures.Count);
         
         Debug.Log("Size: " + creatures.Count);

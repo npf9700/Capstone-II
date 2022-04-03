@@ -3,7 +3,15 @@ guid: 7fb2eced627659e4c9633eb8bd709be5
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - sixPack: {instanceID: 0}
+  - can: {fileID: 2678115029596288564, guid: 6d191049fc292274ba1ae3703a85b006, type: 3}
+  - bottle: {instanceID: 0}
+  - barrel: {instanceID: 0}
+  - bag: {instanceID: 0}
+  - straws: {instanceID: 0}
+  - cam: {instanceID: 0}
+  - gameMgr: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

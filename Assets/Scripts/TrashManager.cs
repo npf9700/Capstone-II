@@ -5,8 +5,16 @@ using UnityEngine;
 public class TrashManager : MonoBehaviour
 {
     //Fields
-    public GameObject trash;
+    public GameObject sixPack;
+    public GameObject can;
+    public GameObject bottle;
+    public GameObject barrel;
+    public GameObject bag;
+    public GameObject straws;
+
     private List<GameObject> trashPile;
+    private List<GameObject> trashObjects;
+
     private float deviation;
     public float timeStart, timeDelay;
     private bool stopSpawning;
@@ -24,6 +32,7 @@ public class TrashManager : MonoBehaviour
     void Start()
     {
         trashPile = new List<GameObject>();
+        trashObjects = new List<GameObject>();
         stopSpawning = false;
         cameraHeight = cam.orthographicSize * 2f;
         cameraWidth = cameraHeight * cam.aspect;
@@ -42,10 +51,17 @@ public class TrashManager : MonoBehaviour
 
     public void SpawnTrash()
     {
+        if(trashObjects.Count == 0)
+        {
+            AddTrashObjects();
+        }
+
+        int trashOption = Random.Range(0, trashObjects.Count);
+
         //Gets a random value to spawn the trash above the camera window
         deviation = Random.Range(-10f, 10f);
         Vector2 spawnLoc = new Vector2(transform.position.x + deviation, transform.position.y);
-        trashPile.Add(Instantiate(trash, spawnLoc, transform.rotation));
+        trashPile.Add(Instantiate(trashObjects[trashOption], spawnLoc, transform.rotation));
         //gameMgr.GetComponent<GameManager>().AddTrash(newTrash);
     }
 
@@ -82,5 +98,15 @@ public class TrashManager : MonoBehaviour
                 trashPile[i].GetComponent<Trash>().IsBehindOil = false;
             }
         }
+    }
+
+    public void AddTrashObjects()
+    {
+        trashObjects.Add(can);
+        trashObjects.Add(sixPack);
+        trashObjects.Add(bag);
+        trashObjects.Add(straws);
+        trashObjects.Add(barrel);
+        trashObjects.Add(bottle);
     }
 }

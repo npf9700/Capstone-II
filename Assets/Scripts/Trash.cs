@@ -77,6 +77,7 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
 
     public void MoveTrash()
     {
+        transform.Rotate(0f, 0f, 0.1f, Space.Self);
         acceleration = direction * accelRate;
         velocity += acceleration;
         velocity = Vector2.ClampMagnitude(velocity, maxSpeed);
