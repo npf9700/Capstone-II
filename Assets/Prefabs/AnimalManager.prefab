@@ -43,4 +43,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e02149d2e6f9a7a499366dbe76d0ea65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animal: {fileID: 4563348170664054409, guid: fd7b97a67080a6047af32cb34b536015, type: 3}
+  turtle: {fileID: 2358172080931647076, guid: b45e412186e92894fb46663414b9c92e, type: 3}
+  dolphin: {fileID: 3435848547348971411, guid: d4da4474885c174488ffbcd23891e167, type: 3}
+  humphead: {fileID: 1997628782703055424, guid: 55fb4bc55fbe97e4fb2e3f453f21a355, type: 3}
+  penguin: {fileID: 441400923197873378, guid: 9c67da7b217f85846b112a97bac2a2ea, type: 3}
+  seal: {fileID: 1192466434926074495, guid: b38bb98329ccb2a478a79824eda8f73a, type: 3}
+  whaleShark: {fileID: 2996586994692645563, guid: dd4f4fa588ef8c44eacc171ac5a839fe, type: 3}
+  vaquita: {fileID: 3644064414801740537, guid: eb8a2c852482fb64d8d0497583d37782, type: 3}

@@ -5,13 +5,32 @@ using UnityEngine;
 public class AnimalManager : MonoBehaviour
 {
     //Fields
-    public GameObject animal;
     private List<GameObject> animals;
+    private List<GameObject> creatures;
+
+    public GameObject turtle;
+    public GameObject dolphin;
+    public GameObject humphead;
+    public GameObject penguin;
+    public GameObject seal;
+    public GameObject whaleShark;
+    public GameObject vaquita;
+    
+    private int randAnim;
 
     // Start is called before the first frame update
     void Start()
     {
         animals = new List<GameObject>();
+        creatures = new List<GameObject>();
+        creatures.Add(turtle);
+        creatures.Add(dolphin);
+        creatures.Add(humphead);
+        creatures.Add(penguin);
+        creatures.Add(seal);
+        creatures.Add(whaleShark);
+        creatures.Add(vaquita);
+        //AddCreatures();
     }
 
     // Update is called once per frame
@@ -22,6 +41,22 @@ public class AnimalManager : MonoBehaviour
 
     public void FreeAnimal(Vector2 bubbleSpot)
     {
-        animals.Add(Instantiate(animal, bubbleSpot, Quaternion.identity));
+        
+        randAnim = Random.Range(0, creatures.Count);
+        
+        Debug.Log("Size: " + creatures.Count);
+        Debug.Log("Index: " + randAnim);
+        animals.Add(Instantiate(creatures[randAnim], bubbleSpot, Quaternion.identity));
+    }
+
+    private void AddCreatures()
+    {
+        creatures.Add(turtle);
+        creatures.Add(dolphin);
+        creatures.Add(humphead);
+        creatures.Add(penguin);
+        creatures.Add(seal);
+        creatures.Add(whaleShark);
+        creatures.Add(vaquita);
     }
 }

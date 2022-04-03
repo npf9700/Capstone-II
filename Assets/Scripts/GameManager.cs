@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
     private float halfOilWidth;
     private Rect oilRect;
     private int ammo;
+    public Slider ammoSlider;
+    public Canvas GUICanvas;
 
     public int PlayerScore
     {
@@ -40,6 +42,8 @@ public class GameManager : MonoBehaviour
         halfOilWidth = oilRend.bounds.size.x / 2;
         oilRect = new Rect(oilPos.x - halfOilWidth, oilPos.y - halfOilHeight, oilRend.bounds.size.x, oilRend.bounds.size.y);
         ammo = 3;
+        GUICanvas = GameObject.Find("GUICanvas").GetComponent<Canvas>();
+        ammoSlider = GUICanvas.GetComponentInChildren<Slider>();
     }
 
     public int Ammo
@@ -57,12 +61,22 @@ public class GameManager : MonoBehaviour
     {
         playerScore += scoreAdd;
         scoreText.text = "Score: " + playerScore;
+
     }
 
     public void DecrementScore(int decScore)
     {
-        playerScore -= decScore;
-        scoreText.text = "Score: " + playerScore;
+        if (playerScore <= 0 || (playerScore - decScore) <= 0)
+        {
+            playerScore = 0;
+            scoreText.text = "Score: " + playerScore;
+            return;
+        }
+        else
+        {
+            playerScore -= decScore;
+            scoreText.text = "Score: " + playerScore;
+        }
     }
 
     //Keeps track of the trash that falls to the bottom and moves the oil box 
