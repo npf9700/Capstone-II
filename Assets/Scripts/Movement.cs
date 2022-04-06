@@ -16,6 +16,7 @@ public class Movement : MonoBehaviour
     private float size;
     private int hitsLeft;
     private Vector3 newScale = new Vector3(1f, 1f, 1f);
+    public GameManager gmr;
 
     public bool IsBehindOil
     {
@@ -39,6 +40,7 @@ public class Movement : MonoBehaviour
         speed = Vector3.ClampMagnitude(speed, 0.005f);
         currentPos = new Vector2(Random.Range(cam.transform.position.x - cameraWidth / 2, cam.transform.position.x + cameraWidth / 2), cam.transform.position.y - cameraHeight / 2 - 1);
         pingPongSpeed = Random.Range(1.05f, 1.1f);
+        gmr = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -82,6 +84,7 @@ public class Movement : MonoBehaviour
    void OnMouseDown()
    {
         hitsLeft--;
+        gmr.ammoSlider.value -= 1;
         for (int j = 0; j < spm.bubbles.Count; j++)
         {
             if(spm.bubbles[j] == gameObject && isBehindOil == false && hitsLeft <= 0)

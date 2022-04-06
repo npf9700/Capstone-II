@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     public Slider ammoSlider;
     public Canvas GUICanvas;
 
+
     public int PlayerScore
     {
         get { return playerScore; }
@@ -44,6 +45,7 @@ public class GameManager : MonoBehaviour
         ammo = 3;
         GUICanvas = GameObject.Find("GUICanvas").GetComponent<Canvas>();
         ammoSlider = GUICanvas.GetComponentInChildren<Slider>();
+
     }
 
     public int Ammo
