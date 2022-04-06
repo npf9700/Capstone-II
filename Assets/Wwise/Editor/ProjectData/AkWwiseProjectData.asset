@@ -92,8 +92,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\PopBubble
       maxAttenuation: 0
-      maxDuration: 1
-      minDuration: 1
+      maxDuration: 0.5
+      minDuration: 0.5
     - name: RemoveTrash
       guid: df70edc6a55af2418f6b7fcf5d2a34dc
       id: 951753125
@@ -155,6 +155,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585536300458570852
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /Capstone-II_WwiseProject
+  - /Capstone-II_WwiseProject/Events
+  - /Capstone-II_WwiseProject/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

@@ -7,7 +7,9 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	3888953723	TrashFallen			\Default Work Unit\TrashFallen	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	277128003	WAGWoodlandsMusic	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Mac\SFX\WAGWoodlandsMusic_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainGameLoopContainer\MainGameLoopSegment\WAGWoodlandsMusic		22532644
-	904211516	TTTListOfX	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Mac\SFX\TTTListOfX_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\PopSoundsContainer\PopSound_00\TTTListOfX		3969064
-	1044557662	TTTListOfO	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Mac\SFX\TTTListOfO_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\TrashRemoveSoundsContainer\TrashSound_00\TTTListOfO		3439864
+	99709799	DeepSeaDefendersMainLoopMarimba	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Mac\SFX\DeepSeaDefendersMainLoopMarimba_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainGameLoopContainer\MainGameLoopSegment\DeepSeaDefendersMainLoopMarimba		2822464
+	151957766	DeepSeaDefendersMainLoopMelody	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Mac\SFX\DeepSeaDefendersMainLoopMelody_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainGameLoopContainer\MainGameLoopSegment\DeepSeaDefendersMainLoopMelody		4233664
+	581796996	TTTListOfX	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Mac\SFX\DeepSeaDefendersBubbleSounds_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\PopSoundsContainer\PopSound_00\TTTListOfX		2116864
+	591925539	DeepSeaDefendersMainLoopDrone	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Mac\SFX\DeepSeaDefendersMainLoopDrone_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainGameLoopContainer\MainGameLoopSegment\DeepSeaDefendersMainLoopDrone		4233664
+	662381675	TTTListOfO	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Mac\SFX\DeepSeaDefendersTrashSounds_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\TrashRemoveSoundsContainer\TrashSound_00\TTTListOfO		1411264
 

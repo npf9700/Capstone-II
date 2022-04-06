@@ -15,7 +15,7 @@
 					<ChildrenList>
 						<MusicSegment Name="MainGameLoopSegment" ID="{3001DB59-6B4E-439E-84A4-4659D52ABF49}" ShortID="565803237">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="127735.714285714"/>
+								<Property Name="EndPosition" Type="Real64" Value="154426.759061833"/>
 								<Property Name="Lowpass" Type="int16">
 									<RTPCList>
 										<RTPC Name="" ID="{14BA1ED9-41A6-4598-9558-2C60325ADBFC}" ShortID="662951147">
@@ -55,18 +55,21 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicTrack Name="WAGWoodlandsMusic" ID="{9841BBF1-4184-4657-B0CE-9A23F0D0249E}" ShortID="1063255005">
+								<MusicTrack Name="DeepSeaDefendersMainLoopDrone" ID="{9841BBF1-4184-4657-B0CE-9A23F0D0249E}" ShortID="1063255005">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FA5F474-4B91-4C6F-BB44-F4441A4D6A93}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="WAGWoodlandsMusic" ID="{86EC2568-E791-460B-BAAD-D93C303D4AD4}">
+										<AudioFileSource Name="DeepSeaDefendersMainLoopDrone" ID="{32B7798D-732A-47DD-A6E6-F01F09E35F56}">
 											<Language>SFX</Language>
-											<AudioFile>WAGWoodlandsMusic.wav</AudioFile>
+											<AudioFile>DeepSeaDefendersMainLoopDrone.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="277128003"/>
+												<MediaID ID="591925539"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -81,13 +84,1221 @@
 									<SequenceList>
 										<MusicTrackSequence Name="" ID="{8F2EE773-6B62-4368-AB4C-C72979CAD785}">
 											<ClipList>
-												<MusicClip Name="WAGWoodlandsMusic" ID="{A8BAB693-0F83-4233-8C33-1D323B153F4D}">
+												<MusicClip Name="DeepSeaDefendersMainLoopDrone" ID="{B843C506-C15F-4B22-8898-6B5912F3E83B}">
 													<PropertyList>
-														<Property Name="EndTrimOffset" Type="Real64" Value="127735.714285714"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="4000.00000000002"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 													</PropertyList>
-													<AudioSourceRef Name="WAGWoodlandsMusic" ID="{86EC2568-E791-460B-BAAD-D93C303D4AD4}"/>
+													<AudioSourceRef Name="DeepSeaDefendersMainLoopDrone" ID="{32B7798D-732A-47DD-A6E6-F01F09E35F56}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{965E694D-EF91-4B57-B7AB-91E8E5BD2D48}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>4</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{1D5E80C3-FDD8-4302-8474-A840599148CD}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>4</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{D0F0BE85-E451-43D6-AF13-E98EE4BDEDA5}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>4</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{605C6F43-928B-442A-BD64-ECC8B21F2E24}">
+											<ClipList>
+												<MusicClip Name="DeepSeaDefendersMainLoopDrone" ID="{EEB88B4B-AC35-4FAD-9D3D-6FC9C9955B0B}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="4000"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="8000.00000000002"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-4000"/>
+													</PropertyList>
+													<AudioSourceRef Name="DeepSeaDefendersMainLoopDrone" ID="{32B7798D-732A-47DD-A6E6-F01F09E35F56}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{7200CFAE-F337-4150-9A63-B0BE154A21FB}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>4</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{43F706E9-4DEA-44C2-82C4-3CA786627640}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>4</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{5D1FED3E-AB18-45BF-9699-1FA9816AC104}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>4</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{28245FD2-3BFE-4A09-B76A-C26D8E78BEA2}">
+											<ClipList>
+												<MusicClip Name="DeepSeaDefendersMainLoopDrone" ID="{5D3CED19-3D4B-4F37-9607-2814595BCCE0}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="8000"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-8000"/>
+													</PropertyList>
+													<AudioSourceRef Name="DeepSeaDefendersMainLoopDrone" ID="{32B7798D-732A-47DD-A6E6-F01F09E35F56}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{11137BD0-E99C-4795-8175-52BCDCEE08A6}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>12</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{9B899050-BFF3-4E94-8ECC-05A32B6B00C9}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>12</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{D34C6735-988B-4D3D-9503-CF0AF8E518DA}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>12</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{80963100-A065-4C5F-A300-69E22A0C5402}">
+											<ClipList>
+												<MusicClip Name="DeepSeaDefendersMainLoopDrone" ID="{5FE0B006-9855-427D-A862-C603E3CBD6C9}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="12000"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="15999.9999999999"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-12000"/>
+													</PropertyList>
+													<AudioSourceRef Name="DeepSeaDefendersMainLoopDrone" ID="{32B7798D-732A-47DD-A6E6-F01F09E35F56}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{D5827696-9B11-4C3F-A578-E8DB8F0F77C4}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>12</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>16</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{8727D588-DA68-4AA2-9E78-8852A6BFC003}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>12</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>16</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{FECE2F4B-F94E-4F26-9234-4549A6403E41}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>12</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>16</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{48372D89-0EB5-41EA-97EC-D0FE32EF1B8E}">
+											<ClipList>
+												<MusicClip Name="DeepSeaDefendersMainLoopDrone" ID="{53A63599-2178-49F1-B776-5670219BA667}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="16000"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="20000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-16000"/>
+													</PropertyList>
+													<AudioSourceRef Name="DeepSeaDefendersMainLoopDrone" ID="{32B7798D-732A-47DD-A6E6-F01F09E35F56}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{34E13624-F2A7-46D7-9D3A-A58CB4FB64E6}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>16</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>20</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{EBF4E35B-806B-426D-B0C6-1ED1D9C67A4E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>16</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>20</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{E148A275-BA60-4030-817B-BE031EA19420}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>16</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>20</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{3613C305-6061-4006-B9A6-4AB47E89E859}">
+											<ClipList>
+												<MusicClip Name="DeepSeaDefendersMainLoopDrone" ID="{87119B76-C5F2-43B9-B030-667505923194}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="20000"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-20000"/>
+													</PropertyList>
+													<AudioSourceRef Name="DeepSeaDefendersMainLoopDrone" ID="{32B7798D-732A-47DD-A6E6-F01F09E35F56}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{6A124FF7-7D3D-418C-B7EC-BD300D2995CA}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>20</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>24</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{229557B6-9824-40DA-B462-11E2D56C0FA8}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>20</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>24</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{7015CD4E-C85B-4400-A93F-0EA5270488D4}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>20</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>24</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="DeepSeaDefendersMainLoopMelody" ID="{DA66C37A-3E43-4F35-ABD4-18D0C58011B4}" ShortID="1056586659">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FA5F474-4B91-4C6F-BB44-F4441A4D6A93}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="DeepSeaDefendersMainLoopMelody" ID="{2627549F-B4C4-4F80-B4EF-3A108ECFF615}">
+											<Language>SFX</Language>
+											<AudioFile>DeepSeaDefendersMainLoopMelody.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="151957766"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{B5686886-50AB-4DC9-AC0E-D13640CA8359}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{39C11DFD-CE90-473F-8102-9D8348EC600B}">
+											<ClipList>
+												<MusicClip Name="DeepSeaDefendersMainLoopMelody" ID="{1388B09D-32DC-42FE-ACB2-DF1B7CFB6DFF}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="4000.00000000001"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="DeepSeaDefendersMainLoopMelody" ID="{2627549F-B4C4-4F80-B4EF-3A108ECFF615}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{9CB0686D-89B6-463D-94E5-01A7E4465E65}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>4</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{6DB5D64A-A0C7-48CF-91A0-91E7F29BA417}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>4</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{6051B26F-9070-483E-88F2-BC3484246206}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>4</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{F3C2317F-322F-4160-85EE-253FAF0834F9}">
+											<ClipList>
+												<MusicClip Name="DeepSeaDefendersMainLoopMelody" ID="{2C07ABBA-E4A9-4C21-9B06-69E43C9C412F}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="4000"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="8000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-4000"/>
+													</PropertyList>
+													<AudioSourceRef Name="DeepSeaDefendersMainLoopMelody" ID="{2627549F-B4C4-4F80-B4EF-3A108ECFF615}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{17CABA14-8A2E-4F89-BAE6-ACCA6BBFC1A4}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>4</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{E196A873-1EA2-4C61-A65B-3973D326B4C9}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>4</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{75849152-2C6A-40EF-9546-4CD0F49D9673}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>4</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{24636365-A84F-40C4-82E5-29780C1098E3}">
+											<ClipList>
+												<MusicClip Name="DeepSeaDefendersMainLoopMelody" ID="{69D12DC5-C3D6-461D-82CA-65C8D58F9B42}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="8000"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-8000"/>
+													</PropertyList>
+													<AudioSourceRef Name="DeepSeaDefendersMainLoopMelody" ID="{2627549F-B4C4-4F80-B4EF-3A108ECFF615}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{192071FC-B8E7-4784-8613-E05248AFF823}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>12</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{E41DEB2C-E86B-4AA0-ABBE-00F4DAC73547}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>12</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{63B7041F-0742-4416-8A66-537B0C7888B9}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>12</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{A0CE9C59-1C2E-4027-B52B-9AEE2BEAD00D}">
+											<ClipList>
+												<MusicClip Name="DeepSeaDefendersMainLoopMelody" ID="{1BCF3147-00F8-4F31-8E44-E28E3CA463F8}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="12000"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-12000"/>
+													</PropertyList>
+													<AudioSourceRef Name="DeepSeaDefendersMainLoopMelody" ID="{2627549F-B4C4-4F80-B4EF-3A108ECFF615}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{C3E5A55E-6FD0-4AD6-B4B1-0B52B6C34841}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>12</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>16</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{A388F38F-25D1-4BCF-9772-7800ABA8167E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>12</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>16</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{44E9E7F8-4CB6-444D-9538-A03BCC06A867}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>12</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>16</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{2779824F-E985-4FC6-A64E-ACB9F0AA57C9}">
+											<ClipList>
+												<MusicClip Name="DeepSeaDefendersMainLoopMelody" ID="{CE2C9995-EA77-4ACA-B351-FAC6EEC27E70}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="16000"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="20000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-16000"/>
+													</PropertyList>
+													<AudioSourceRef Name="DeepSeaDefendersMainLoopMelody" ID="{2627549F-B4C4-4F80-B4EF-3A108ECFF615}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{753CEDA6-4B60-456D-AB23-00786E723C2E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>16</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>20</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{B32761BF-A646-48AF-A070-8ED193DB653E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>16</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>20</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{847ECF63-B78A-4BD4-88E7-119101DF56E6}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>16</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>20</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{81257EFB-8E6B-437D-AA23-185B9B4D45F0}">
+											<ClipList>
+												<MusicClip Name="DeepSeaDefendersMainLoopMelody" ID="{126C82BD-DE78-4DA9-B76B-FE2599F57B7E}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="20000"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-20000"/>
+													</PropertyList>
+													<AudioSourceRef Name="DeepSeaDefendersMainLoopMelody" ID="{2627549F-B4C4-4F80-B4EF-3A108ECFF615}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{46E35B53-2E67-46DA-94F4-1B2A38346F97}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>20</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>24</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{6E10A2EA-C288-4BC1-8B9C-B56AD4980AC3}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>20</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>24</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{6D7E47CF-725B-4B70-AECB-45A07348647B}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>20</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>24</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="DeepSeaDefendersMainLoopMarimba" ID="{114D0767-91D7-4BB6-B6F6-29334B6D92BA}" ShortID="807131670">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FA5F474-4B91-4C6F-BB44-F4441A4D6A93}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="DeepSeaDefendersMainLoopMarimba" ID="{CA240F6F-2ADE-47B5-B28A-4B5373B74680}">
+											<Language>SFX</Language>
+											<AudioFile>DeepSeaDefendersMainLoopMarimba.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="99709799"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{4EDCCE6E-4669-4CC2-BE80-68EF243A31E7}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{15C4B982-F689-4B78-B235-CE53C607B34D}">
+											<ClipList>
+												<MusicClip Name="DeepSeaDefendersMainLoopMarimba" ID="{E4D6C3C0-CB6C-4C40-850A-DA199629B1C4}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="4000.00000000001"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="DeepSeaDefendersMainLoopMarimba" ID="{CA240F6F-2ADE-47B5-B28A-4B5373B74680}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{000F84D3-71EE-4D72-988B-55FE0E7BF369}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>4</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{EC2DC2DF-F7A1-49BE-BF61-87DB30E1FD36}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>4</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{D94DBA49-5F2C-4A32-AEFB-0E7B26A711C8}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>4</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{D326ED9A-97C1-4C94-AF6A-7303C9006745}">
+											<ClipList>
+												<MusicClip Name="DeepSeaDefendersMainLoopMarimba" ID="{8F9DB337-BDDC-4A2B-BE96-26BCEF68AD3F}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="4000"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="7999.99999999999"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-4000"/>
+													</PropertyList>
+													<AudioSourceRef Name="DeepSeaDefendersMainLoopMarimba" ID="{CA240F6F-2ADE-47B5-B28A-4B5373B74680}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{B701BE2F-F905-483E-8C35-FD29E1A4F9C1}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>4</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{ABFA5862-D895-487D-9E23-6BD0B5D126EA}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>4</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{05FC18E6-277F-477F-B725-1ABFFD1CEBD1}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>4</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{AD996D2F-4367-4E6B-BB7C-CD051E9D54EA}">
+											<ClipList>
+												<MusicClip Name="DeepSeaDefendersMainLoopMarimba" ID="{07315688-7185-4853-AA43-3523B7E7684E}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="8000"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-8000"/>
+													</PropertyList>
+													<AudioSourceRef Name="DeepSeaDefendersMainLoopMarimba" ID="{CA240F6F-2ADE-47B5-B28A-4B5373B74680}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{CCC5124A-DF5B-4088-B62D-A32611899F4E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>12</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{55257F02-7AAF-46F9-9D7E-B0CC492E9123}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>12</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{3557207B-BD3A-4930-85BD-868E2663FF20}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>12</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{AFB44E62-7B84-485A-8806-BF7F7E081ACB}">
+											<ClipList>
+												<MusicClip Name="DeepSeaDefendersMainLoopMarimba" ID="{EB8B3393-FA4A-40C5-AC77-A4AEC77B7E87}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="12000"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-12000"/>
+													</PropertyList>
+													<AudioSourceRef Name="DeepSeaDefendersMainLoopMarimba" ID="{CA240F6F-2ADE-47B5-B28A-4B5373B74680}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{9F11ECF6-26DC-4D14-8F18-4132D474D9C1}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>12</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>16</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{2AA419BF-BE00-4519-A6CD-63C1775FB089}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>12</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>16</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{4E72CD42-8904-4749-BC35-2F8E75D3EBC7}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>12</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>16</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
 												</MusicClip>
 											</ClipList>
 										</MusicTrackSequence>
@@ -99,7 +1310,7 @@
 								<MusicCue Name="Exit Cue" ID="{E9A12C05-15A4-4514-8FA1-8560C11871F3}">
 									<PropertyList>
 										<Property Name="CueType" Type="int16" Value="1"/>
-										<Property Name="TimeMs" Type="Real64" Value="127735.714285714"/>
+										<Property Name="TimeMs" Type="Real64" Value="4000"/>
 									</PropertyList>
 								</MusicCue>
 							</CueList>
@@ -162,11 +1373,11 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="TTTListOfX" ID="{136DF7B3-9670-4F7E-A053-51D1E8466AC2}">
+										<AudioFileSource Name="DeepSeaDefendersBubbleSounds" ID="{9247D697-4E45-4480-98EE-ECB382F77A62}">
 											<Language>SFX</Language>
-											<AudioFile>TTTListOfX.wav</AudioFile>
+											<AudioFile>DeepSeaDefendersBubbleSounds.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="904211516"/>
+												<MediaID ID="581796996"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -181,16 +1392,16 @@
 									<SequenceList>
 										<MusicTrackSequence Name="" ID="{BEF11407-2835-4E4F-878C-C445DDB91588}">
 											<ClipList>
-												<MusicClip Name="TTTListOfX" ID="{5B41D678-2A64-4F61-BC05-B67CCAA35D37}">
+												<MusicClip Name="DeepSeaDefendersBubbleSounds" ID="{93947460-7144-4866-9357-4FF306779982}">
 													<PropertyList>
-														<Property Name="EndTrimOffset" Type="Real64" Value="999.999999999996"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="500.000000000004"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 													</PropertyList>
-													<AudioSourceRef Name="TTTListOfX" ID="{136DF7B3-9670-4F7E-A053-51D1E8466AC2}"/>
+													<AudioSourceRef Name="DeepSeaDefendersBubbleSounds" ID="{9247D697-4E45-4480-98EE-ECB382F77A62}"/>
 													<PropertyCurveList>
 														<PropertyCurve PropertyName="Highpass">
-															<Curve Name="" ID="{D1D16BCA-BE3B-492E-8A00-92A1B5100683}">
+															<Curve Name="" ID="{5E4282C1-01AC-49AB-9D40-3A6A377F7025}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="1"/>
 																</PropertyList>
@@ -201,7 +1412,7 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>1</XPos>
+																		<XPos>0.5</XPos>
 																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -209,7 +1420,7 @@
 															</Curve>
 														</PropertyCurve>
 														<PropertyCurve PropertyName="Lowpass">
-															<Curve Name="" ID="{BE88BFF6-5649-4C73-AD25-5DFAACE514B9}">
+															<Curve Name="" ID="{4DD6DCDA-3502-403C-88A8-1E8C99F87CFC}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="1"/>
 																</PropertyList>
@@ -220,7 +1431,7 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>1</XPos>
+																		<XPos>0.5</XPos>
 																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -228,7 +1439,7 @@
 															</Curve>
 														</PropertyCurve>
 														<PropertyCurve PropertyName="Volume">
-															<Curve Name="" ID="{F1081C4E-94D4-4966-954B-1763C3E24051}">
+															<Curve Name="" ID="{9483F607-50B6-453C-81EA-ECAC6168AEF1}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
@@ -239,7 +1450,7 @@
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>1</XPos>
+																		<XPos>0.5</XPos>
 																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -258,7 +1469,7 @@
 								<MusicCue Name="Exit Cue" ID="{341E2ADD-E836-4026-B333-03C8AA892BD5}">
 									<PropertyList>
 										<Property Name="CueType" Type="int16" Value="1"/>
-										<Property Name="TimeMs" Type="Real64" Value="1000"/>
+										<Property Name="TimeMs" Type="Real64" Value="500"/>
 									</PropertyList>
 								</MusicCue>
 							</CueList>
@@ -283,11 +1494,11 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="TTTListOfX" ID="{642DB97F-2DFF-4EA8-ACF2-6596204629C8}">
+										<AudioFileSource Name="DeepSeaDefendersBubbleSounds" ID="{AE4B72AF-0ADF-49EF-A892-235B80611ABE}">
 											<Language>SFX</Language>
-											<AudioFile>TTTListOfX.wav</AudioFile>
+											<AudioFile>DeepSeaDefendersBubbleSounds.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="904211516"/>
+												<MediaID ID="581796996"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -302,29 +1513,29 @@
 									<SequenceList>
 										<MusicTrackSequence Name="" ID="{5C4C043F-FD14-4CF7-977D-EB07A20F0AD5}">
 											<ClipList>
-												<MusicClip Name="TTTListOfX" ID="{21B14EF0-8FEC-4D43-8B3A-560E4782430F}">
+												<MusicClip Name="DeepSeaDefendersBubbleSounds" ID="{C8CFCA82-3C9D-429E-BB19-5E147A2C0B01}">
 													<PropertyList>
-														<Property Name="BeginTrimOffset" Type="Real64" Value="9500.00000000001"/>
-														<Property Name="EndTrimOffset" Type="Real64" Value="10500"/>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="2000.00000000001"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="2500.00000000001"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
-														<Property Name="PlayAt" Type="Real64" Value="-9500.00000000001"/>
+														<Property Name="PlayAt" Type="Real64" Value="-2000.00000000001"/>
 													</PropertyList>
-													<AudioSourceRef Name="TTTListOfX" ID="{642DB97F-2DFF-4EA8-ACF2-6596204629C8}"/>
+													<AudioSourceRef Name="DeepSeaDefendersBubbleSounds" ID="{AE4B72AF-0ADF-49EF-A892-235B80611ABE}"/>
 													<PropertyCurveList>
 														<PropertyCurve PropertyName="Highpass">
-															<Curve Name="" ID="{F12DDAD7-A1A4-4042-AB88-CD758E7EE308}">
+															<Curve Name="" ID="{1A8E7B87-4B2B-452D-AAC9-725579CF1E34}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="1"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
-																		<XPos>9.5</XPos>
+																		<XPos>2</XPos>
 																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>10.5</XPos>
+																		<XPos>2.5</XPos>
 																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -332,18 +1543,18 @@
 															</Curve>
 														</PropertyCurve>
 														<PropertyCurve PropertyName="Lowpass">
-															<Curve Name="" ID="{4BB05FB2-AB1B-4841-B1B5-66886243DB8E}">
+															<Curve Name="" ID="{3CDE37ED-BE6B-4D00-A593-DDA445EDAE3F}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="1"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
-																		<XPos>9.5</XPos>
+																		<XPos>2</XPos>
 																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>10.5</XPos>
+																		<XPos>2.5</XPos>
 																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -351,18 +1562,18 @@
 															</Curve>
 														</PropertyCurve>
 														<PropertyCurve PropertyName="Volume">
-															<Curve Name="" ID="{6D98C4C5-7FD2-46D5-AB59-E700A77728B0}">
+															<Curve Name="" ID="{25F94D6F-9FCF-439B-9747-1F3873680966}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
-																		<XPos>9.5</XPos>
+																		<XPos>2</XPos>
 																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>10.5</XPos>
+																		<XPos>2.5</XPos>
 																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -381,7 +1592,7 @@
 								<MusicCue Name="Exit Cue" ID="{BA011F9B-6811-4E70-9B02-114B0FE5ABE5}">
 									<PropertyList>
 										<Property Name="CueType" Type="int16" Value="1"/>
-										<Property Name="TimeMs" Type="Real64" Value="1000"/>
+										<Property Name="TimeMs" Type="Real64" Value="500"/>
 									</PropertyList>
 								</MusicCue>
 							</CueList>
@@ -406,11 +1617,11 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="TTTListOfX" ID="{437596E5-5EE9-4FA1-BDC0-F53C0881EB63}">
+										<AudioFileSource Name="DeepSeaDefendersBubbleSounds" ID="{214A200A-CE0E-41D1-B34A-DA1ED477D2AD}">
 											<Language>SFX</Language>
-											<AudioFile>TTTListOfX.wav</AudioFile>
+											<AudioFile>DeepSeaDefendersBubbleSounds.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="904211516"/>
+												<MediaID ID="581796996"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -425,29 +1636,29 @@
 									<SequenceList>
 										<MusicTrackSequence Name="" ID="{84EFA5DF-57B3-4264-ADD3-307A040097A4}">
 											<ClipList>
-												<MusicClip Name="TTTListOfX" ID="{A703A1C1-028C-4315-956D-EB874D82704B}">
+												<MusicClip Name="DeepSeaDefendersBubbleSounds" ID="{4E4A0B1A-5E40-4AA7-B1BE-49164CC508DD}">
 													<PropertyList>
-														<Property Name="BeginTrimOffset" Type="Real64" Value="15500"/>
-														<Property Name="EndTrimOffset" Type="Real64" Value="16500"/>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="4000"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="4500"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
-														<Property Name="PlayAt" Type="Real64" Value="-15500"/>
+														<Property Name="PlayAt" Type="Real64" Value="-4000"/>
 													</PropertyList>
-													<AudioSourceRef Name="TTTListOfX" ID="{437596E5-5EE9-4FA1-BDC0-F53C0881EB63}"/>
+													<AudioSourceRef Name="DeepSeaDefendersBubbleSounds" ID="{214A200A-CE0E-41D1-B34A-DA1ED477D2AD}"/>
 													<PropertyCurveList>
 														<PropertyCurve PropertyName="Highpass">
-															<Curve Name="" ID="{0DEAED9D-6D39-45E0-898B-BBDB5EEF15EF}">
+															<Curve Name="" ID="{1E460CBF-6239-4902-9D94-9D19B9AAF599}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="1"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
-																		<XPos>15.5</XPos>
+																		<XPos>4</XPos>
 																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>16.5</XPos>
+																		<XPos>4.5</XPos>
 																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -455,18 +1666,18 @@
 															</Curve>
 														</PropertyCurve>
 														<PropertyCurve PropertyName="Lowpass">
-															<Curve Name="" ID="{EEED5236-E36C-449D-AE47-B3F251C48492}">
+															<Curve Name="" ID="{953540A8-ECFD-492A-AFB5-8E44A70770C7}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="1"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
-																		<XPos>15.5</XPos>
+																		<XPos>4</XPos>
 																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>16.5</XPos>
+																		<XPos>4.5</XPos>
 																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -474,18 +1685,18 @@
 															</Curve>
 														</PropertyCurve>
 														<PropertyCurve PropertyName="Volume">
-															<Curve Name="" ID="{2D363DDE-8BEC-4CA4-A6DD-534C2919B3A7}">
+															<Curve Name="" ID="{1193289C-D144-45DB-813C-253BAFAFF6DA}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
-																		<XPos>15.5</XPos>
+																		<XPos>4</XPos>
 																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>16.5</XPos>
+																		<XPos>4.5</XPos>
 																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -504,7 +1715,7 @@
 								<MusicCue Name="Exit Cue" ID="{CD5F3A25-8543-4056-9780-A8DC85E45BFF}">
 									<PropertyList>
 										<Property Name="CueType" Type="int16" Value="1"/>
-										<Property Name="TimeMs" Type="Real64" Value="1000"/>
+										<Property Name="TimeMs" Type="Real64" Value="500"/>
 									</PropertyList>
 								</MusicCue>
 							</CueList>
@@ -529,11 +1740,11 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="TTTListOfX" ID="{E2A782B3-9783-4789-BABB-69037D1D0352}">
+										<AudioFileSource Name="DeepSeaDefendersBubbleSounds" ID="{5C16BA37-2A64-40BD-A537-28B42BB264DC}">
 											<Language>SFX</Language>
-											<AudioFile>TTTListOfX.wav</AudioFile>
+											<AudioFile>DeepSeaDefendersBubbleSounds.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="904211516"/>
+												<MediaID ID="581796996"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -548,29 +1759,29 @@
 									<SequenceList>
 										<MusicTrackSequence Name="" ID="{F2C8483E-E2DE-4650-BAEA-F79F271CCC79}">
 											<ClipList>
-												<MusicClip Name="TTTListOfX" ID="{38B51E26-6342-4707-98C4-B9364421E902}">
+												<MusicClip Name="DeepSeaDefendersBubbleSounds" ID="{62A38E72-4376-493C-8E48-9CCFD15705C0}">
 													<PropertyList>
-														<Property Name="BeginTrimOffset" Type="Real64" Value="21000"/>
-														<Property Name="EndTrimOffset" Type="Real64" Value="22000"/>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="6000"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="6500"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
-														<Property Name="PlayAt" Type="Real64" Value="-21000"/>
+														<Property Name="PlayAt" Type="Real64" Value="-6000"/>
 													</PropertyList>
-													<AudioSourceRef Name="TTTListOfX" ID="{E2A782B3-9783-4789-BABB-69037D1D0352}"/>
+													<AudioSourceRef Name="DeepSeaDefendersBubbleSounds" ID="{5C16BA37-2A64-40BD-A537-28B42BB264DC}"/>
 													<PropertyCurveList>
 														<PropertyCurve PropertyName="Highpass">
-															<Curve Name="" ID="{D0084A29-76AC-4966-9CB2-FC5A982082AC}">
+															<Curve Name="" ID="{A20973A7-2993-4374-ABEA-22B517BAF81A}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="1"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
-																		<XPos>21</XPos>
+																		<XPos>6</XPos>
 																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>22</XPos>
+																		<XPos>6.5</XPos>
 																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -578,18 +1789,18 @@
 															</Curve>
 														</PropertyCurve>
 														<PropertyCurve PropertyName="Lowpass">
-															<Curve Name="" ID="{AAA4811E-643A-4FD2-8F1C-A3A5A08BBB6B}">
+															<Curve Name="" ID="{DDC48113-43B3-441A-8434-E0CB5697C987}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="1"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
-																		<XPos>21</XPos>
+																		<XPos>6</XPos>
 																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>22</XPos>
+																		<XPos>6.5</XPos>
 																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -597,18 +1808,18 @@
 															</Curve>
 														</PropertyCurve>
 														<PropertyCurve PropertyName="Volume">
-															<Curve Name="" ID="{5A9985A2-6C6A-4A12-B8A3-09382CC8CB0F}">
+															<Curve Name="" ID="{ACA1DD30-DCC4-48C6-B787-1570CA0D3EA1}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
-																		<XPos>21</XPos>
+																		<XPos>6</XPos>
 																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>22</XPos>
+																		<XPos>6.5</XPos>
 																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -627,7 +1838,254 @@
 								<MusicCue Name="Exit Cue" ID="{7675E893-0E07-45C2-8DF8-72C48FB10A6B}">
 									<PropertyList>
 										<Property Name="CueType" Type="int16" Value="1"/>
-										<Property Name="TimeMs" Type="Real64" Value="1000"/>
+										<Property Name="TimeMs" Type="Real64" Value="500"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="PopSound_04" ID="{5C01C4C5-E9CC-489E-A5AF-FDBFC6F32658}" ShortID="805810130">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="22500"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C234D76-B988-4FC4-BBD1-C5FB797B737D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FA5F474-4B91-4C6F-BB44-F4441A4D6A93}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="TTTListOfX" ID="{F6B85249-C2D9-421A-B755-6D2586E10C92}" ShortID="801299718">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FA5F474-4B91-4C6F-BB44-F4441A4D6A93}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="DeepSeaDefendersBubbleSounds" ID="{690C067F-F210-430E-A547-DB32AF0CD261}">
+											<Language>SFX</Language>
+											<AudioFile>DeepSeaDefendersBubbleSounds.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="581796996"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{64FEC8D6-6CCB-41FD-812D-A4F772CEB5FF}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{7A702474-5AA7-4E37-8BCD-CADB2E83E17F}">
+											<ClipList>
+												<MusicClip Name="DeepSeaDefendersBubbleSounds" ID="{D4116569-99D7-4BD3-B605-0CBF51036B36}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10500"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-10000"/>
+													</PropertyList>
+													<AudioSourceRef Name="DeepSeaDefendersBubbleSounds" ID="{690C067F-F210-430E-A547-DB32AF0CD261}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{28F6D8ED-CA17-44B1-A1FD-B4DEC9A78865}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10.5</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{45E2CC05-1864-477E-AE32-1FE250E072BD}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10.5</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{BB2183ED-7C45-4E47-BE4C-BD430CFB0636}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10.5</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{F84D54B8-512A-43AC-8179-8636101EC594}"/>
+								<MusicCue Name="Exit Cue" ID="{0B156B2A-E72B-4989-B91C-760FEAB058AF}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="500"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="PopSound_05" ID="{ABDD9745-C2CE-4547-AAAE-9185E4D05269}" ShortID="741169052">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="22500"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C234D76-B988-4FC4-BBD1-C5FB797B737D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FA5F474-4B91-4C6F-BB44-F4441A4D6A93}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="TTTListOfX" ID="{139A1993-8699-427F-9D73-6D7976611AEE}" ShortID="724319131">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FA5F474-4B91-4C6F-BB44-F4441A4D6A93}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="DeepSeaDefendersBubbleSounds" ID="{248D6230-53C3-43BC-AE2F-B5345C0BE882}">
+											<Language>SFX</Language>
+											<AudioFile>DeepSeaDefendersBubbleSounds.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="581796996"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{CC5B2CF3-E6B8-4C1C-A27F-7D054E8A265F}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList/>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{E95E49E5-747D-4F0F-A6B8-E3E9B7CF339F}">
+											<ClipList>
+												<MusicClip Name="DeepSeaDefendersBubbleSounds" ID="{E238FCD8-7E14-4F20-BE1B-B809F6337183}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="8000"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="8500"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-8000"/>
+													</PropertyList>
+													<AudioSourceRef Name="DeepSeaDefendersBubbleSounds" ID="{248D6230-53C3-43BC-AE2F-B5345C0BE882}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{A31DF311-0556-4D18-9760-9A0A92554F13}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8.5</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{D5DEA495-7F0C-43ED-B985-D38848BDA48D}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8.5</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{954C91D2-BBA0-4A3F-B9B7-EE4277474228}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8.5</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{01E9CA72-1888-4012-8DAA-4C2463808153}"/>
+								<MusicCue Name="Exit Cue" ID="{2CC08D3A-50A3-4199-BE39-A643F8411EFC}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="500"/>
 									</PropertyList>
 								</MusicCue>
 							</CueList>
@@ -677,6 +2135,18 @@
 									</PropertyList>
 									<SegmentRef Name="PopSound_03" ID="{19BFBFEA-2675-4917-A2D1-6028B9689A0E}"/>
 								</MusicPlaylistItem>
+								<MusicPlaylistItem Name="" ID="{82CF2C24-95EF-4DA6-94E1-8BEAEE092B3C}" ShortID="700593004">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="PopSound_04" ID="{5C01C4C5-E9CC-489E-A5AF-FDBFC6F32658}"/>
+								</MusicPlaylistItem>
+								<MusicPlaylistItem Name="" ID="{8B0B940C-38B7-4D8B-B4CB-17951875D51D}" ShortID="556269701">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="PopSound_05" ID="{ABDD9745-C2CE-4547-AAAE-9185E4D05269}"/>
+								</MusicPlaylistItem>
 							</ChildrenList>
 						</MusicPlaylistItem>
 					</Playlist>
@@ -711,11 +2181,11 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="TTTListOfO" ID="{CAE11DBC-B32F-49C1-9528-2310D79B992E}">
+										<AudioFileSource Name="DeepSeaDefendersTrashSounds" ID="{D0AA9C7A-C939-4BCA-A9B3-0EC5930DC90D}">
 											<Language>SFX</Language>
-											<AudioFile>TTTListOfO.wav</AudioFile>
+											<AudioFile>DeepSeaDefendersTrashSounds.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="1044557662"/>
+												<MediaID ID="662381675"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -730,16 +2200,16 @@
 									<SequenceList>
 										<MusicTrackSequence Name="" ID="{61FDEBB2-FE91-4AC8-8E54-8B3589AAFBA6}">
 											<ClipList>
-												<MusicClip Name="TTTListOfO" ID="{76ED1102-46E8-4F51-9BE6-4DDCA72FDA8D}">
+												<MusicClip Name="DeepSeaDefendersTrashSounds" ID="{A8E0ED28-BC9C-45FD-ADA9-C05C1E9A3CAE}">
 													<PropertyList>
-														<Property Name="EndTrimOffset" Type="Real64" Value="1000"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="999.999999999999"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 													</PropertyList>
-													<AudioSourceRef Name="TTTListOfO" ID="{CAE11DBC-B32F-49C1-9528-2310D79B992E}"/>
+													<AudioSourceRef Name="DeepSeaDefendersTrashSounds" ID="{D0AA9C7A-C939-4BCA-A9B3-0EC5930DC90D}"/>
 													<PropertyCurveList>
 														<PropertyCurve PropertyName="Highpass">
-															<Curve Name="" ID="{103F15B4-C14C-4D8B-B85C-9A401DFCFDA7}">
+															<Curve Name="" ID="{88FF8183-3B16-4FFA-B02F-F3B35CD92248}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="1"/>
 																</PropertyList>
@@ -758,7 +2228,7 @@
 															</Curve>
 														</PropertyCurve>
 														<PropertyCurve PropertyName="Lowpass">
-															<Curve Name="" ID="{3480A5E1-A309-4752-B0DE-C1F6E639BFD6}">
+															<Curve Name="" ID="{19ED43E9-5F1F-4828-8F76-599522855574}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="1"/>
 																</PropertyList>
@@ -777,7 +2247,7 @@
 															</Curve>
 														</PropertyCurve>
 														<PropertyCurve PropertyName="Volume">
-															<Curve Name="" ID="{6B7F4C19-6468-4AD2-8B33-7F0B9E15C848}">
+															<Curve Name="" ID="{B03F80F9-C1EC-4A07-8625-4D64FD8AC721}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
@@ -832,11 +2302,11 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="TTTListOfO" ID="{A6113E99-3CC0-44FD-B237-22D56039CE41}">
+										<AudioFileSource Name="DeepSeaDefendersTrashSounds" ID="{738C816B-5419-417D-BCCB-E2E1012D52D8}">
 											<Language>SFX</Language>
-											<AudioFile>TTTListOfO.wav</AudioFile>
+											<AudioFile>DeepSeaDefendersTrashSounds.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="1044557662"/>
+												<MediaID ID="662381675"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -851,29 +2321,29 @@
 									<SequenceList>
 										<MusicTrackSequence Name="" ID="{9D7EA371-ADE6-4AE0-B184-42D67AB6714D}">
 											<ClipList>
-												<MusicClip Name="TTTListOfO" ID="{5580A4B8-F3C8-42C7-A505-D903DA3CA01E}">
+												<MusicClip Name="DeepSeaDefendersTrashSounds" ID="{7DF85173-A96F-4ED4-A021-90EF17C1A86A}">
 													<PropertyList>
-														<Property Name="BeginTrimOffset" Type="Real64" Value="6000"/>
-														<Property Name="EndTrimOffset" Type="Real64" Value="7000"/>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="2000"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="3000"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
-														<Property Name="PlayAt" Type="Real64" Value="-6000"/>
+														<Property Name="PlayAt" Type="Real64" Value="-2000"/>
 													</PropertyList>
-													<AudioSourceRef Name="TTTListOfO" ID="{A6113E99-3CC0-44FD-B237-22D56039CE41}"/>
+													<AudioSourceRef Name="DeepSeaDefendersTrashSounds" ID="{738C816B-5419-417D-BCCB-E2E1012D52D8}"/>
 													<PropertyCurveList>
 														<PropertyCurve PropertyName="Highpass">
-															<Curve Name="" ID="{A9A1FE63-963F-45B8-A960-7282ED2DFB24}">
+															<Curve Name="" ID="{AA1FF0B1-0BA7-4ACF-ACEC-9ACDCA0A9270}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="1"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
-																		<XPos>6</XPos>
+																		<XPos>2</XPos>
 																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>7</XPos>
+																		<XPos>3</XPos>
 																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -881,18 +2351,18 @@
 															</Curve>
 														</PropertyCurve>
 														<PropertyCurve PropertyName="Lowpass">
-															<Curve Name="" ID="{D0048DFB-88B4-4164-9237-B748E8DE18AD}">
+															<Curve Name="" ID="{10E083F4-8D90-4BAD-BFDD-920C838C27F9}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="1"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
-																		<XPos>6</XPos>
+																		<XPos>2</XPos>
 																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>7</XPos>
+																		<XPos>3</XPos>
 																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -900,18 +2370,18 @@
 															</Curve>
 														</PropertyCurve>
 														<PropertyCurve PropertyName="Volume">
-															<Curve Name="" ID="{3D85AB55-BDA9-4EC4-9ED4-9C6A8DBC7C8D}">
+															<Curve Name="" ID="{0E4C4415-AE2B-4329-BF70-CF4C0C1B820A}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
-																		<XPos>6</XPos>
+																		<XPos>2</XPos>
 																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>7</XPos>
+																		<XPos>3</XPos>
 																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -955,11 +2425,11 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="TTTListOfO" ID="{4FF393A7-6EBE-413D-AFC8-195C539A83A0}">
+										<AudioFileSource Name="DeepSeaDefendersTrashSounds" ID="{6AF09890-9418-400D-849A-D7DB30BE8E7A}">
 											<Language>SFX</Language>
-											<AudioFile>TTTListOfO.wav</AudioFile>
+											<AudioFile>DeepSeaDefendersTrashSounds.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="1044557662"/>
+												<MediaID ID="662381675"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -974,29 +2444,29 @@
 									<SequenceList>
 										<MusicTrackSequence Name="" ID="{D22560DE-7998-4F3A-83F4-F2BA2E6834AA}">
 											<ClipList>
-												<MusicClip Name="TTTListOfO" ID="{056D3AFA-BC4B-49ED-B3C5-5B003B809320}">
+												<MusicClip Name="DeepSeaDefendersTrashSounds" ID="{E9049E33-3C4A-490E-9C38-6844BD9C4422}">
 													<PropertyList>
-														<Property Name="BeginTrimOffset" Type="Real64" Value="11500"/>
-														<Property Name="EndTrimOffset" Type="Real64" Value="12500"/>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="4000"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="5000"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
-														<Property Name="PlayAt" Type="Real64" Value="-11500"/>
+														<Property Name="PlayAt" Type="Real64" Value="-4000"/>
 													</PropertyList>
-													<AudioSourceRef Name="TTTListOfO" ID="{4FF393A7-6EBE-413D-AFC8-195C539A83A0}"/>
+													<AudioSourceRef Name="DeepSeaDefendersTrashSounds" ID="{6AF09890-9418-400D-849A-D7DB30BE8E7A}"/>
 													<PropertyCurveList>
 														<PropertyCurve PropertyName="Highpass">
-															<Curve Name="" ID="{A5D788D1-F8D3-4675-A5AD-CE42B6EA038D}">
+															<Curve Name="" ID="{AFAE7DAB-1251-47CE-AB82-BB43419C400C}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="1"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
-																		<XPos>11.5</XPos>
+																		<XPos>4</XPos>
 																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>12.5</XPos>
+																		<XPos>5</XPos>
 																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -1004,18 +2474,18 @@
 															</Curve>
 														</PropertyCurve>
 														<PropertyCurve PropertyName="Lowpass">
-															<Curve Name="" ID="{AFECFE9F-D003-4854-BDFB-73B5347AF077}">
+															<Curve Name="" ID="{04B2EB6C-90E4-421B-9FCF-B91BEA7BF09A}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="1"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
-																		<XPos>11.5</XPos>
+																		<XPos>4</XPos>
 																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>12.5</XPos>
+																		<XPos>5</XPos>
 																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -1023,18 +2493,18 @@
 															</Curve>
 														</PropertyCurve>
 														<PropertyCurve PropertyName="Volume">
-															<Curve Name="" ID="{3DD1E339-9ADA-4DC6-BD9E-3E9CD1B777B0}">
+															<Curve Name="" ID="{272522BD-FA64-4144-B857-3799B109BFB3}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
-																		<XPos>11.5</XPos>
+																		<XPos>4</XPos>
 																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>12.5</XPos>
+																		<XPos>5</XPos>
 																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -1078,11 +2548,11 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="TTTListOfO" ID="{19DD8EC0-2220-4C13-A09E-F25A5ED9A299}">
+										<AudioFileSource Name="DeepSeaDefendersTrashSounds" ID="{F92DD055-E83D-4B79-9E8B-80E1804AFB6E}">
 											<Language>SFX</Language>
-											<AudioFile>TTTListOfO.wav</AudioFile>
+											<AudioFile>DeepSeaDefendersTrashSounds.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="1044557662"/>
+												<MediaID ID="662381675"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -1097,29 +2567,29 @@
 									<SequenceList>
 										<MusicTrackSequence Name="" ID="{0FC60BA8-3840-4ABB-9EBE-51E7132F3D52}">
 											<ClipList>
-												<MusicClip Name="TTTListOfO" ID="{DD67F61F-81B0-4C87-A945-FB6E1EF94C74}">
+												<MusicClip Name="DeepSeaDefendersTrashSounds" ID="{14BAF0C7-923A-42A2-AC64-0E0AC2A67F50}">
 													<PropertyList>
-														<Property Name="BeginTrimOffset" Type="Real64" Value="17500"/>
-														<Property Name="EndTrimOffset" Type="Real64" Value="18500"/>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="6000"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="6999.99999999999"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
-														<Property Name="PlayAt" Type="Real64" Value="-17500"/>
+														<Property Name="PlayAt" Type="Real64" Value="-6000"/>
 													</PropertyList>
-													<AudioSourceRef Name="TTTListOfO" ID="{19DD8EC0-2220-4C13-A09E-F25A5ED9A299}"/>
+													<AudioSourceRef Name="DeepSeaDefendersTrashSounds" ID="{F92DD055-E83D-4B79-9E8B-80E1804AFB6E}"/>
 													<PropertyCurveList>
 														<PropertyCurve PropertyName="Highpass">
-															<Curve Name="" ID="{97643BF4-7B57-4E7C-A037-A59B7E3DB44A}">
+															<Curve Name="" ID="{FF3D6745-E90C-4CDB-ADFD-E77CE9D39DC6}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="1"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
-																		<XPos>17.5</XPos>
+																		<XPos>6</XPos>
 																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>18.5</XPos>
+																		<XPos>7</XPos>
 																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -1127,18 +2597,18 @@
 															</Curve>
 														</PropertyCurve>
 														<PropertyCurve PropertyName="Lowpass">
-															<Curve Name="" ID="{C73F5B09-2CD3-4C4A-88F3-A66CBA1449D2}">
+															<Curve Name="" ID="{DA5B6839-AFA8-48BF-9DA6-E9FA57C96914}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="1"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
-																		<XPos>17.5</XPos>
+																		<XPos>6</XPos>
 																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>18.5</XPos>
+																		<XPos>7</XPos>
 																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -1146,18 +2616,18 @@
 															</Curve>
 														</PropertyCurve>
 														<PropertyCurve PropertyName="Volume">
-															<Curve Name="" ID="{1C00C6D2-2BC8-4843-A58E-8278D7184489}">
+															<Curve Name="" ID="{E933C2BB-7281-40AE-9FC3-7F499EC47228}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
-																		<XPos>17.5</XPos>
+																		<XPos>6</XPos>
 																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>18.5</XPos>
+																		<XPos>7</XPos>
 																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
