@@ -3,6 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+public enum AnimalState
+{
+    turtle,
+    seal,
+    dolphin,
+    humphead,
+    penguin,
+    whaleshark,
+    vaquita
+}
 public class Movement : MonoBehaviour
 {
     public Vector3 speed;
@@ -17,6 +27,15 @@ public class Movement : MonoBehaviour
     private int hitsLeft;
     private Vector3 newScale = new Vector3(1f, 1f, 1f);
     public GameManager gmr;
+    private AnimalState animalState;
+
+    public GameObject smallTurtle;
+    public GameObject smallSeal;
+    public GameObject smallDolphin;
+    public GameObject smallPenguin;
+    public GameObject smallHumphead;
+    public GameObject smallVaquita;
+    public GameObject smallWhaleshark;
 
     public bool IsBehindOil
     {
@@ -24,15 +43,14 @@ public class Movement : MonoBehaviour
         set { isBehindOil = value; }
     }
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
-        size = DetermineSize();
-        ScaleBubble();
         hitsLeft = (int)size;
         isBehindOil = false;
         spm = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
-       // spm = GameObject.FindObjectOfType(typeof(SpawnManager)) as SpawnManager;
         cam = Camera.main;
         cameraHeight = cam.orthographicSize * 2f;
         cameraWidth = cameraHeight * cam.aspect;
@@ -41,6 +59,38 @@ public class Movement : MonoBehaviour
         currentPos = new Vector2(Random.Range(cam.transform.position.x - cameraWidth / 2, cam.transform.position.x + cameraWidth / 2), cam.transform.position.y - cameraHeight / 2 - 1);
         pingPongSpeed = Random.Range(1.05f, 1.1f);
         gmr = GameObject.Find("GameManager").GetComponent<GameManager>();
+        animalState = (AnimalState)Random.Range(0, 7);
+        size = DetermineSize();
+        ScaleBubble();
+        GameObject childSprite;
+        switch ((int)animalState)
+        {
+            case 0:
+                childSprite = Instantiate(smallTurtle, transform.position, Quaternion.identity);
+                break;
+            case 1:
+                childSprite = Instantiate(smallDolphin, transform.position, Quaternion.identity);
+                break;
+            case 2:
+                childSprite = Instantiate(smallHumphead, transform.position, Quaternion.identity);
+                break;
+            case 3:
+                childSprite = Instantiate(smallPenguin, transform.position, Quaternion.identity);
+                break;
+            case 4:
+                childSprite = Instantiate(smallSeal, transform.position, Quaternion.identity);
+                break;
+            case 5:
+                childSprite = Instantiate(smallWhaleshark, transform.position, Quaternion.identity);
+                break;
+            case 6:
+                childSprite = Instantiate(smallVaquita, transform.position, Quaternion.identity);
+                break;
+            default:
+                childSprite = Instantiate(smallTurtle, transform.position, Quaternion.identity);
+                break;
+        }
+        childSprite.transform.parent = transform;
     }
 
     // Update is called once per frame
@@ -89,7 +139,7 @@ public class Movement : MonoBehaviour
         {
             if(spm.bubbles[j] == gameObject && isBehindOil == false && hitsLeft <= 0)
             {
-                spm.SpawnAnimal(spm.bubbles[j]);
+                spm.SpawnAnimal(spm.bubbles[j], (int)animalState);
             }
             
         }
@@ -100,13 +150,12 @@ public class Movement : MonoBehaviour
     //(Randomness is weighted towards the smaller bubbles)
     private float DetermineSize()
     {
-        float scaleRank = Random.Range(0f, 10f);
         float bubbleSize = 0;
-        if(scaleRank <= 5f)
+        if((int)animalState == 2 || (int)animalState == 3)
         {
             bubbleSize = 1f;
         }
-        else if(scaleRank <= 8.5f)
+        else if((int)animalState == 0 || (int)animalState == 1 || (int)animalState == 4)
         {
             bubbleSize = 2f;
         }
@@ -120,7 +169,9 @@ public class Movement : MonoBehaviour
     //Changes the scale value of the bubble accordingly
     private void ScaleBubble()
     {
-        newScale = new Vector3(size, size, 1f);
+        newScale = new Vector3(size * 0.15f, size * 0.15f, 1f);
         transform.localScale = newScale;
     }
+
+  
 }

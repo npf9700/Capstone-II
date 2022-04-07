@@ -5,7 +5,16 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - bubblePrefab: {fileID: 7682001888031642654, guid: 49012d6fb5715bd4fb9e036951c6d1d6, type: 3}
-  - mv: {instanceID: 0}
+  - animalMgr: {instanceID: 0}
+  - gameMgr: {instanceID: 0}
+  - gmr: {instanceID: 0}
+  - smallPenguin: {instanceID: 0}
+  - smallTurtle: {fileID: 1141097332132387232, guid: 93f42ae9180d92d4ab6f7e7c02f5eed1, type: 3}
+  - smallVaquita: {instanceID: 0}
+  - smallHumphead: {instanceID: 0}
+  - smallDolphin: {instanceID: 0}
+  - smallWhaleshark: {instanceID: 0}
+  - smallSeal: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

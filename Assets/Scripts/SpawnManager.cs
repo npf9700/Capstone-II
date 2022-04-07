@@ -24,6 +24,14 @@ public class SpawnManager : MonoBehaviour
     private int playerAmmo;
     public GameManager gmr;
 
+    //public GameObject smallPenguin;
+    //public GameObject smallTurtle;
+    //public GameObject smallVaquita;
+    //public GameObject smallHumphead;
+    //public GameObject smallDolphin;
+    //public GameObject smallWhaleshark;
+    //public GameObject smallSeal;
+
     void Start()
     {
         movement = GameObject.FindObjectOfType(typeof(Movement)) as Movement;
@@ -62,6 +70,36 @@ public class SpawnManager : MonoBehaviour
     {
         spawnPos = new Vector2(Random.Range(20, (cameraWidth - 90)), cameraHeight);
         local = Instantiate(bubblePrefab, spawnPos, Quaternion.identity);
+        //GameObject childSprite;
+        //switch (local.GetAnimState())
+        //{
+        //    case 0:
+        //        childSprite = Instantiate(smallTurtle, spawnPos, Quaternion.identity);
+        //        break;
+        //    case 1:
+        //        childSprite = Instantiate(smallSeal, spawnPos, Quaternion.identity);
+        //        break;
+        //    case 2:
+        //        childSprite = Instantiate(smallDolphin, spawnPos, Quaternion.identity);
+        //        break;
+        //    case 3:
+        //        childSprite = Instantiate(smallHumphead, spawnPos, Quaternion.identity);
+        //        break;
+        //    case 4:
+        //        childSprite = Instantiate(smallPenguin, spawnPos, Quaternion.identity);
+        //        break;
+        //    case 5:
+        //        childSprite = Instantiate(smallWhaleshark, spawnPos, Quaternion.identity);
+        //        break;
+        //    case 6:
+        //        childSprite = Instantiate(smallVaquita, spawnPos, Quaternion.identity);
+        //        break;
+        //    default:
+        //        childSprite = Instantiate(smallTurtle, spawnPos, Quaternion.identity);
+        //        break;
+        //}
+        //Debug.Log(local.GetAnimState());
+        //childSprite.transform.parent = local.transform;
         bubbles.Add(local);
         movement.FloatUp(pingPongSpeed);
         spawned = true;
@@ -75,7 +113,7 @@ public class SpawnManager : MonoBehaviour
         
     }
 
-    public void SpawnAnimal(GameObject bubble)
+    public void SpawnAnimal(GameObject bubble, int animalOption)
     {
         //Increments score
         gameMgr.GetComponent<GameManager>().IncrementScore(100);
@@ -86,7 +124,7 @@ public class SpawnManager : MonoBehaviour
         else
         {
             //Spawns the animal sprite before the location is lost
-            animalMgr.GetComponent<AnimalManager>().FreeAnimal(bubble.transform.position);
+            animalMgr.GetComponent<AnimalManager>().FreeAnimal(bubble.transform.position, animalOption);
             //Gets rid of bubble
             Destroy(bubble);
             bubbles.Remove(bubble);

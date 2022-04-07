@@ -18,6 +18,11 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
     private float startPosX;
     private float startPosY;
 
+    public Sprite notClicked;
+    public Sprite clicked;
+
+    private SpriteRenderer trashRend;
+
     public Vector2 Position
     {
         get { return position; }
@@ -36,6 +41,7 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
         direction = new Vector2(0, -1);
         maxSpeed = 0.01f;
         isBehindOil = false;
+        trashRend = gameObject.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -62,6 +68,7 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
 
         if (isBehindOil == false)
         {
+            trashRend.sprite = clicked;
             startPosX = mousePos.x - transform.position.x;
             startPosY = mousePos.y - transform.position.y;
 
@@ -71,8 +78,8 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
 
     public void OnMouseUp()
     {
+        trashRend.sprite = notClicked;
         isHeld = false;
-
     }
 
     public void MoveTrash()

@@ -16,7 +16,6 @@ public class AnimalManager : MonoBehaviour
     public GameObject whaleShark;
     public GameObject vaquita;
     
-    private int randAnim;
 
     // Start is called before the first frame update
     void Start()
@@ -31,17 +30,13 @@ public class AnimalManager : MonoBehaviour
         
     }
 
-    public void FreeAnimal(Vector2 bubbleSpot)
+    public void FreeAnimal(Vector2 bubbleSpot, int animalOption)
     {
         if(creatures.Count == 0)
         {
             AddCreatures();
         }
-        randAnim = Random.Range(0, creatures.Count);
-        
-        Debug.Log("Size: " + creatures.Count);
-        Debug.Log("Index: " + randAnim);
-        animals.Add(Instantiate(creatures[randAnim], bubbleSpot, Quaternion.identity));
+        animals.Add(Instantiate(creatures[animalOption], bubbleSpot, Quaternion.identity));
     }
 
     private void AddCreatures()
