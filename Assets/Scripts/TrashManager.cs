@@ -79,6 +79,7 @@ public class TrashManager : MonoBehaviour
         if(trashPiece.transform.position.x < cam.transform.position.x - (cameraWidth / 2) - 0.5 || trashPiece.transform.position.x > cam.transform.position.x + (cameraWidth / 2) + 0.5)
         {
             gameMgr.GetComponent<GameManager>().ammoSlider.value += 1;
+            gameMgr.GetComponent<GameManager>().ammoText.text = gameMgr.GetComponent<GameManager>().ammoSlider.value.ToString();
             trashPile.Remove(trashPiece);
             Destroy(trashPiece);//Trash is removed from the list and hierarchy
         }

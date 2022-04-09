@@ -37,6 +37,7 @@ public class AnimalManager : MonoBehaviour
             AddCreatures();
         }
         animals.Add(Instantiate(creatures[animalOption], bubbleSpot, Quaternion.identity));
+
     }
 
     private void AddCreatures()
