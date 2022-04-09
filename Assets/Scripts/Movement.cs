@@ -48,7 +48,7 @@ public class Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        hitsLeft = (int)size;
+        hitsLeft = 0;
         isBehindOil = false;
         spm = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
         cam = Camera.main;
@@ -154,14 +154,17 @@ public class Movement : MonoBehaviour
         if((int)animalState == 2 || (int)animalState == 3)
         {
             bubbleSize = 1f;
+            hitsLeft = 1;
         }
         else if((int)animalState == 0 || (int)animalState == 1 || (int)animalState == 4)
         {
             bubbleSize = 2f;
+            hitsLeft = 2;
         }
         else
         {
             bubbleSize = 3f;
+            hitsLeft = 3;
         }
         return bubbleSize;
     }

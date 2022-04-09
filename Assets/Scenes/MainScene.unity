@@ -882,8 +882,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2065577339
-  m_SortingLayer: 1
-  m_SortingOrder: 1
+  m_SortingLayer: 2
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.72156864}
   m_FlipX: 0
@@ -1458,6 +1458,10 @@ PrefabInstance:
       value: SpawnManager
       objectReference: {fileID: 0}
     - target: {fileID: 6952456094374347626, guid: e9aabae5585511242b14237609303a21, type: 3}
+      propertyPath: pop
+      value: 
+      objectReference: {fileID: 6722367685721334697, guid: 4d3a4c63bc10a384d84905736e44279c, type: 3}
+    - target: {fileID: 6952456094374347626, guid: e9aabae5585511242b14237609303a21, type: 3}
       propertyPath: gameMgr
       value: 
       objectReference: {fileID: 1853467279}
@@ -1465,6 +1469,10 @@ PrefabInstance:
       propertyPath: smallSeal
       value: 
       objectReference: {fileID: 962078339584390917, guid: e316a20e9c6694b4ca8c5417dc2f2e46, type: 3}
+    - target: {fileID: 6952456094374347626, guid: e9aabae5585511242b14237609303a21, type: 3}
+      propertyPath: bubbleTrail
+      value: 
+      objectReference: {fileID: 6242309573723132006, guid: 6630b58b671d5cf49b1e8b044f11cb60, type: 3}
     - target: {fileID: 6952456094374347626, guid: e9aabae5585511242b14237609303a21, type: 3}
       propertyPath: smallTurtle
       value: 

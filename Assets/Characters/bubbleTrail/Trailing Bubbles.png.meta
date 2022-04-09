@@ -1,0 +1,2328 @@
+fileFormatVersion: 2
+guid: e18c5bc4d87cf95498fe80456cae8d89
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6073473279830225650
+    second: Trailing Bubbles_0
+  - first:
+      213: -2337350086945116626
+    second: Trailing Bubbles_1
+  - first:
+      213: -5411515975420245195
+    second: Trailing Bubbles_2
+  - first:
+      213: -1568148446885597259
+    second: Trailing Bubbles_3
+  - first:
+      213: 3497115710737430659
+    second: Trailing Bubbles_4
+  - first:
+      213: -613424296555819470
+    second: Trailing Bubbles_5
+  - first:
+      213: 4297514436386663785
+    second: Trailing Bubbles_6
+  - first:
+      213: -2078733816960954998
+    second: Trailing Bubbles_7
+  - first:
+      213: 5638829410642782518
+    second: Trailing Bubbles_8
+  - first:
+      213: 2407949250263713110
+    second: Trailing Bubbles_9
+  - first:
+      213: 7941610091289395298
+    second: Trailing Bubbles_10
+  - first:
+      213: -2037340009077689087
+    second: Trailing Bubbles_11
+  - first:
+      213: -6524812565567625991
+    second: Trailing Bubbles_12
+  - first:
+      213: 8108913597185548307
+    second: Trailing Bubbles_13
+  - first:
+      213: 5165620266694718773
+    second: Trailing Bubbles_14
+  - first:
+      213: 5440688382125706835
+    second: Trailing Bubbles_15
+  - first:
+      213: -837942110641916358
+    second: Trailing Bubbles_16
+  - first:
+      213: -2151485740797191849
+    second: Trailing Bubbles_17
+  - first:
+      213: -3598980118883956271
+    second: Trailing Bubbles_18
+  - first:
+      213: 338274959779997395
+    second: Trailing Bubbles_19
+  - first:
+      213: -1945777202041431562
+    second: Trailing Bubbles_20
+  - first:
+      213: 2485294340989353042
+    second: Trailing Bubbles_21
+  - first:
+      213: 29368203312742208
+    second: Trailing Bubbles_22
+  - first:
+      213: -1968586168199308518
+    second: Trailing Bubbles_23
+  - first:
+      213: 2969652325373959140
+    second: Trailing Bubbles_24
+  - first:
+      213: 4375614799453513882
+    second: Trailing Bubbles_25
+  - first:
+      213: -7207874207684027689
+    second: Trailing Bubbles_26
+  - first:
+      213: -7238100026862978892
+    second: Trailing Bubbles_27
+  - first:
+      213: -6355137741034671851
+    second: Trailing Bubbles_28
+  - first:
+      213: 716859620865742400
+    second: Trailing Bubbles_29
+  - first:
+      213: 8203689008303433197
+    second: Trailing Bubbles_30
+  - first:
+      213: 6468010543936913091
+    second: Trailing Bubbles_31
+  - first:
+      213: 8519458110085705365
+    second: Trailing Bubbles_32
+  - first:
+      213: -1485285269186147015
+    second: Trailing Bubbles_33
+  - first:
+      213: 7813925630220169094
+    second: Trailing Bubbles_34
+  - first:
+      213: 8607629204578746521
+    second: Trailing Bubbles_35
+  - first:
+      213: -5747029748758096885
+    second: Trailing Bubbles_36
+  - first:
+      213: -6418919556352635302
+    second: Trailing Bubbles_37
+  - first:
+      213: -8305499774146481692
+    second: Trailing Bubbles_38
+  - first:
+      213: 4112191001043934759
+    second: Trailing Bubbles_39
+  - first:
+      213: -564925977344480593
+    second: Trailing Bubbles_40
+  - first:
+      213: -2166105661467352794
+    second: Trailing Bubbles_41
+  - first:
+      213: 5228043942027067139
+    second: Trailing Bubbles_42
+  - first:
+      213: 587415344463656421
+    second: Trailing Bubbles_43
+  - first:
+      213: 3473863585542239830
+    second: Trailing Bubbles_44
+  - first:
+      213: 1205123166641335568
+    second: Trailing Bubbles_45
+  - first:
+      213: 4083479972304787529
+    second: Trailing Bubbles_46
+  - first:
+      213: -6080892596154018089
+    second: Trailing Bubbles_47
+  - first:
+      213: 8317954337258179959
+    second: Trailing Bubbles_48
+  - first:
+      213: 1948587208896131250
+    second: Trailing Bubbles_49
+  - first:
+      213: 3132781608912060201
+    second: Trailing Bubbles_50
+  - first:
+      213: -4758292385357549666
+    second: Trailing Bubbles_51
+  - first:
+      213: 7358191848760609795
+    second: Trailing Bubbles_52
+  - first:
+      213: 4502731919367383994
+    second: Trailing Bubbles_53
+  - first:
+      213: -6839067345935734611
+    second: Trailing Bubbles_54
+  - first:
+      213: 7985863285055619563
+    second: Trailing Bubbles_55
+  - first:
+      213: 1775380858486913442
+    second: Trailing Bubbles_56
+  - first:
+      213: -7621438580939021325
+    second: Trailing Bubbles_57
+  - first:
+      213: -3851814848324833708
+    second: Trailing Bubbles_58
+  - first:
+      213: 900020944064050513
+    second: Trailing Bubbles_59
+  - first:
+      213: -7443615663320315636
+    second: Trailing Bubbles_60
+  - first:
+      213: 2912686779100544211
+    second: Trailing Bubbles_61
+  - first:
+      213: -7687388632988811014
+    second: Trailing Bubbles_62
+  - first:
+      213: -1953413611841624090
+    second: Trailing Bubbles_63
+  - first:
+      213: -448195459287154753
+    second: Trailing Bubbles_64
+  - first:
+      213: -2305804892161541923
+    second: Trailing Bubbles_65
+  - first:
+      213: 3664073086980201791
+    second: Trailing Bubbles_66
+  - first:
+      213: -4837995879480087635
+    second: Trailing Bubbles_67
+  - first:
+      213: 2642162799954041487
+    second: Trailing Bubbles_68
+  - first:
+      213: 5785397936530984638
+    second: Trailing Bubbles_69
+  - first:
+      213: -5788404195722878206
+    second: Trailing Bubbles_70
+  - first:
+      213: -5435256920512450346
+    second: Trailing Bubbles_71
+  - first:
+      213: -3901453969479804835
+    second: Trailing Bubbles_72
+  - first:
+      213: -1890787748635871113
+    second: Trailing Bubbles_73
+  - first:
+      213: -561562575836332189
+    second: Trailing Bubbles_74
+  - first:
+      213: 4964957530231818299
+    second: Trailing Bubbles_75
+  - first:
+      213: 468803814285326975
+    second: Trailing Bubbles_76
+  - first:
+      213: 3446734732962341982
+    second: Trailing Bubbles_77
+  - first:
+      213: -8082916521598824498
+    second: Trailing Bubbles_78
+  - first:
+      213: 8378776573487051986
+    second: Trailing Bubbles_79
+  - first:
+      213: -6596596847562173284
+    second: Trailing Bubbles_80
+  - first:
+      213: -7086582986916854251
+    second: Trailing Bubbles_81
+  - first:
+      213: -515810577996510719
+    second: Trailing Bubbles_82
+  - first:
+      213: -434672033989245065
+    second: Trailing Bubbles_83
+  - first:
+      213: 3665201745489212054
+    second: Trailing Bubbles_84
+  - first:
+      213: 5080263573994068063
+    second: Trailing Bubbles_85
+  - first:
+      213: 8282468568874292642
+    second: Trailing Bubbles_86
+  - first:
+      213: 9149020601376312587
+    second: Trailing Bubbles_87
+  - first:
+      213: -7595839424474500811
+    second: Trailing Bubbles_88
+  - first:
+      213: 3305161381743609707
+    second: Trailing Bubbles_89
+  - first:
+      213: -7050365689315562941
+    second: Trailing Bubbles_90
+  - first:
+      213: -8934189967754236240
+    second: Trailing Bubbles_91
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Trailing Bubbles_0
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 8000
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0d84ea0b30b6bba0800000000000000
+      internalID: -6073473279830225650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_1
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 8000
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e68efca70109fd0800000000000000
+      internalID: -2337350086945116626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_2
+      rect:
+        serializedVersion: 2
+        x: 7500
+        y: 8000
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53b89bc44ee66e4b0800000000000000
+      internalID: -5411515975420245195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_3
+      rect:
+        serializedVersion: 2
+        x: 9000
+        y: 8000
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bfad44cb41dc3ae0800000000000000
+      internalID: -1568148446885597259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_4
+      rect:
+        serializedVersion: 2
+        x: 10500
+        y: 8000
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38831fcd530488030800000000000000
+      internalID: 3497115710737430659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_5
+      rect:
+        serializedVersion: 2
+        x: 12000
+        y: 8000
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e42333addac77f0800000000000000
+      internalID: -613424296555819470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_6
+      rect:
+        serializedVersion: 2
+        x: 13500
+        y: 8000
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96da0f55c96d3ab30800000000000000
+      internalID: 4297514436386663785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7200
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d43796b9ad623e0800000000000000
+      internalID: -2078733816960954998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_8
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 7200
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63963622975214e40800000000000000
+      internalID: 5638829410642782518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_9
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 7200
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6550323d511ca6120800000000000000
+      internalID: 2407949250263713110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_10
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 7200
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26046f33d44463e60800000000000000
+      internalID: 7941610091289395298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_11
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 7200
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 105bb385e0ae9b3e0800000000000000
+      internalID: -2037340009077689087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_12
+      rect:
+        serializedVersion: 2
+        x: 7500
+        y: 7200
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f42653aa853375a0800000000000000
+      internalID: -6524812565567625991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_13
+      rect:
+        serializedVersion: 2
+        x: 9000
+        y: 7200
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310649a24f5a88070800000000000000
+      internalID: 8108913597185548307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_14
+      rect:
+        serializedVersion: 2
+        x: 10500
+        y: 7200
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535b5e09348ffa740800000000000000
+      internalID: 5165620266694718773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_15
+      rect:
+        serializedVersion: 2
+        x: 12000
+        y: 7200
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e823ee145318b40800000000000000
+      internalID: 5440688382125706835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_16
+      rect:
+        serializedVersion: 2
+        x: 13500
+        y: 7200
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a36f8d807180f54f0800000000000000
+      internalID: -837942110641916358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6400
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75917782e136422e0800000000000000
+      internalID: -2151485740797191849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_18
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 6400
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d98a3c66aadd0ec0800000000000000
+      internalID: -3598980118883956271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_19
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 6400
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d6a81e984bc1b400800000000000000
+      internalID: 338274959779997395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_20
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 6400
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f95444a1f53ff4e0800000000000000
+      internalID: -1945777202041431562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_21
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 6400
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c75f4190a8d7220800000000000000
+      internalID: 2485294340989353042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_22
+      rect:
+        serializedVersion: 2
+        x: 7500
+        y: 6400
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04fb52ea936586000800000000000000
+      internalID: 29368203312742208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_23
+      rect:
+        serializedVersion: 2
+        x: 9000
+        y: 6400
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b9bbe5f4d2ea4e0800000000000000
+      internalID: -1968586168199308518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_24
+      rect:
+        serializedVersion: 2
+        x: 10500
+        y: 6400
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ebd3585e03563920800000000000000
+      internalID: 2969652325373959140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_25
+      rect:
+        serializedVersion: 2
+        x: 12000
+        y: 6400
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a986e532a7e49bc30800000000000000
+      internalID: 4375614799453513882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_26
+      rect:
+        serializedVersion: 2
+        x: 13500
+        y: 6400
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da1b49d89c78fb90800000000000000
+      internalID: -7207874207684027689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5600
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b8361aef5a1d8b90800000000000000
+      internalID: -7238100026862978892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_28
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 5600
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51133fe35e30ec7a0800000000000000
+      internalID: -6355137741034671851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_29
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 5600
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 046168fe60cc2f900800000000000000
+      internalID: 716859620865742400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_30
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 5600
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de5e3b320bb59d170800000000000000
+      internalID: 8203689008303433197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_31
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 5600
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce37da125df2c950800000000000000
+      internalID: 6468010543936913091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_32
+      rect:
+        serializedVersion: 2
+        x: 7500
+        y: 5600
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59eaa7a53023b3670800000000000000
+      internalID: 8519458110085705365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_33
+      rect:
+        serializedVersion: 2
+        x: 9000
+        y: 5600
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d0a04cae4336be0800000000000000
+      internalID: -1485285269186147015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_34
+      rect:
+        serializedVersion: 2
+        x: 10500
+        y: 5600
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68fe792f5f3a07c60800000000000000
+      internalID: 7813925630220169094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_35
+      rect:
+        serializedVersion: 2
+        x: 12000
+        y: 5600
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 990c1390821747770800000000000000
+      internalID: 8607629204578746521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_36
+      rect:
+        serializedVersion: 2
+        x: 13500
+        y: 5600
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04dbaf74e27e30b0800000000000000
+      internalID: -5747029748758096885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4800
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e0bc12caa6be6a0800000000000000
+      internalID: -6418919556352635302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_38
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 4800
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e179e7b5ffecbc80800000000000000
+      internalID: -8305499774146481692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_39
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 4800
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72e18c99def611930800000000000000
+      internalID: 4112191001043934759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_40
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 4800
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faaedf311daf828f0800000000000000
+      internalID: -564925977344480593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_41
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 4800
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 621a64e906270f1e0800000000000000
+      internalID: -2166105661467352794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_42
+      rect:
+        serializedVersion: 2
+        x: 7500
+        y: 4800
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ff7a2144ebd8840800000000000000
+      internalID: 5228043942027067139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_43
+      rect:
+        serializedVersion: 2
+        x: 9000
+        y: 4800
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5be5eb42be62800800000000000000
+      internalID: 587415344463656421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_44
+      rect:
+        serializedVersion: 2
+        x: 10500
+        y: 4800
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656f8669684a53030800000000000000
+      internalID: 3473863585542239830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_45
+      rect:
+        serializedVersion: 2
+        x: 12000
+        y: 4800
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d2042922579b010800000000000000
+      internalID: 1205123166641335568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_46
+      rect:
+        serializedVersion: 2
+        x: 13500
+        y: 4800
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94816ac466f6ba830800000000000000
+      internalID: 4083479972304787529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4000
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d6dfe8d6645c9ba0800000000000000
+      internalID: -6080892596154018089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_48
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 4000
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d813a366f4f6370800000000000000
+      internalID: 8317954337258179959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_49
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 4000
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b0bf101eb5ca0b10800000000000000
+      internalID: 1948587208896131250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_50
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 4000
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92f741e6640e97b20800000000000000
+      internalID: 3132781608912060201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_51
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 4000
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f2159394627fdb0800000000000000
+      internalID: -4758292385357549666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_52
+      rect:
+        serializedVersion: 2
+        x: 7500
+        y: 4000
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c0d86408c8d1660800000000000000
+      internalID: 7358191848760609795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_53
+      rect:
+        serializedVersion: 2
+        x: 9000
+        y: 4000
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abba4bcf2daec7e30800000000000000
+      internalID: 4502731919367383994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_54
+      rect:
+        serializedVersion: 2
+        x: 10500
+        y: 4000
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da8e68adb70c611a0800000000000000
+      internalID: -6839067345935734611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_55
+      rect:
+        serializedVersion: 2
+        x: 12000
+        y: 4000
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1039ac85c73de60800000000000000
+      internalID: 7985863285055619563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_56
+      rect:
+        serializedVersion: 2
+        x: 13500
+        y: 4000
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a9f3230c7b63a810800000000000000
+      internalID: 1775380858486913442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3200
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f32ca1adf53b3690800000000000000
+      internalID: -7621438580939021325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_58
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3200
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ee501adca9b8ac0800000000000000
+      internalID: -3851814848324833708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_59
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3200
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1557955b7448d7c00800000000000000
+      internalID: 900020944064050513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_60
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 3200
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09424ffdf6f2b890800000000000000
+      internalID: -7443615663320315636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_61
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 3200
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dcb34a8131fb6820800000000000000
+      internalID: 2912686779100544211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_62
+      rect:
+        serializedVersion: 2
+        x: 7500
+        y: 3200
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0835094c8e05590800000000000000
+      internalID: -7687388632988811014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_63
+      rect:
+        serializedVersion: 2
+        x: 9000
+        y: 3200
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e764ce6ba414e4e0800000000000000
+      internalID: -1953413611841624090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_64
+      rect:
+        serializedVersion: 2
+        x: 10500
+        y: 3200
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbffe3bba90b7c9f0800000000000000
+      internalID: -448195459287154753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_65
+      rect:
+        serializedVersion: 2
+        x: 12000
+        y: 3200
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd87a51daa22000e0800000000000000
+      internalID: -2305804892161541923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_66
+      rect:
+        serializedVersion: 2
+        x: 13500
+        y: 3200
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d168c3f0769d230800000000000000
+      internalID: 3664073086980201791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_67
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab29c2616cfbdcb0800000000000000
+      internalID: -4837995879480087635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_68
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2400
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a130a5119daa420800000000000000
+      internalID: 2642162799954041487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_69
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2400
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe053b55ccd94050800000000000000
+      internalID: 5785397936530984638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_70
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 2400
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 203ae816d057bafa0800000000000000
+      internalID: -5788404195722878206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_71
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 2400
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d03fd5c0a61294b0800000000000000
+      internalID: -5435256920512450346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_72
+      rect:
+        serializedVersion: 2
+        x: 7500
+        y: 2400
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d585e9919404bd9c0800000000000000
+      internalID: -3901453969479804835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_73
+      rect:
+        serializedVersion: 2
+        x: 9000
+        y: 2400
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778f5e87f8292c5e0800000000000000
+      internalID: -1890787748635871113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_74
+      rect:
+        serializedVersion: 2
+        x: 10500
+        y: 2400
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36f3f1400dde438f0800000000000000
+      internalID: -561562575836332189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_75
+      rect:
+        serializedVersion: 2
+        x: 12000
+        y: 2400
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b384e5a719217e440800000000000000
+      internalID: 4964957530231818299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_76
+      rect:
+        serializedVersion: 2
+        x: 13500
+        y: 2400
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a33d3d596818600800000000000000
+      internalID: 468803814285326975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_77
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1600
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54a8316af245df20800000000000000
+      internalID: 3446734732962341982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_78
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1600
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf47fcaf36b3df80800000000000000
+      internalID: -8082916521598824498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_79
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1600
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d47f03a6e4674470800000000000000
+      internalID: 8378776573487051986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_80
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 1600
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94589e0e1e2474a0800000000000000
+      internalID: -6596596847562173284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_81
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 1600
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5168e79d15667ad90800000000000000
+      internalID: -7086582986916854251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_82
+      rect:
+        serializedVersion: 2
+        x: 7500
+        y: 1600
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10a012f130977d8f0800000000000000
+      internalID: -515810577996510719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_83
+      rect:
+        serializedVersion: 2
+        x: 9000
+        y: 1600
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 777464c861cb7f9f0800000000000000
+      internalID: -434672033989245065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_84
+      rect:
+        serializedVersion: 2
+        x: 10500
+        y: 1600
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692b60681996dd230800000000000000
+      internalID: 3665201745489212054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_85
+      rect:
+        serializedVersion: 2
+        x: 12000
+        y: 1600
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f58d54dddc8b08640800000000000000
+      internalID: 5080263573994068063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_86
+      rect:
+        serializedVersion: 2
+        x: 13500
+        y: 1600
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a5171fe74d31f270800000000000000
+      internalID: 8282468568874292642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_87
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d04cb63c9d7fe70800000000000000
+      internalID: 9149020601376312587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_88
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 800
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5313a45b948269690800000000000000
+      internalID: -7595839424474500811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_89
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 800
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b67ca24e3ca4edd20800000000000000
+      internalID: 3305161381743609707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_90
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 800
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a6ebf82c1182e90800000000000000
+      internalID: -7050365689315562941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trailing Bubbles_91
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 800
+        width: 1500
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be66284f81630480800000000000000
+      internalID: -8934189967754236240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
