@@ -19,9 +19,10 @@ public class GameManager : MonoBehaviour
     private float halfOilHeight;
     private float halfOilWidth;
     private Rect oilRect;
-    private int ammo;
+    //private int ammo;
     public Slider ammoSlider;
     public Canvas GUICanvas;
+    public Text ammoText;
 
 
     public int PlayerScore
@@ -42,16 +43,18 @@ public class GameManager : MonoBehaviour
         halfTrashWidth = trashRend.bounds.size.y / 2;
         halfOilWidth = oilRend.bounds.size.x / 2;
         oilRect = new Rect(oilPos.x - halfOilWidth, oilPos.y - halfOilHeight, oilRend.bounds.size.x, oilRend.bounds.size.y);
-        ammo = 3;
+       // ammo = 3;
         GUICanvas = GameObject.Find("GUICanvas").GetComponent<Canvas>();
         ammoSlider = GUICanvas.GetComponentInChildren<Slider>();
+        ammoText = ammoSlider.GetComponentInChildren<Text>();
+        ammoText.text = ammoSlider.value.ToString();
 
     }
 
-    public int Ammo
-    {
-        get { return ammo; }
-    }
+    //public int Ammo
+    //{
+    //    get { return ammo; }
+    //}
 
     // Update is called once per frame
     void Update()
@@ -68,7 +71,7 @@ public class GameManager : MonoBehaviour
 
     public void DecrementScore(int decScore)
     {
-        if (playerScore <= 0 || (playerScore - decScore) <= 0)
+        if (playerScore <= 0 || (playerScore - decScore) <= 0) //prevents score from going negative
         {
             playerScore = 0;
             scoreText.text = "Score: " + playerScore;

@@ -57,7 +57,7 @@ public class Movement : MonoBehaviour
         speed = new Vector3(0f, Random.Range(0f, cameraHeight)) * Time.deltaTime;
         speed = Vector3.ClampMagnitude(speed, 0.005f);
         currentPos = new Vector2(Random.Range(cam.transform.position.x - cameraWidth / 2, cam.transform.position.x + cameraWidth / 2), cam.transform.position.y - cameraHeight / 2 - 1);
-        pingPongSpeed = Random.Range(1.05f, 1.1f);
+        pingPongSpeed = Random.Range(0.4f, 0.8f);
         gmr = GameObject.Find("GameManager").GetComponent<GameManager>();
         animalState = (AnimalState)Random.Range(0, 7);
         size = DetermineSize();
@@ -113,7 +113,7 @@ public class Movement : MonoBehaviour
    {
         float time = Mathf.PingPong(Time.time * pingPongSpeed, 1);
         currentPos.y += speed.y; //change y coordinate based on speed
-        Vector2 newPos = new Vector2(currentPos.x + 2, currentPos.y);
+        Vector2 newPos = new Vector2(currentPos.x + 2, currentPos.y + 0.5f);
         transform.position = Vector2.Lerp(currentPos, newPos, time);
    }
 
@@ -135,6 +135,8 @@ public class Movement : MonoBehaviour
    {
         hitsLeft--;
         gmr.ammoSlider.value -= 1;
+        gmr.ammoText.text = gmr.ammoSlider.value.ToString();
+        Debug.Log("Ammo: " + gmr.ammoSlider.value);
         for (int j = 0; j < spm.bubbles.Count; j++)
         {
             if(spm.bubbles[j] == gameObject && isBehindOil == false && hitsLeft <= 0)
