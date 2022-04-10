@@ -23,14 +23,12 @@ public class SpawnManager : MonoBehaviour
     public bool spawned = false;
     private int playerAmmo;
 
-    //public GameObject smallPenguin;
-    //public GameObject smallTurtle;
-    //public GameObject smallVaquita;
-    //public GameObject smallHumphead;
-    //public GameObject smallDolphin;
-    //public GameObject smallWhaleshark;
-    //public GameObject smallSeal;
-    
+    public GameObject pop;
+    private List<GameObject> pops;
+
+    public GameObject bubbleTrail;
+    private List<GameObject> trails;
+
     void Start()
     {
         movement = GameObject.FindObjectOfType(typeof(Movement)) as Movement;
@@ -38,6 +36,8 @@ public class SpawnManager : MonoBehaviour
         cameraHeight = cam.orthographicSize * 2f;
         cameraWidth = cameraHeight * cam.aspect;
         bubbles = new List<GameObject>();
+        pops = new List<GameObject>();
+        trails = new List<GameObject>();
         gameMgr = GameObject.Find("GameManager").GetComponent<GameManager>();
         spawnTime = Random.Range(1.5f, 2.5f);
         Debug.Log("Spawn time: " + spawnTime);
@@ -77,36 +77,6 @@ public class SpawnManager : MonoBehaviour
         {
             spawnPos = new Vector2(Random.Range(20, (cameraWidth - 90)), cameraHeight);
             local = Instantiate(bubblePrefab, spawnPos, Quaternion.identity);
-            //GameObject childSprite;
-            //switch (local.GetAnimState())
-            //{
-            //    case 0:
-            //        childSprite = Instantiate(smallTurtle, spawnPos, Quaternion.identity);
-            //        break;
-            //    case 1:
-            //        childSprite = Instantiate(smallSeal, spawnPos, Quaternion.identity);
-            //        break;
-            //    case 2:
-            //        childSprite = Instantiate(smallDolphin, spawnPos, Quaternion.identity);
-            //        break;
-            //    case 3:
-            //        childSprite = Instantiate(smallHumphead, spawnPos, Quaternion.identity);
-            //        break;
-            //    case 4:
-            //        childSprite = Instantiate(smallPenguin, spawnPos, Quaternion.identity);
-            //        break;
-            //    case 5:
-            //        childSprite = Instantiate(smallWhaleshark, spawnPos, Quaternion.identity);
-            //        break;
-            //    case 6:
-            //        childSprite = Instantiate(smallVaquita, spawnPos, Quaternion.identity);
-            //        break;
-            //    default:
-            //        childSprite = Instantiate(smallTurtle, spawnPos, Quaternion.identity);
-            //        break;
-            //}
-            //Debug.Log(local.GetAnimState());
-            //childSprite.transform.parent = local.transform;
             bubbles.Add(local);
             movement.FloatUp(pingPongSpeed);
             spawned = true;
@@ -132,15 +102,46 @@ public class SpawnManager : MonoBehaviour
         {
             //Spawns the animal sprite before the location is lost
             animalMgr.GetComponent<AnimalManager>().FreeAnimal(bubble.transform.position, animalOption);
+
+            //Stores position of bubble
+            Vector3 bubbleSpot = bubble.transform.position;
+
             //Gets rid of bubble
             Destroy(bubble);
             bubbles.Remove(bubble);
 
+            float popScale;
+            float trailScale;
+            float popSize = 0.25f;
+            float trailSize = 0.15f;
+
+            //Plays the pop animation
+            GameObject bubblePop = Instantiate(pop, bubbleSpot, Quaternion.identity);
+            GameObject trailBubbles = Instantiate(bubbleTrail, bubbleSpot, Quaternion.identity);
+            if (animalOption == 2 || animalOption == 3)
+            {
+                popScale = 1f * popSize;
+                trailScale = 1f * trailSize;
+            }
+            else if (animalOption == 0 || animalOption == 1 || animalOption == 4)
+            {
+                popScale = 2f * popSize;
+                trailScale = 2f * trailSize;
+            }
+            else
+            {
+                popScale = 3f * popSize;
+                trailScale = 3f * trailSize;
+            }
+            Vector3 newPopScale = new Vector3(popScale, popScale, 1f);
+            Vector3 newTrailScale = new Vector3(trailScale, trailScale, 1f);
+            bubblePop.transform.localScale = newPopScale;
+            trailBubbles.transform.localScale = newTrailScale;
+            pops.Add(bubblePop);
+            trails.Add(trailBubbles);
+
             //Increments score
             gameMgr.IncrementScore(100);
-            gameMgr.ammoSlider.value -= 1;
-            Debug.Log("Ammo: " + gameMgr.ammoSlider.value);
-            gameMgr.ammoText.text = gameMgr.ammoSlider.value.ToString();
         }
     }
 
@@ -158,5 +159,12 @@ public class SpawnManager : MonoBehaviour
                 bubbles[i].GetComponent<Movement>().IsBehindOil = false;
             }
         }
+    }
+
+    //HOW TO USE THIS TO GET RID OF EXTRA OBJECTS??
+    private void CleanUpAnimations()
+    {
+        pops.Clear();
+        trails.Clear();
     }
 }

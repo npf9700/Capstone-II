@@ -28,6 +28,7 @@ public class Movement : MonoBehaviour
     private Vector3 newScale = new Vector3(1f, 1f, 1f);
     public GameManager gmr;
     private AnimalState animalState;
+    private SpriteRenderer bubbleRend;
 
     public GameObject smallTurtle;
     public GameObject smallSeal;
@@ -59,6 +60,8 @@ public class Movement : MonoBehaviour
         currentPos = new Vector2(Random.Range(cam.transform.position.x - cameraWidth / 2, cam.transform.position.x + cameraWidth / 2), cam.transform.position.y - cameraHeight / 2 - 1);
         pingPongSpeed = Random.Range(0.4f, 0.8f);
         gmr = GameObject.Find("GameManager").GetComponent<GameManager>();
+        bubbleRend = gameObject.GetComponent<SpriteRenderer>();
+
         animalState = (AnimalState)Random.Range(0, 7);
         size = DetermineSize();
         ScaleBubble();
@@ -133,19 +136,37 @@ public class Movement : MonoBehaviour
 
    void OnMouseDown()
    {
-        hitsLeft--;
+        if (gmr.ammoSlider.value != 0 && isBehindOil == false)
+        {
+            hitsLeft--;
+        }
         gmr.ammoSlider.value -= 1;
-        gmr.ammoText.text = gmr.ammoSlider.value.ToString();
-        Debug.Log("Ammo: " + gmr.ammoSlider.value);
         for (int j = 0; j < spm.bubbles.Count; j++)
         {
-            if(spm.bubbles[j] == gameObject && isBehindOil == false && hitsLeft <= 0)
+            if (spm.bubbles[j] == gameObject)
             {
-                spm.SpawnAnimal(spm.bubbles[j], (int)animalState);
+                if (isBehindOil == false && hitsLeft <= 0)
+                {
+                    spm.SpawnAnimal(spm.bubbles[j], (int)animalState);
+                }
+                else if (isBehindOil == true)
+                {
+                    gmr.ammoSlider.value += 1;
+                }
+                if((size == 3 && hitsLeft == 2) || (size == 2 && hitsLeft == 1))
+                {
+                    bubbleRend.color = new Color(1, 0, 1, 0.5f);
+                }
+                else if(size == 3 && hitsLeft == 1)
+                {
+                    bubbleRend.color = new Color(1, 0, 0, 0.5f);
+                }
             }
             
         }
-        
+        gmr.ammoText.text = gmr.ammoSlider.value.ToString();
+        Debug.Log("Ammo: " + gmr.ammoSlider.value);
+
     }
 
     //Randomly determines if the bubble should be small, medium, or large

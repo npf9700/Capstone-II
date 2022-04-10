@@ -130,6 +130,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3482657739933981745, guid: 49012d6fb5715bd4fb9e036951c6d1d6, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482657739933981745, guid: 49012d6fb5715bd4fb9e036951c6d1d6, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482657739933981745, guid: 49012d6fb5715bd4fb9e036951c6d1d6, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7682001888031642642, guid: 49012d6fb5715bd4fb9e036951c6d1d6, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -593,6 +605,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3616168034364374049, guid: 572e16b452470364b959aad2d810bb20, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616168034364374049, guid: 572e16b452470364b959aad2d810bb20, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616168034364374049, guid: 572e16b452470364b959aad2d810bb20, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5374572812171823703, guid: 572e16b452470364b959aad2d810bb20, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5374572812171823703, guid: 572e16b452470364b959aad2d810bb20, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8012663052584304676, guid: 572e16b452470364b959aad2d810bb20, type: 3}
       propertyPath: m_Name
       value: GUICanvas
@@ -617,6 +649,7 @@ GameObject:
   - component: {fileID: 976226469}
   - component: {fileID: 976226466}
   - component: {fileID: 976226470}
+  - component: {fileID: 976226471}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -741,6 +774,38 @@ MonoBehaviour:
   unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
+--- !u!114 &976226471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976226465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_RenderPostProcessing: 1
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &1006688728
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,7 +1045,7 @@ MonoBehaviour:
   sixPack: {fileID: 956430476446295471, guid: dbcea4f95b133694aaa495a9226d2aa6, type: 3}
   can: {fileID: 7670740968740045660, guid: 047f06cdfcc8f3345af138dfb436c958, type: 3}
   bottle: {fileID: 5334011728255612296, guid: af6dcc05305cd0643917f197e74e55be, type: 3}
-  barrel: {fileID: 5576860274418971176, guid: 3e2fcdb3fe6102147bebc9d6d41e91fd, type: 3}
+  barrel: {fileID: 8801446719064670355, guid: 3e2fcdb3fe6102147bebc9d6d41e91fd, type: 3}
   bag: {fileID: 2666575312460740971, guid: 1843ebc7b2b9c84448321a7ed1274787, type: 3}
   straws: {fileID: 8270290050943206827, guid: 9fe6b034e546e494182d1dec518234ca, type: 3}
   timeStart: 1

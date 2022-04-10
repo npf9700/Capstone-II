@@ -51,11 +51,6 @@ public class GameManager : MonoBehaviour
 
     }
 
-    //public int Ammo
-    //{
-    //    get { return ammo; }
-    //}
-
     // Update is called once per frame
     void Update()
     {

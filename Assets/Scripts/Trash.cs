@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Experimental.Rendering.Universal; 
 
 public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler*/
 {
@@ -23,6 +24,8 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
 
     private SpriteRenderer trashRend;
 
+    private Light2D trashLight;
+
     public Vector2 Position
     {
         get { return position; }
@@ -42,6 +45,7 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
         maxSpeed = 0.01f;
         isBehindOil = false;
         trashRend = gameObject.GetComponent<SpriteRenderer>();
+        trashLight = gameObject.GetComponent<Light2D>();
     }
 
     // Update is called once per frame
@@ -69,6 +73,7 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
         if (isBehindOil == false)
         {
             trashRend.sprite = clicked;
+            trashLight.intensity = 3f;
             startPosX = mousePos.x - transform.position.x;
             startPosY = mousePos.y - transform.position.y;
 
@@ -80,6 +85,7 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
     {
         trashRend.sprite = notClicked;
         isHeld = false;
+        trashLight.intensity = 1f;
     }
 
     public void MoveTrash()
