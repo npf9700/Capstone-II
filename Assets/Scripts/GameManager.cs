@@ -23,7 +23,12 @@ public class GameManager : MonoBehaviour
     public Slider ammoSlider;
     public Canvas GUICanvas;
     public Text ammoText;
-
+    //Public timer value
+    public float currentTime;
+    public float startingTime;
+    public Text countdownText;
+    //modals
+    public GameObject gameOverModal;
 
     public int PlayerScore
     {
@@ -49,12 +54,24 @@ public class GameManager : MonoBehaviour
         ammoText = ammoSlider.GetComponentInChildren<Text>();
         ammoText.text = ammoSlider.value.ToString();
 
+        currentTime = startingTime;
+        //Time.timeScale = 1;
+        gameOverModal.SetActive(false);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //timer script
+        if (Mathf.RoundToInt(currentTime) == 0)
+        {
+            TriggerGameOver();
+        } else
+        {
+            currentTime -= 1 * Time.deltaTime;
+            countdownText.text = Mathf.RoundToInt(currentTime).ToString();
+        }
     }
 
     public void IncrementScore(int scoreAdd)
@@ -92,7 +109,11 @@ public class GameManager : MonoBehaviour
         else if(trashNotCollected % 2 == 1 && trashNotCollected < 28)
         {
             oilPos.y -= 0.75f;
+        } else if(trashNotCollected == 28)
+        {
+            TriggerGameOver();
         }
+
         oilSlick.transform.position = oilPos;
     }
 
@@ -110,4 +131,21 @@ public class GameManager : MonoBehaviour
 
         return oilRect.Contains(mousePos);
     }
+
+
+
+    public void TriggerGameOver()
+    {
+        //Show Game Over Modal
+        //Reset Scene?
+        //Clicking button sends back to title screen
+        Debug.Log("GAME OVER!");
+        gameOverModal.SetActive(true);
+
+        //Time.timeScale = 0;
+        //Application.LoadLevel(Application.loadedLevel);
+        //LoadStartScene();
+    }
+
+
 }
