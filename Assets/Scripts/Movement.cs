@@ -70,7 +70,7 @@ public class Movement : MonoBehaviour
 
         animalState = (AnimalState)Random.Range(0, 10);
         size = DetermineSize();
-        ScaleBubble();
+        //ScaleBubble();
         GameObject childSprite;
         switch ((int)animalState)
         {
@@ -177,10 +177,12 @@ public class Movement : MonoBehaviour
                 if((size == 3 && hitsLeft == 2) || (size == 2 && hitsLeft == 1))
                 {
                     bubbleRend.color = new Color(1, 0, 1, 0.5f);
+                    ScaleBubble(2f);
                 }
                 else if(size == 3 && hitsLeft == 1)
                 {
                     bubbleRend.color = new Color(1, 0, 0, 0.5f);
+                    ScaleBubble(3f);
                 }
             }
             
@@ -214,9 +216,9 @@ public class Movement : MonoBehaviour
     }
 
     //Changes the scale value of the bubble accordingly
-    private void ScaleBubble()
+    private void ScaleBubble(float scale)
     {
-        newScale = new Vector3(size * 0.15f, size * 0.15f, 1f);
+        newScale = new Vector3(scale * 0.15f, scale * 0.15f, 1f);
         transform.localScale = newScale;
     }
 

@@ -24,7 +24,6 @@ public class TrashManager : MonoBehaviour
     public GameManager gameMgr;
 
     public GameObject starGauge;
-    public GameObject sliderHandle;
 
     public List<GameObject> TrashPile
     {
@@ -84,10 +83,11 @@ public class TrashManager : MonoBehaviour
             gameMgr.GetComponent<GameManager>().ammoSlider.value += 1;
             float sliderVal = gameMgr.GetComponent<GameManager>().ammoSlider.value;
             gameMgr.GetComponent<GameManager>().ammoText.text = gameMgr.GetComponent<GameManager>().ammoSlider.value.ToString();
-            Instantiate(starGauge, new Vector3(8.5f,-4.8f + (sliderVal * 0.8f),0f), Quaternion.identity);
+            
             trashPile.Remove(trashPiece);
             Destroy(trashPiece);//Trash is removed from the list and hierarchy
             AkSoundEngine.PostEvent("RemoveTrash", gameObject);
+            Instantiate(starGauge, new Vector3(8.5f, -4.8f + (sliderVal * 0.8f), 0f), Quaternion.identity);
         }
     }
     //-.4, -1.4, -2.4, -3.4, -4.4
