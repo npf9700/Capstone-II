@@ -8,13 +8,18 @@ using WiimoteApi;
 
 public class PointerManager : MonoBehaviour
 {
-    private Quaternion initial_rotation;
-    private Wiimote wiimote;
-    public GameObject Pointer_P1;
     public Camera cam;
     private float cameraHeight;
     private float cameraWidth;
+    private float xOffset;
+    private float yOffset;
+
+    private Quaternion initial_rotation;
+    private Wiimote wiimote;
+    public GameObject Pointer_P1;
+    public GameObject myPrefab;
     public Vector2 pointerPosition;
+
 
 
     // Start is called before the first frame update
@@ -23,13 +28,22 @@ public class PointerManager : MonoBehaviour
         //Setting up camera values
         cameraHeight = cam.orthographicSize * 2f;
         cameraWidth = cameraHeight * cam.aspect;
+        xOffset = cameraWidth / 2;
+        yOffset = cameraHeight / 2;
         Debug.Log("camera width and height: " + cameraWidth + ", " + cameraHeight);
+
+        //Bounds Calibration
+        Instantiate(myPrefab, new Vector2((0f * cameraWidth) - xOffset, (1f  *cameraHeight) - yOffset), Quaternion.identity);
+        Instantiate(myPrefab, new Vector2((0f * cameraWidth) - xOffset, (0f * cameraHeight) - yOffset), Quaternion.identity);
+        Instantiate(myPrefab, new Vector2((1f * cameraWidth) - xOffset, (1f * cameraHeight) - yOffset), Quaternion.identity);
+        Instantiate(myPrefab, new Vector2((1f * cameraWidth) - xOffset, (0f * cameraHeight) - yOffset), Quaternion.identity);
 
         //Setting up Wiimote
         WiimoteManager.FindWiimotes();
         wiimote = WiimoteManager.Wiimotes[0];
         wiimote.SetupIRCamera(IRDataType.BASIC);
     }
+
 
 
     // Update is called once per frame
@@ -47,11 +61,8 @@ public class PointerManager : MonoBehaviour
         //Getting pointer position: pointer[0] is x position, pointer[1] is y position
         float[] pointer = wiimote.Ir.GetPointingPosition();
 
-        // Midpoint: Instantiate(Pointer_P1, new Vector2(11f, -4f), Quaternion.identity);
-        // Old Method: Instantiate(Pointer_P1, new Vector2(-1* cameraWidth / 4, cameraHeight/2), Quaternion.identity);
-
         //Sets position of pointer to IR pointer location. The float is multiplied across the width/height of the camera. The additional numbers are offsets to center it.
-        pointerPosition = new Vector2 ( (pointer[0] * cameraWidth)+0.5f, (pointer[1] * cameraHeight) - 8 ) ;
+        pointerPosition = new Vector2 ( (pointer[0] * cameraWidth) - xOffset, (pointer[1] * cameraHeight) - yOffset);
         Pointer_P1.transform.position = pointerPosition;
 
         //Handles button presses
@@ -68,6 +79,6 @@ public class PointerManager : MonoBehaviour
         } else {
             //Nothing
         }
-
     }
+
 }

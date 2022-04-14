@@ -1260,6 +1260,7 @@ MonoBehaviour:
   Pointer_P1: {fileID: 683264136}
   cam: {fileID: 976226467}
   pointerPosition: {x: 0, y: 0}
+  myPrefab: {fileID: 2237645446747361166, guid: 81c91a69ce84adc4ebdd44a1f8b88334, type: 3}
 --- !u!4 &1006688730
 Transform:
   m_ObjectHideFlags: 0
@@ -1890,8 +1891,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.4000244, y: 0}
-  m_SizeDelta: {x: -593.6, y: -408.5922}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -747.2885, y: -294.7616}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1809321718
 GameObject:
