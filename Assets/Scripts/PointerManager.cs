@@ -70,17 +70,20 @@ public class PointerManager : MonoBehaviour
     void Update()
     {
 
-        ////Reading Wiimote data
-        //if (!WiimoteManager.HasWiimote()) { return; }
-        //wiimote1 = WiimoteManager.Wiimotes[0];
-        //int ret;
-        //do
-        //{
-        //    ret = wiimote1.ReadWiimoteData();
-        //} while (ret > 0);
+
 
         if (usingMouse == false)
         {
+
+            //Reading Wiimote data
+            if (!WiimoteManager.HasWiimote()) { return; }
+            wiimote1 = WiimoteManager.Wiimotes[0];
+            int ret;
+            do
+            {
+                ret = wiimote1.ReadWiimoteData();
+            } while (ret > 0);
+
             // Sets IR position: pointer[0] is x, pointer[1] is y
             float[] pointer = wiimote1.Ir.GetPointingPosition();
             P1_IRPosition = new Vector2((pointer[0] * cameraWidth) - xOffset, (pointer[1] * cameraHeight) - yOffset);
