@@ -22,6 +22,9 @@ public class PointerManager : MonoBehaviour
     public GameObject P1_Cursor;
     public Vector2 P1_CursorPosition;
     public float moveSpeed = 10f;
+    public bool P1_Popping = false;
+    public bool P1_Grabbing = false;
+
 
     private Wiimote wiimote2;
     private GameObject P2_IRLocation;
@@ -30,6 +33,7 @@ public class PointerManager : MonoBehaviour
     public GameObject myPrefab;
     public bool usingMouse;
 
+    
 
 
     // Start is called before the first frame update
@@ -87,7 +91,28 @@ public class PointerManager : MonoBehaviour
             // Sets IR position: pointer[0] is x, pointer[1] is y
             float[] pointer = wiimote1.Ir.GetPointingPosition();
             P1_IRPosition = new Vector2((pointer[0] * cameraWidth) - xOffset, (pointer[1] * cameraHeight) - yOffset);
-        } 
+
+            //Handles button presses
+            if (wiimote1.Button.a == true)
+            {
+                if (wiimote1.Button.b == true)
+                {
+                    P1_Grabbing = true;
+                    P1_Popping = false;
+                }
+                else
+                {
+                    P1_Popping = true;
+                    P1_Grabbing = false;
+                }
+            }
+            else
+            {
+                P1_Popping = false;
+                P1_Grabbing = false;
+            }
+
+        }
         else if (usingMouse == true) 
         {
             // Gets mouse and instead uses mouse position to guide the cursor
@@ -101,20 +126,7 @@ public class PointerManager : MonoBehaviour
         P1_CursorPosition = Vector2.Lerp(P1_CursorPosition, P1_IRPosition, Time.deltaTime * moveSpeed);
         P1_Cursor.transform.position = P1_CursorPosition;
 
-        ////Handles button presses
-        //if (wiimote1.Button.a == true) {
-        //    if (wiimote1.Button.b == true)
-        //    {
-        //        //Call to Move Trash
-        //        //Check Accelerometer?
-        //    }
-        //    else
-        //    {
-        //        //Call to Pop Bubble
-        //    }
-        //} else {
-        //    //Nothing
-        //}
+
     }
 
 }

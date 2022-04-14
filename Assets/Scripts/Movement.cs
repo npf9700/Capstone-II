@@ -134,7 +134,7 @@ public class Movement : MonoBehaviour
         }
     }
 
-   void OnMouseDown()
+   public void OnMouseDown()
    {
         if (gmr.ammoSlider.value != 0 && isBehindOil == false)
         {

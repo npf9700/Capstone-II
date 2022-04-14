@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     //Fields
     private int playerScore;
-    public Text scoreText;
+    public TMP_Text scoreText;
     private int trashNotCollected;
     public GameObject oilSlick;
     private Vector2 oilPos;
@@ -22,11 +23,11 @@ public class GameManager : MonoBehaviour
     //private int ammo;
     public Slider ammoSlider;
     public Canvas GUICanvas;
-    public Text ammoText;
+    public TMP_Text ammoText;
     //Public timer value
     public float currentTime;
     public float startingTime;
-    public Text countdownText;
+    public TMP_Text countdownText;
     //modals
     public GameObject gameOverModal;
 
@@ -51,7 +52,7 @@ public class GameManager : MonoBehaviour
        // ammo = 3;
         GUICanvas = GameObject.Find("GUICanvas").GetComponent<Canvas>();
         ammoSlider = GUICanvas.GetComponentInChildren<Slider>();
-        ammoText = ammoSlider.GetComponentInChildren<Text>();
+        ammoText = ammoSlider.GetComponentInChildren<TMP_Text>();
         ammoText.text = ammoSlider.value.ToString();
 
         currentTime = startingTime;
