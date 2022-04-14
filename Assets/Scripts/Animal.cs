@@ -16,8 +16,17 @@ public class Animal : MonoBehaviour
     void Start()
     {
         position = transform.position;
-        direction = new Vector2(1, 0);
-        maxSpeed = 0.01f;
+        float dirChoice = Random.Range(0, 1f);
+        if (dirChoice < 0.5f)
+        {
+            direction = new Vector2(1, 0);
+        }
+        else
+        {
+            direction = new Vector2(-1, 0);
+            this.GetComponent<SpriteRenderer>().flipX = true;
+    }
+    maxSpeed = 0.01f;
     }
 
     // Update is called once per frame
