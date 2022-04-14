@@ -50,3 +50,6 @@ MonoBehaviour:
   seal: {fileID: 1192466434926074495, guid: b38bb98329ccb2a478a79824eda8f73a, type: 3}
   whaleShark: {fileID: 2996586994692645563, guid: dd4f4fa588ef8c44eacc171ac5a839fe, type: 3}
   vaquita: {fileID: 3644064414801740537, guid: eb8a2c852482fb64d8d0497583d37782, type: 3}
+  otter: {fileID: 1660374727765697511, guid: 8a78c82b2961ff749a8d8f2afe743dd4, type: 3}
+  blueWhale: {fileID: 26683417661307332, guid: 7a89595e881f433499b1b9ee48b99966, type: 3}
+  rightWhale: {fileID: 8516325737914486841, guid: adfc3ef905402974b97d6af53a8c5820, type: 3}

@@ -65,6 +65,9 @@ MonoBehaviour:
   smallHumphead: {fileID: 6995803519060937136, guid: 325bc901b33f2274a917a92eebe2cfc7, type: 3}
   smallVaquita: {fileID: 5403598072881557949, guid: 070e08b43f6b44a44ac2c59e23a5f6c0, type: 3}
   smallWhaleshark: {fileID: 2201634039067463137, guid: dfdb5ed82df10d243a556577a1210265, type: 3}
+  smallOtter: {fileID: 2584604859733940135, guid: 409ec6bd3a5641e4b814161f21442a07, type: 3}
+  smallRightWhale: {fileID: 7172815081314332289, guid: b4e1174dfb917954586f80e6d7b23ce9, type: 3}
+  smallBlueWhale: {fileID: 1061818216637981218, guid: 777598969b8662a43a50558557dcce2a, type: 3}
 --- !u!222 &7682001888031642652
 CanvasRenderer:
   m_ObjectHideFlags: 0

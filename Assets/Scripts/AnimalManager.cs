@@ -15,13 +15,16 @@ public class AnimalManager : MonoBehaviour
     public GameObject seal;
     public GameObject whaleShark;
     public GameObject vaquita;
+    public GameObject otter;
+    public GameObject blueWhale;
+    public GameObject rightWhale;
     
 
     // Start is called before the first frame update
     void Start()
     {
-        animals = new List<GameObject>();
         creatures = new List<GameObject>();
+        animals = new List<GameObject>();
     }
 
     // Update is called once per frame
@@ -32,7 +35,16 @@ public class AnimalManager : MonoBehaviour
 
     public void FreeAnimal(Vector2 bubbleSpot, int animalOption)
     {
-        if(creatures.Count == 0)
+        if (creatures == null)
+        {
+            creatures = new List<GameObject>();
+        }
+        if(animals == null)
+        {
+            animals = new List<GameObject>();
+        }
+
+        if (creatures.Count == 0)
         {
             AddCreatures();
         }
@@ -49,5 +61,8 @@ public class AnimalManager : MonoBehaviour
         creatures.Add(seal);
         creatures.Add(whaleShark);
         creatures.Add(vaquita);
+        creatures.Add(otter);
+        creatures.Add(blueWhale);
+        creatures.Add(rightWhale);
     }
 }

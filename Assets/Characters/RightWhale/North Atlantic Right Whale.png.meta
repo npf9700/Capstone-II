@@ -1,0 +1,2424 @@
+fileFormatVersion: 2
+guid: 98b744a52a2427e47b003b505f09d248
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4206076067032056787
+    second: North Atlantic Right Whale_0
+  - first:
+      213: 8673281773433918923
+    second: North Atlantic Right Whale_1
+  - first:
+      213: 3929550552518908632
+    second: North Atlantic Right Whale_2
+  - first:
+      213: -5837849895645191920
+    second: North Atlantic Right Whale_3
+  - first:
+      213: 6981038326789742780
+    second: North Atlantic Right Whale_4
+  - first:
+      213: 702502750730940516
+    second: North Atlantic Right Whale_5
+  - first:
+      213: 7633821798516390965
+    second: North Atlantic Right Whale_6
+  - first:
+      213: -4697261104848359783
+    second: North Atlantic Right Whale_7
+  - first:
+      213: 3276771480105413476
+    second: North Atlantic Right Whale_8
+  - first:
+      213: -9027171767691457674
+    second: North Atlantic Right Whale_9
+  - first:
+      213: 6915497999405516935
+    second: North Atlantic Right Whale_10
+  - first:
+      213: 8522780150100010854
+    second: North Atlantic Right Whale_11
+  - first:
+      213: -3277287768689180950
+    second: North Atlantic Right Whale_12
+  - first:
+      213: 4973061790672994356
+    second: North Atlantic Right Whale_13
+  - first:
+      213: -2892405752638768066
+    second: North Atlantic Right Whale_14
+  - first:
+      213: -1155309001994340895
+    second: North Atlantic Right Whale_15
+  - first:
+      213: -3582940181507229533
+    second: North Atlantic Right Whale_16
+  - first:
+      213: -1708504997975524475
+    second: North Atlantic Right Whale_17
+  - first:
+      213: 1170944417159885618
+    second: North Atlantic Right Whale_18
+  - first:
+      213: 4825077783762870913
+    second: North Atlantic Right Whale_19
+  - first:
+      213: -1926865709742577399
+    second: North Atlantic Right Whale_20
+  - first:
+      213: 1582247366074318999
+    second: North Atlantic Right Whale_21
+  - first:
+      213: -1422982981249906172
+    second: North Atlantic Right Whale_22
+  - first:
+      213: -7808915490605152793
+    second: North Atlantic Right Whale_23
+  - first:
+      213: 2503801333587825963
+    second: North Atlantic Right Whale_24
+  - first:
+      213: -1640410913964231168
+    second: North Atlantic Right Whale_25
+  - first:
+      213: -3780310281868583964
+    second: North Atlantic Right Whale_26
+  - first:
+      213: 1076701512573300081
+    second: North Atlantic Right Whale_27
+  - first:
+      213: -808065280030436548
+    second: North Atlantic Right Whale_28
+  - first:
+      213: -2929371194749329248
+    second: North Atlantic Right Whale_29
+  - first:
+      213: 2479573829389328477
+    second: North Atlantic Right Whale_30
+  - first:
+      213: 5317548134941600737
+    second: North Atlantic Right Whale_31
+  - first:
+      213: -8730428993561689786
+    second: North Atlantic Right Whale_32
+  - first:
+      213: -7099247670637236398
+    second: North Atlantic Right Whale_33
+  - first:
+      213: -2365373957547616421
+    second: North Atlantic Right Whale_34
+  - first:
+      213: 8731356452712378764
+    second: North Atlantic Right Whale_35
+  - first:
+      213: -968168730069761549
+    second: North Atlantic Right Whale_36
+  - first:
+      213: 4353009763145741344
+    second: North Atlantic Right Whale_37
+  - first:
+      213: -240931392688837400
+    second: North Atlantic Right Whale_38
+  - first:
+      213: -6157465848771729672
+    second: North Atlantic Right Whale_39
+  - first:
+      213: 5123755727594024498
+    second: North Atlantic Right Whale_40
+  - first:
+      213: -6460217513181373256
+    second: North Atlantic Right Whale_41
+  - first:
+      213: 2119015401956626631
+    second: North Atlantic Right Whale_42
+  - first:
+      213: 2571316024159776835
+    second: North Atlantic Right Whale_43
+  - first:
+      213: 6549828604770714010
+    second: North Atlantic Right Whale_44
+  - first:
+      213: 4263235666683936117
+    second: North Atlantic Right Whale_45
+  - first:
+      213: -5250268130366883861
+    second: North Atlantic Right Whale_46
+  - first:
+      213: -2971507121475665936
+    second: North Atlantic Right Whale_47
+  - first:
+      213: 4280474888657279757
+    second: North Atlantic Right Whale_48
+  - first:
+      213: -8458822170227336060
+    second: North Atlantic Right Whale_49
+  - first:
+      213: 1327256836356706440
+    second: North Atlantic Right Whale_50
+  - first:
+      213: 5490661081113156829
+    second: North Atlantic Right Whale_51
+  - first:
+      213: 3933383767688941076
+    second: North Atlantic Right Whale_52
+  - first:
+      213: -570437849058536527
+    second: North Atlantic Right Whale_53
+  - first:
+      213: -8860813413884142262
+    second: North Atlantic Right Whale_54
+  - first:
+      213: 8082223547677295991
+    second: North Atlantic Right Whale_55
+  - first:
+      213: 473232923502576631
+    second: North Atlantic Right Whale_56
+  - first:
+      213: 6572173806147058467
+    second: North Atlantic Right Whale_57
+  - first:
+      213: -1429124565970703833
+    second: North Atlantic Right Whale_58
+  - first:
+      213: 4912454164215395246
+    second: North Atlantic Right Whale_59
+  - first:
+      213: 5772609259847431553
+    second: North Atlantic Right Whale_60
+  - first:
+      213: 3352169871122381969
+    second: North Atlantic Right Whale_61
+  - first:
+      213: 5447529212520622491
+    second: North Atlantic Right Whale_62
+  - first:
+      213: 7950045110166137913
+    second: North Atlantic Right Whale_63
+  - first:
+      213: 425598480617251220
+    second: North Atlantic Right Whale_64
+  - first:
+      213: 8784315297823586375
+    second: North Atlantic Right Whale_65
+  - first:
+      213: -4509135531744163065
+    second: North Atlantic Right Whale_66
+  - first:
+      213: 1072155363077814172
+    second: North Atlantic Right Whale_67
+  - first:
+      213: -61725082647824292
+    second: North Atlantic Right Whale_68
+  - first:
+      213: 7761302321453178359
+    second: North Atlantic Right Whale_69
+  - first:
+      213: 1519955497054660228
+    second: North Atlantic Right Whale_70
+  - first:
+      213: 5759698009581350871
+    second: North Atlantic Right Whale_71
+  - first:
+      213: 6069207771422276645
+    second: North Atlantic Right Whale_72
+  - first:
+      213: 4153434579008139143
+    second: North Atlantic Right Whale_73
+  - first:
+      213: 5839680189083211004
+    second: North Atlantic Right Whale_74
+  - first:
+      213: -7695930776872305765
+    second: North Atlantic Right Whale_75
+  - first:
+      213: -2303770741106324928
+    second: North Atlantic Right Whale_76
+  - first:
+      213: 4177546276909963151
+    second: North Atlantic Right Whale_77
+  - first:
+      213: 1896874017714177717
+    second: North Atlantic Right Whale_78
+  - first:
+      213: 5607883097043986847
+    second: North Atlantic Right Whale_79
+  - first:
+      213: 2511236301266877652
+    second: North Atlantic Right Whale_80
+  - first:
+      213: -2388880439684434203
+    second: North Atlantic Right Whale_81
+  - first:
+      213: -6515373672296455976
+    second: North Atlantic Right Whale_82
+  - first:
+      213: 7606626794144533790
+    second: North Atlantic Right Whale_83
+  - first:
+      213: 8110162180357635668
+    second: North Atlantic Right Whale_84
+  - first:
+      213: -7988812191620441097
+    second: North Atlantic Right Whale_85
+  - first:
+      213: -2273795835075372049
+    second: North Atlantic Right Whale_86
+  - first:
+      213: 850290595731560029
+    second: North Atlantic Right Whale_87
+  - first:
+      213: 7789473134770478787
+    second: North Atlantic Right Whale_88
+  - first:
+      213: -8416772659749188839
+    second: North Atlantic Right Whale_89
+  - first:
+      213: 7406162192208029713
+    second: North Atlantic Right Whale_90
+  - first:
+      213: -7289934333408759756
+    second: North Atlantic Right Whale_91
+  - first:
+      213: -3810686674266249632
+    second: North Atlantic Right Whale_92
+  - first:
+      213: 4390763768647734362
+    second: North Atlantic Right Whale_93
+  - first:
+      213: 8859811423619305237
+    second: North Atlantic Right Whale_94
+  - first:
+      213: 4017551388382712429
+    second: North Atlantic Right Whale_95
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c384e0a1401a5c0800000000000000
+      internalID: -4206076067032056787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_1
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 6750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc51666e1dfad5870800000000000000
+      internalID: 8673281773433918923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_2
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 6750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da54d96861988630800000000000000
+      internalID: 3929550552518908632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_3
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 6750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011640e337acbfea0800000000000000
+      internalID: -5837849895645191920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_4
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 6750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0a0bffe51a1e060800000000000000
+      internalID: 6981038326789742780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_5
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 6750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4607d0f978acfb900800000000000000
+      internalID: 702502750730940516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_6
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 6750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53cf333ea78c0f960800000000000000
+      internalID: 7633821798516390965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_7
+      rect:
+        serializedVersion: 2
+        x: 5250
+        y: 6750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e214c89e9ffceb0800000000000000
+      internalID: -4697261104848359783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_8
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 6750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b60d1dc4e697d20800000000000000
+      internalID: 3276771480105413476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_9
+      rect:
+        serializedVersion: 2
+        x: 6750
+        y: 6750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67bc054fa1b09b280800000000000000
+      internalID: -9027171767691457674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6000
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7888d736ac8c8ff50800000000000000
+      internalID: 6915497999405516935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_11
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 6000
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6672671146ff64670800000000000000
+      internalID: 8522780150100010854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_12
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 6000
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee7c80632cb482d0800000000000000
+      internalID: -3277287768689180950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_13
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 6000
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430c127a95dd30540800000000000000
+      internalID: 4973061790672994356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_14
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 6000
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c7ba7ea4c1cd7d0800000000000000
+      internalID: -2892405752638768066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_15
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 6000
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5f052759487ffe0800000000000000
+      internalID: -1155309001994340895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_16
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 6000
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8b9cd53e6d64ec0800000000000000
+      internalID: -3582940181507229533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_17
+      rect:
+        serializedVersion: 2
+        x: 5250
+        y: 6000
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b70b2a1cb2a48e0800000000000000
+      internalID: -1708504997975524475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_18
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 6000
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 233ba845eb7004010800000000000000
+      internalID: 1170944417159885618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_19
+      rect:
+        serializedVersion: 2
+        x: 6750
+        y: 6000
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 182a0d21eae16f240800000000000000
+      internalID: 4825077783762870913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5250
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909a9e098d56245e0800000000000000
+      internalID: -1926865709742577399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_21
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 5250
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79048a9a89545f510800000000000000
+      internalID: 1582247366074318999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_22
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 5250
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a4c21948c804ce0800000000000000
+      internalID: -1422982981249906172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_23
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 5250
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e54f651cb821a390800000000000000
+      internalID: -7808915490605152793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_24
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 5250
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b25d6a41c0a4fb220800000000000000
+      internalID: 2503801333587825963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_25
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 5250
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006fc7b07f61c39e0800000000000000
+      internalID: -1640410913964231168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_26
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 5250
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb577cd3d3a98bc0800000000000000
+      internalID: -3780310281868583964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_27
+      rect:
+        serializedVersion: 2
+        x: 5250
+        y: 5250
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17dae02325631fe00800000000000000
+      internalID: 1076701512573300081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_28
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 5250
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c33957cb8ec29c4f0800000000000000
+      internalID: -808065280030436548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_29
+      rect:
+        serializedVersion: 2
+        x: 6750
+        y: 5250
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a064b93b68c857d0800000000000000
+      internalID: -2929371194749329248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4500
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d502b1fa247396220800000000000000
+      internalID: 2479573829389328477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_31
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 4500
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb2c3bead9bbc940800000000000000
+      internalID: 5317548134941600737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_32
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 4500
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6410cfd061947d680800000000000000
+      internalID: -8730428993561689786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_33
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 4500
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25fe5236bd76a7d90800000000000000
+      internalID: -7099247670637236398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_34
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 4500
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b571a6bfae08c2fd0800000000000000
+      internalID: -2365373957547616421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_35
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 4500
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c817c3bde620c2970800000000000000
+      internalID: 8731356452712378764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_36
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 4500
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f10d896baf5092f0800000000000000
+      internalID: -968168730069761549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_37
+      rect:
+        serializedVersion: 2
+        x: 5250
+        y: 4500
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 024fb1cf05ff86c30800000000000000
+      internalID: 4353009763145741344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_38
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 4500
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ecaa83cc2a08acf0800000000000000
+      internalID: -240931392688837400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_39
+      rect:
+        serializedVersion: 2
+        x: 6750
+        y: 4500
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6ac572f694c8aa0800000000000000
+      internalID: -6157465848771729672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e6d1bffac3b1740800000000000000
+      internalID: 5123755727594024498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_41
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 3750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc11134662b856a0800000000000000
+      internalID: -6460217513181373256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_42
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c0d433f741486d10800000000000000
+      internalID: 2119015401956626631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_43
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 3750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3403051fc462fa320800000000000000
+      internalID: 2571316024159776835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_44
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a910d0fd96aa5ea50800000000000000
+      internalID: 6549828604770714010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_45
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 3750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57db872504e0a2b30800000000000000
+      internalID: 4263235666683936117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_46
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 3750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be77de9d3fc4327b0800000000000000
+      internalID: -5250268130366883861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_47
+      rect:
+        serializedVersion: 2
+        x: 5250
+        y: 3750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff36e8440613c6d0800000000000000
+      internalID: -2971507121475665936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_48
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 3750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b95687b3d476b30800000000000000
+      internalID: 4280474888657279757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_49
+      rect:
+        serializedVersion: 2
+        x: 6750
+        y: 3750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c966d8d0a3c9a80800000000000000
+      internalID: -8458822170227336060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3000
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88010c08f0d5b6210800000000000000
+      internalID: 1327256836356706440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_51
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 3000
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddcdfc9992fb23c40800000000000000
+      internalID: 5490661081113156829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_52
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3000
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41e036e52bf269630800000000000000
+      internalID: 3933383767688941076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_53
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 3000
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b39d607cc56518f0800000000000000
+      internalID: -570437849058536527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_54
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3000
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d5b6c8521180580800000000000000
+      internalID: -8860813413884142262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_55
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 3000
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7754a92ce73d92070800000000000000
+      internalID: 8082223547677295991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_56
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 3000
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3046d26d2419600800000000000000
+      internalID: 473232923502576631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_57
+      rect:
+        serializedVersion: 2
+        x: 5250
+        y: 3000
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32bb58d714d053b50800000000000000
+      internalID: 6572173806147058467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_58
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 3000
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a288177caba2ce0800000000000000
+      internalID: -1429124565970703833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_59
+      rect:
+        serializedVersion: 2
+        x: 6750
+        y: 3000
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea37279f80b8c2440800000000000000
+      internalID: 4912454164215395246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2250
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1853658898d6c1050800000000000000
+      internalID: 5772609259847431553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_61
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 2250
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c340bbcbc458e20800000000000000
+      internalID: 3352169871122381969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_62
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2250
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99eadfd4f2899b40800000000000000
+      internalID: 5447529212520622491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_63
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 2250
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ca8c318eb345e60800000000000000
+      internalID: 7950045110166137913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_64
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2250
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491232e209708e500800000000000000
+      internalID: 425598480617251220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_65
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 2250
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 748fdc9d83828e970800000000000000
+      internalID: 8784315297823586375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_66
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 2250
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b0c42df155c61c0800000000000000
+      internalID: -4509135531744163065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_67
+      rect:
+        serializedVersion: 2
+        x: 5250
+        y: 2250
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9778484f9f01ee00800000000000000
+      internalID: 1072155363077814172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_68
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 2250
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c587b074d55b42ff0800000000000000
+      internalID: -61725082647824292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_69
+      rect:
+        serializedVersion: 2
+        x: 6750
+        y: 2250
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd91a8175fa5bb60800000000000000
+      internalID: 7761302321453178359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4866854b877f71510800000000000000
+      internalID: 1519955497054660228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_71
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1500
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dfee92d2de8eef40800000000000000
+      internalID: 5759698009581350871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_72
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1500
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52c3aa3ef482a3450800000000000000
+      internalID: 6069207771422276645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_73
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1500
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78faa976eb6f3a930800000000000000
+      internalID: 4153434579008139143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_74
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1500
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf4d0382136ba0150800000000000000
+      internalID: 5839680189083211004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_75
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 1500
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9bb784bbbf823590800000000000000
+      internalID: -7695930776872305765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_76
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 1500
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a4b6487bc5700e0800000000000000
+      internalID: -2303770741106324928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_77
+      rect:
+        serializedVersion: 2
+        x: 5250
+        y: 1500
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8759fb8430a9f930800000000000000
+      internalID: 4177546276909963151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_78
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 1500
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b685897edc035a10800000000000000
+      internalID: 1896874017714177717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_79
+      rect:
+        serializedVersion: 2
+        x: 6750
+        y: 1500
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f99693507f333dd40800000000000000
+      internalID: 5607883097043986847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dcf3146c14b9d220800000000000000
+      internalID: 2511236301266877652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_81
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6fabd95edf8ded0800000000000000
+      internalID: -2388880439684434203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_82
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d066db3a2eb495a0800000000000000
+      internalID: -6515373672296455976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_83
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d04f384ca209960800000000000000
+      internalID: 7606626794144533790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_84
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e360798851d8070800000000000000
+      internalID: 8110162180357635668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_85
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb572563a9022190800000000000000
+      internalID: -7988812191620441097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_86
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: febd19e2cbad170e0800000000000000
+      internalID: -2273795835075372049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_87
+      rect:
+        serializedVersion: 2
+        x: 5250
+        y: 750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d565f62bac6dccb00800000000000000
+      internalID: 850290595731560029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_88
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce5171bb84c91c60800000000000000
+      internalID: 7789473134770478787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_89
+      rect:
+        serializedVersion: 2
+        x: 6750
+        y: 750
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b0e642cdd913b80800000000000000
+      internalID: -8416772659749188839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 118ec773649f7c660800000000000000
+      internalID: 7406162192208029713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_91
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4303f35f853f4da90800000000000000
+      internalID: -7289934333408759756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_92
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 066ab0ed8a8bd1bc0800000000000000
+      internalID: -3810686674266249632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_93
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 0
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5457e262602fec30800000000000000
+      internalID: 4390763768647734362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_94
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51fc6c96c8f54fa70800000000000000
+      internalID: 8859811423619305237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: North Atlantic Right Whale_95
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 0
+        width: 750
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62dd6ba3b531c730800000000000000
+      internalID: 4017551388382712429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

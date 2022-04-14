@@ -36,6 +36,48 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="GameOver" ID="{1C2E44F9-04CB-448D-A939-2C2880F5C9DC}">
+					<ChildrenList>
+						<Action Name="" ID="{7C90D918-930E-4875-87F2-F1A5BE2D7851}" ShortID="590372835">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainGameLoopContainer" ID="{08370254-C982-4D86-A02C-1B33C19EE973}" WorkUnitID="{D413CACA-AF7F-4D5C-B245-A7ABC8656A3F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D6565D8E-2543-4535-8CE1-4E7FF4D10C51}" ShortID="1002614315">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GameEndMusicContainer" ID="{541D0083-3FB7-4A80-9496-C45C7DA76F40}" WorkUnitID="{D413CACA-AF7F-4D5C-B245-A7ABC8656A3F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BackToTitle" ID="{4E0400C2-13E0-4FCE-98ED-4F9C2410F735}">
+					<ChildrenList>
+						<Action Name="" ID="{1F882843-60DC-47B9-8CB9-7E26D591A448}" ShortID="3535484">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ClickBubble" ID="{C0C51CE9-9AB3-4F0B-AF1B-1249B21B9C2F}">
+					<ChildrenList>
+						<Action Name="" ID="{4BCA52C7-D857-483B-B449-80677CAB18B8}" ShortID="683030197">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ClickSoundsContainer" ID="{4845B76E-E2AA-4A19-A24F-5A5E37023D7D}" WorkUnitID="{D413CACA-AF7F-4D5C-B245-A7ABC8656A3F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

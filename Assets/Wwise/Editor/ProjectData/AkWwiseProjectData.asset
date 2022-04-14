@@ -20,7 +20,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 10335158ee520843a699be3f75e6e2f2
     GuidInternal: 
-    m_lastTime: -8585528954584753836
+    m_lastTime: -8585536300457287077
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 74f4a57f914b6f4cbb44f4441a4d6a93
     GuidInternal: 
-    m_lastTime: -8585528954587271729
+    m_lastTime: -8585536300457022886
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -49,7 +49,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 082876235f78da4190169cc04b15502e
     GuidInternal: 
-    m_lastTime: -8585528954584788847
+    m_lastTime: -8585518122462504979
     List:
     - name: GameScene
       guid: d69c70a08f4e5c458c4a05aecc75b2b1
@@ -68,8 +68,44 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 4c075f9c272ef9448a887b077fbb530b
     GuidInternal: 
-    m_lastTime: -8585528954592067590
+    m_lastTime: -8585518122462690580
     List:
+    - name: BackToTitle
+      guid: c200044ee013ce4f98ed4f9c2410f735
+      id: 1693860815
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: BackToTitle
+        ObjectType: 3
+      Path: Default Work Unit\BackToTitle
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: ClickBubble
+      guid: e91cc5c0b39a0b4faf1b1249b21b9c2f
+      id: 209665745
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ClickBubble
+        ObjectType: 3
+      Path: Default Work Unit\ClickBubble
+      maxAttenuation: 0
+      maxDuration: 1
+      minDuration: 0.125
+    - name: GameOver
+      guid: f9442e1ccb048d44a9392c2880f5c9dc
+      id: 4158285989
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GameOver
+        ObjectType: 3
+      Path: Default Work Unit\GameOver
+      maxAttenuation: 0
+      maxDuration: 4
+      minDuration: 4
     - name: GameStart
       guid: e8da06462dcd40468a9e5d1767832129
       id: 4058101365
@@ -104,7 +140,7 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\RemoveTrash
       maxAttenuation: 0
-      maxDuration: 1
+      maxDuration: 1.223881
       minDuration: 1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
@@ -114,7 +150,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 1a50971653384a4596fc8951d76f7a7c
     GuidInternal: 
-    m_lastTime: -8585528954592057583
+    m_lastTime: -8585534582768447524
     List:
     - name: TrashFallen
       guid: 362b2f11d4497740870b9ee9c8b59f17
@@ -133,7 +169,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 304735ef659be94dbbf37f3e3a274fa7
     GuidInternal: 
-    m_lastTime: -8585528954584773840
+    m_lastTime: -8585536300458510762
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -143,7 +179,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: d6671ea9be091f46a0f8b879e4f3db1b
     GuidInternal: 
-    m_lastTime: -8585528954584763840
+    m_lastTime: -8585536300457475119
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -153,8 +189,11 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 7d2a873d711da24bb96b25bdd5e11707
     GuidInternal: 
-    m_lastTime: -8585528954584758835
+    m_lastTime: -8585536300458570852
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /Capstone-II_WwiseProject
+  - /Capstone-II_WwiseProject/Events
+  - /Capstone-II_WwiseProject/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

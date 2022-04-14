@@ -16,11 +16,40 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2859421969" Language="SFX" Hash="2659406831">
+		<SoundBank Id="2859421969" Language="SFX" Hash="2531811208">
 			<ObjectPath>\SoundBanks\Default Work Unit\GameScene</ObjectPath>
 			<ShortName>GameScene</ShortName>
 			<Path>GameScene.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1693860815" Name="BackToTitle" ObjectPath="\Events\Default Work Unit\BackToTitle" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="209665745" Name="ClickBubble" ObjectPath="\Events\Default Work Unit\ClickBubble" DurationType="OneShot" DurationMin="0.125" DurationMax="1.">
+					<IncludedMemoryFiles>
+						<File Id="36830320" Language="SFX">
+							<ShortName>DeepSeaDefendersClickSounds.wav</ShortName>
+							<Path>SFX\DeepSeaDefendersClickSounds_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4158285989" Name="GameOver" ObjectPath="\Events\Default Work Unit\GameOver" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="207450628" Language="SFX">
+							<ShortName>DeepSeaDefendersGameOverPluck.wav</ShortName>
+							<Path>SFX\DeepSeaDefendersGameOverPluck_D79FB2B7.wem</Path>
+						</File>
+						<File Id="591925539" Language="SFX">
+							<ShortName>DeepSeaDefendersMainLoopDrone.wav</ShortName>
+							<Path>SFX\DeepSeaDefendersMainLoopDrone_D79FB2B7.wem</Path>
+						</File>
+						<File Id="800561047" Language="SFX">
+							<ShortName>DeepSeaDefendersGameOverMarimba.wav</ShortName>
+							<Path>SFX\DeepSeaDefendersGameOverMarimba_D79FB2B7.wem</Path>
+						</File>
+						<File Id="993249864" Language="SFX">
+							<ShortName>DeepSeaDefendersGameOverChimes.wav</ShortName>
+							<Path>SFX\DeepSeaDefendersGameOverChimes_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="4058101365" Name="GameStart" ObjectPath="\Events\Default Work Unit\GameStart" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="99709799" Language="SFX">
@@ -45,11 +74,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="951753125" Name="RemoveTrash" ObjectPath="\Events\Default Work Unit\RemoveTrash" DurationType="OneShot" DurationMin="1." DurationMax="1.">
+				<Event Id="951753125" Name="RemoveTrash" ObjectPath="\Events\Default Work Unit\RemoveTrash" DurationType="OneShot" DurationMin="1." DurationMax="1.223881">
 					<IncludedMemoryFiles>
-						<File Id="662381675" Language="SFX">
-							<ShortName>DeepSeaDefendersTrashSounds.wav</ShortName>
-							<Path>SFX\DeepSeaDefendersTrashSounds_D79FB2B7.wem</Path>
+						<File Id="557855250" Language="SFX">
+							<ShortName>DeepSeaDefendersTrashCompacterSounds.wav</ShortName>
+							<Path>SFX\DeepSeaDefendersTrashCompacterSounds_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

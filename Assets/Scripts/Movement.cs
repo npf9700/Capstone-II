@@ -11,7 +11,10 @@ public enum AnimalState
     humphead,
     penguin,
     whaleshark,
-    vaquita
+    vaquita,
+    otter,
+    rightWhale,
+    blueWhale
 }
 public class Movement : MonoBehaviour
 {
@@ -37,6 +40,9 @@ public class Movement : MonoBehaviour
     public GameObject smallHumphead;
     public GameObject smallVaquita;
     public GameObject smallWhaleshark;
+    public GameObject smallOtter;
+    public GameObject smallRightWhale;
+    public GameObject smallBlueWhale;
 
     public bool IsBehindOil
     {
@@ -62,7 +68,7 @@ public class Movement : MonoBehaviour
         gmr = GameObject.Find("GameManager").GetComponent<GameManager>();
         bubbleRend = gameObject.GetComponent<SpriteRenderer>();
 
-        animalState = (AnimalState)Random.Range(0, 7);
+        animalState = (AnimalState)Random.Range(0, 10);
         size = DetermineSize();
         ScaleBubble();
         GameObject childSprite;
@@ -88,6 +94,15 @@ public class Movement : MonoBehaviour
                 break;
             case 6:
                 childSprite = Instantiate(smallVaquita, transform.position, Quaternion.identity);
+                break;
+            case 7:
+                childSprite = Instantiate(smallOtter, transform.position, Quaternion.identity);
+                break;
+            case 8:
+                childSprite = Instantiate(smallBlueWhale, transform.position, Quaternion.identity);
+                break;
+            case 9:
+                childSprite = Instantiate(smallRightWhale, transform.position, Quaternion.identity);
                 break;
             default:
                 childSprite = Instantiate(smallTurtle, transform.position, Quaternion.identity);
@@ -147,11 +162,17 @@ public class Movement : MonoBehaviour
             {
                 if (isBehindOil == false && hitsLeft <= 0)
                 {
+                    AkSoundEngine.PostEvent("PopBubble", gameObject);//Bubble Sound Effect
                     spm.SpawnAnimal(spm.bubbles[j], (int)animalState);
                 }
                 else if (isBehindOil == true)
                 {
+                    AkSoundEngine.PostEvent("ClickBubble", gameObject);//Click Sound Effect
                     gmr.ammoSlider.value += 1;
+                }
+                else
+                {
+                    AkSoundEngine.PostEvent("PopBubble", gameObject);//Bubble Sound Effect
                 }
                 if((size == 3 && hitsLeft == 2) || (size == 2 && hitsLeft == 1))
                 {
@@ -179,7 +200,7 @@ public class Movement : MonoBehaviour
             bubbleSize = 1f;
             hitsLeft = 1;
         }
-        else if((int)animalState == 0 || (int)animalState == 1 || (int)animalState == 4)
+        else if((int)animalState == 0 || (int)animalState == 1 || (int)animalState == 4 || (int)animalState == 7)
         {
             bubbleSize = 2f;
             hitsLeft = 2;

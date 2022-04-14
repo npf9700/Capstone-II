@@ -13,6 +13,9 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID BACKTOTITLE = 1693860815U;
+        static const AkUniqueID CLICKBUBBLE = 209665745U;
+        static const AkUniqueID GAMEOVER = 4158285989U;
         static const AkUniqueID GAMESTART = 4058101365U;
         static const AkUniqueID POPBUBBLE = 1027931564U;
         static const AkUniqueID REMOVETRASH = 951753125U;

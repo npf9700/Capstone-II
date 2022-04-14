@@ -1,15 +1,22 @@
 Event	ID	Name			Wwise Object Path	Notes
+	209665745	ClickBubble			\Default Work Unit\ClickBubble	
 	951753125	RemoveTrash			\Default Work Unit\RemoveTrash	
 	1027931564	PopBubble			\Default Work Unit\PopBubble	
+	1693860815	BackToTitle			\Default Work Unit\BackToTitle	
 	4058101365	GameStart			\Default Work Unit\GameStart	
+	4158285989	GameOver			\Default Work Unit\GameOver	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	3888953723	TrashFallen			\Default Work Unit\TrashFallen	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	36830320	DeepSeaDefendersClickSounds	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Mac\SFX\DeepSeaDefendersClickSounds_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\ClickSoundsContainer\ClickSound_00\DeepSeaDefendersClickSounds		1411264
 	99709799	DeepSeaDefendersMainLoopMarimba	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Mac\SFX\DeepSeaDefendersMainLoopMarimba_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainGameLoopContainer\MainGameLoopSegment\DeepSeaDefendersMainLoopMarimba		2822464
 	151957766	DeepSeaDefendersMainLoopMelody	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Mac\SFX\DeepSeaDefendersMainLoopMelody_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainGameLoopContainer\MainGameLoopSegment\DeepSeaDefendersMainLoopMelody		4233664
+	207450628	DeepSeaDefendersGameOverPluck	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Mac\SFX\DeepSeaDefendersGameOverPluck_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\GameEndMusicContainer\GameEndSegment\DeepSeaDefendersGameOverPluck		2822464
+	557855250	TTTListOfO	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Mac\SFX\DeepSeaDefendersTrashCompacterSounds_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\TrashRemoveSoundsContainer\TrashSound_00\TTTListOfO		2822464
 	581796996	TTTListOfX	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Mac\SFX\DeepSeaDefendersBubbleSounds_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\PopSoundsContainer\PopSound_00\TTTListOfX		2116864
 	591925539	DeepSeaDefendersMainLoopDrone	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Mac\SFX\DeepSeaDefendersMainLoopDrone_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainGameLoopContainer\MainGameLoopSegment\DeepSeaDefendersMainLoopDrone		4233664
-	662381675	TTTListOfO	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Mac\SFX\DeepSeaDefendersTrashSounds_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\TrashRemoveSoundsContainer\TrashSound_00\TTTListOfO		1411264
+	800561047	DeepSeaDefendersGameOverMarimba	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Mac\SFX\DeepSeaDefendersGameOverMarimba_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\GameEndMusicContainer\GameEndSegment\DeepSeaDefendersGameOverMarimba		2822464
+	993249864	DeepSeaDefendersGameOverChimes	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Mac\SFX\DeepSeaDefendersGameOverChimes_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\GameEndMusicContainer\GameEndSegment\DeepSeaDefendersGameOverChimes		2822464
 

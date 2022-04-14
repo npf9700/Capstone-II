@@ -23,6 +23,9 @@ public class TrashManager : MonoBehaviour
     private float cameraWidth;
     public GameManager gameMgr;
 
+    public GameObject starGauge;
+    public GameObject sliderHandle;
+
     public List<GameObject> TrashPile
     {
         get { return trashPile; }
@@ -79,12 +82,15 @@ public class TrashManager : MonoBehaviour
         if(trashPiece.transform.position.x < cam.transform.position.x - (cameraWidth / 2) - 0.5 || trashPiece.transform.position.x > cam.transform.position.x + (cameraWidth / 2) + 0.5)
         {
             gameMgr.GetComponent<GameManager>().ammoSlider.value += 1;
+            float sliderVal = gameMgr.GetComponent<GameManager>().ammoSlider.value;
             gameMgr.GetComponent<GameManager>().ammoText.text = gameMgr.GetComponent<GameManager>().ammoSlider.value.ToString();
+            Instantiate(starGauge, new Vector3(8.5f,-4.8f + (sliderVal * 0.8f),0f), Quaternion.identity);
             trashPile.Remove(trashPiece);
             Destroy(trashPiece);//Trash is removed from the list and hierarchy
+            AkSoundEngine.PostEvent("RemoveTrash", gameObject);
         }
     }
-
+    //-.4, -1.4, -2.4, -3.4, -4.4
     //Checking if the trash in the trashPile is behind the oil and changing their respective bool values to show that
     public void TrashBehindOil()
     {

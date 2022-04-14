@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
     public Text countdownText;
     //modals
     public GameObject gameOverModal;
+    private bool isGameOver;
+    
 
     public int PlayerScore
     {
@@ -53,7 +55,7 @@ public class GameManager : MonoBehaviour
         ammoSlider = GUICanvas.GetComponentInChildren<Slider>();
         ammoText = ammoSlider.GetComponentInChildren<Text>();
         ammoText.text = ammoSlider.value.ToString();
-
+        isGameOver = false;
         currentTime = startingTime;
         //Time.timeScale = 1;
         gameOverModal.SetActive(false);
@@ -64,10 +66,11 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         //timer script
-        if (Mathf.RoundToInt(currentTime) == 0)
+        if (Mathf.RoundToInt(currentTime) == 0 && isGameOver == false)
         {
             TriggerGameOver();
-        } else
+            isGameOver = true;
+        } else if(isGameOver == false)
         {
             currentTime -= 1 * Time.deltaTime;
             countdownText.text = Mathf.RoundToInt(currentTime).ToString();
@@ -141,6 +144,7 @@ public class GameManager : MonoBehaviour
         //Clicking button sends back to title screen
         Debug.Log("GAME OVER!");
         gameOverModal.SetActive(true);
+        AkSoundEngine.PostEvent("GameOver", gameObject);
 
         //Time.timeScale = 0;
         //Application.LoadLevel(Application.loadedLevel);

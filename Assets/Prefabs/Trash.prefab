@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4150095158616409999}
   - component: {fileID: 855885363619451263}
   - component: {fileID: -1065160592746133985}
-  - component: {fileID: -5599826476393445503}
   m_Layer: 0
   m_Name: Trash
   m_TagString: Untagged
@@ -98,6 +97,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86e1e43d3ca3c8946aacd1e825a543c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notClicked: {fileID: 0}
+  clicked: {fileID: 0}
 --- !u!61 &855885363619451263
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -146,32 +147,3 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!114 &-5599826476393445503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2678115029596288564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5825cad016c71d48bacffe94b4c2040, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: 958ca0ea
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e5accd5f55b10c9419e16e2f302f733e, type: 2}
-  useCallbacks: 0
-  Callbacks: []
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
