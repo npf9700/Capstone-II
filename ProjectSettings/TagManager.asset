@@ -42,6 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 1212372467
+    locked: 0
   - name: Bubble
     uniqueID: 2674515627
     locked: 0

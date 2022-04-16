@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
+using UnityEngine.Video;
 
 public class GameManager : MonoBehaviour
 {
@@ -31,6 +32,8 @@ public class GameManager : MonoBehaviour
     //modals
     public GameObject gameOverModal;
     private bool isGameOver;
+    public RawImage colorBackGround;
+    public RawImage deadBackGround;
     
 
     public int PlayerScore
@@ -60,7 +63,8 @@ public class GameManager : MonoBehaviour
         currentTime = startingTime;
         //Time.timeScale = 1;
         gameOverModal.SetActive(false);
-
+        deadBackGround.color = new Color(1, 1, 1, 0);
+        colorBackGround.color = new Color(1, 1, 1, 1);
     }
 
     // Update is called once per frame
@@ -106,13 +110,14 @@ public class GameManager : MonoBehaviour
     {
         trashNotCollected++;
         AkSoundEngine.SetRTPCValue("TrashFallen", trashNotCollected);
-        if(trashNotCollected == 1)
+        if(trashNotCollected < 28)
         {
-            oilPos.y -= 0.5f;
-        }
-        else if(trashNotCollected % 2 == 1 && trashNotCollected < 28)
-        {
-            oilPos.y -= 0.75f;
+            float backAlpha = colorBackGround.color.a;
+            backAlpha -= 0.07f;
+            colorBackGround.color = new Color(1, 1, 1, backAlpha);
+            float deadAlpha = deadBackGround.color.a;
+            deadAlpha += 0.07f;
+            deadBackGround.color = new Color(1, 1, 1, deadAlpha);
         } else if(trashNotCollected == 28)
         {
             TriggerGameOver();
