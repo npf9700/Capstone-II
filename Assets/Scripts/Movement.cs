@@ -43,6 +43,8 @@ public class Movement : MonoBehaviour
     public GameObject smallOtter;
     public GameObject smallRightWhale;
     public GameObject smallBlueWhale;
+    float frequency;
+    float magnitude;
 
     public bool IsBehindOil
     {
@@ -67,11 +69,12 @@ public class Movement : MonoBehaviour
         pingPongSpeed = Random.Range(0.4f, 0.8f);
         gmr = GameObject.Find("GameManager").GetComponent<GameManager>();
         bubbleRend = gameObject.GetComponent<SpriteRenderer>();
-
         animalState = (AnimalState)Random.Range(0, 10);
         size = DetermineSize();
         //ScaleBubble();
         GameObject childSprite;
+        magnitude = Random.Range(0.003f, 0.007f);
+        frequency = Random.Range(3f, 6f);
         switch ((int)animalState)
         {
             case 0:
@@ -118,7 +121,7 @@ public class Movement : MonoBehaviour
         //spawned boolean is set to true after initial call to FloatUp() method in SpawnManager.cs
         if (spm.spawned)
         {
-            FloatUp(pingPongSpeed);
+            FloatUp();
         }
         DespawnAtTop();
        
@@ -127,15 +130,15 @@ public class Movement : MonoBehaviour
     }
 
 
-   public void FloatUp(float pingPongSpeed)
+   public void FloatUp()
    {
-        float time = Mathf.PingPong(Time.time * pingPongSpeed, 1);
         currentPos.y += speed.y; //change y coordinate based on speed
-        Vector2 newPos = new Vector2(currentPos.x + 2, currentPos.y + 0.5f);
-        transform.position = Vector2.Lerp(currentPos, newPos, time);
+        currentPos.x += Mathf.Sin(Time.time * frequency) * magnitude; //makes movement more sinwave/soundwave like
+        transform.position = currentPos;
    }
 
-   public void DespawnAtTop()
+
+    public void DespawnAtTop()
    {
         if (this.transform.position.y > cam.transform.position.y + cameraHeight / 2 + 1)
         {
@@ -155,7 +158,7 @@ public class Movement : MonoBehaviour
         {
             hitsLeft--;
         }
-        gmr.ammoSlider.value -= 1;
+       // gmr.ammoSlider.value -= 1;
         for (int j = 0; j < spm.bubbles.Count; j++)
         {
             if (spm.bubbles[j] == gameObject)
@@ -184,11 +187,13 @@ public class Movement : MonoBehaviour
                     bubbleRend.color = new Color(1, 0, 0, 0.5f);
                     ScaleBubble(3f);
                 }
+                gmr.ammoSlider.value -= 1;
             }
             
         }
+        
         gmr.ammoText.text = gmr.ammoSlider.value.ToString();
-        Debug.Log("Ammo: " + gmr.ammoSlider.value);
+      //  Debug.Log("Ammo: " + gmr.ammoSlider.value);
 
     }
 
