@@ -56,7 +56,7 @@ public class Movement : MonoBehaviour
     public Vector2 p1_Cursor;
     public bool popping = false;
     public CircleCollider2D bubble_Collider;
-
+    public bool ableToPop = true;
 
 
     // Start is called before the first frame update
@@ -139,13 +139,25 @@ public class Movement : MonoBehaviour
         }
         DespawnAtTop();
 
-        if (popping)
+
+        if (ableToPop)
         {
-            if (bubble_Collider.bounds.Contains(p1_Cursor))
+            if (popping)
             {
-                WiiPop();
+                if (bubble_Collider.bounds.Contains(p1_Cursor))
+                {
+                    WiiPop();
+                    ableToPop = false;
+                }
             }
         }
+
+        if (popping == false)
+        {
+            ableToPop = true;
+        }
+
+
     }
 
 
@@ -215,6 +227,7 @@ public class Movement : MonoBehaviour
         gmr.ammoText.text = gmr.ammoSlider.value.ToString();
       //  Debug.Log("Ammo: " + gmr.ammoSlider.value);
       **/
+
         WiiPop();
     }
 
