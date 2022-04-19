@@ -40,10 +40,7 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
     public GameObject pointerManager;
     public Vector2 p1_Cursor;
     public bool grabbing = false;
-    //public float cameraWidth;
-    //public float cameraHeight;
-    public Transform m_NewTransform;
-    public Collider trash_Collider;
+    public BoxCollider2D trash_Collider;
 
 
 
@@ -58,58 +55,52 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
         trashRend = gameObject.GetComponent<SpriteRenderer>();
         trashLight = gameObject.GetComponent<Light2D>();
 
-
         pointerManager = GameObject.Find("PointerManager");
         grabbing = pointerManager.GetComponent<PointerManager>().P1_Grabbing;
         p1_Cursor = pointerManager.GetComponent<PointerManager>().P1_CursorPosition;
-        //Fetch the Collider from the GameObject this script is attached to
-        trash_Collider = GetComponent<Collider>();
-        //Assign the point to be that of the Transform you assign in the Inspector window
-        //p1_Point = m_NewTransform.position;
+        trash_Collider = GetComponent<BoxCollider2D>();
     }
-
 
 
 
     // Update is called once per frame
     void Update()
     {
+        p1_Cursor = pointerManager.GetComponent<PointerManager>().P1_CursorPosition;
+        grabbing = pointerManager.GetComponent<PointerManager>().P1_Grabbing;
+
         MoveTrash();
 
         if (isHeld)
         {
+            /*
             Vector3 mousePos = Input.mousePosition;
             mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-
             position = new Vector2(mousePos.x - startPosX, mousePos.y - startPosY);
+            */
+            position = new Vector2(p1_Cursor.x - startPosX, p1_Cursor.y - startPosY);
         }
 
-
-        grabbing = pointerManager.GetComponent<PointerManager>().P1_Grabbing;
-        Debug.Log(p1_Cursor);
         if (grabbing)
         {
-            Debug.Log("Grabbing!");
-        }
-        if (trash_Collider.bounds.Contains(p1_Cursor))
+            if (trash_Collider.bounds.Contains(p1_Cursor))
+            {
+                WiiGrab();
+            }
+        } else
         {
-            Debug.Log("Bounds contain the point : " + p1_Cursor);
+            WiiRelease();
         }
-
-
     }
-
-
-
 
 
 
     public void OnMouseDown()
     {
+        /**
         //Getting mouse position in world
         Vector3 mousePos = Input.mousePosition;
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-
 
         if (isBehindOil == false)
         {
@@ -117,16 +108,20 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
             trashLight.intensity = 3f;
             startPosX = mousePos.x - transform.position.x;
             startPosY = mousePos.y - transform.position.y;
-
             isHeld = true;
         }
+        **/
+        WiiGrab();
     }
 
     public void OnMouseUp()
     {
+        /**
         trashRend.sprite = notClicked;
         isHeld = false;
         trashLight.intensity = 1f;
+        **/
+        WiiRelease();
     }
 
     public void MoveTrash()
@@ -149,7 +144,22 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
 
     public void WiiGrab ()
     {
+        if (isBehindOil == false)
+        {
+            trashRend.sprite = clicked;
+            trashLight.intensity = 3f;
+            startPosX = p1_Cursor.x - transform.position.x;
+            startPosY = p1_Cursor.y - transform.position.y;
 
+            isHeld = true;
+        }
+    }
+
+    public void WiiRelease()
+    {
+        trashRend.sprite = notClicked;
+        isHeld = false;
+        trashLight.intensity = 1f;
     }
 
 }

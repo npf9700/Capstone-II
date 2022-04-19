@@ -13,7 +13,6 @@ public class PointerManager : MonoBehaviour
     private float cameraWidth;
     private float xOffset;
     private float yOffset;
-
     private Quaternion initial_rotation;
 
     private Wiimote wiimote1;
@@ -25,7 +24,6 @@ public class PointerManager : MonoBehaviour
     public bool P1_Popping = false;
     public bool P1_Grabbing = false;
 
-
     private Wiimote wiimote2;
     private GameObject P2_IRLocation;
     public GameObject P2_CursorLocation;
@@ -33,7 +31,6 @@ public class PointerManager : MonoBehaviour
     public GameObject myPrefab;
     public bool usingMouse;
 
-    
 
 
     // Start is called before the first frame update
@@ -47,10 +44,10 @@ public class PointerManager : MonoBehaviour
         Debug.Log("camera width and height: " + cameraWidth + ", " + cameraHeight);
 
         // Bounds Calibration, shows current corners of camera and wiimote bounds
-        Instantiate(myPrefab, new Vector2((0f * cameraWidth) - xOffset, (1f  *cameraHeight) - yOffset), Quaternion.identity);
-        Instantiate(myPrefab, new Vector2((0f * cameraWidth) - xOffset, (0f * cameraHeight) - yOffset), Quaternion.identity);
-        Instantiate(myPrefab, new Vector2((1f * cameraWidth) - xOffset, (1f * cameraHeight) - yOffset), Quaternion.identity);
-        Instantiate(myPrefab, new Vector2((1f * cameraWidth) - xOffset, (0f * cameraHeight) - yOffset), Quaternion.identity);
+        //Instantiate(myPrefab, new Vector2((0f * cameraWidth) - xOffset, (1f  *cameraHeight) - yOffset), Quaternion.identity);
+        //Instantiate(myPrefab, new Vector2((0f * cameraWidth) - xOffset, (0f * cameraHeight) - yOffset), Quaternion.identity);
+        //Instantiate(myPrefab, new Vector2((1f * cameraWidth) - xOffset, (1f * cameraHeight) - yOffset), Quaternion.identity);
+        //Instantiate(myPrefab, new Vector2((1f * cameraWidth) - xOffset, (0f * cameraHeight) - yOffset), Quaternion.identity);
 
         // Setting up Wiimote. Uses mouse location if none are found.
         WiimoteManager.FindWiimotes();
@@ -73,12 +70,8 @@ public class PointerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
-
         if (usingMouse == false)
         {
-
             //Reading Wiimote data
             if (!WiimoteManager.HasWiimote()) { return; }
             wiimote1 = WiimoteManager.Wiimotes[0];
@@ -125,8 +118,5 @@ public class PointerManager : MonoBehaviour
         P1_IR.transform.position = P1_IRPosition;
         P1_CursorPosition = Vector2.Lerp(P1_CursorPosition, P1_IRPosition, Time.deltaTime * moveSpeed);
         P1_Cursor.transform.position = P1_CursorPosition;
-
-
     }
-
 }
