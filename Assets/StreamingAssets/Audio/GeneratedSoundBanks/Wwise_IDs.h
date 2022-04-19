@@ -19,6 +19,10 @@ namespace AK
         static const AkUniqueID GAMESTART = 4058101365U;
         static const AkUniqueID POPBUBBLE = 1027931564U;
         static const AkUniqueID REMOVETRASH = 951753125U;
+        static const AkUniqueID TITLESTART = 1078416719U;
+        static const AkUniqueID TITLESTOP = 46678997U;
+        static const AkUniqueID TUTORIALSTART = 2433453369U;
+        static const AkUniqueID TUTORIALSTOP = 3782405011U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS

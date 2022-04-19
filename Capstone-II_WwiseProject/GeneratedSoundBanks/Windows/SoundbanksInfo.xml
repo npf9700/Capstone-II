@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2859421969" Language="SFX" Hash="2531811208">
+		<SoundBank Id="2859421969" Language="SFX" Hash="4051524561">
 			<ObjectPath>\SoundBanks\Default Work Unit\GameScene</ObjectPath>
 			<ShortName>GameScene</ShortName>
 			<Path>GameScene.bnk</Path>
@@ -82,6 +82,36 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1078416719" Name="TitleStart" ObjectPath="\Events\Default Work Unit\TitleStart" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="151957766" Language="SFX">
+							<ShortName>DeepSeaDefendersMainLoopMelody.wav</ShortName>
+							<Path>SFX\DeepSeaDefendersMainLoopMelody_D79FB2B7.wem</Path>
+						</File>
+						<File Id="955172489" Language="SFX">
+							<ShortName>DeepSeaDefendersTitleDrone.wav</ShortName>
+							<Path>SFX\DeepSeaDefendersTitleDrone_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1048214576" Language="SFX">
+							<ShortName>DeepSeaDefendersTitleMelody.wav</ShortName>
+							<Path>SFX\DeepSeaDefendersTitleMelody_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="46678997" Name="TitleStop" ObjectPath="\Events\Default Work Unit\TitleStop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2433453369" Name="TutorialStart" ObjectPath="\Events\Default Work Unit\TutorialStart" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="151957766" Language="SFX">
+							<ShortName>DeepSeaDefendersMainLoopMelody.wav</ShortName>
+							<Path>SFX\DeepSeaDefendersMainLoopMelody_D79FB2B7.wem</Path>
+						</File>
+						<File Id="955172489" Language="SFX">
+							<ShortName>DeepSeaDefendersTitleDrone.wav</ShortName>
+							<Path>SFX\DeepSeaDefendersTitleDrone_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3782405011" Name="TutorialStop" ObjectPath="\Events\Default Work Unit\TutorialStop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="3888953723" Name="TrashFallen" ObjectPath="\Game Parameters\Default Work Unit\TrashFallen"/>

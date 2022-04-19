@@ -78,6 +78,56 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="TitleStart" ID="{A733262D-4273-40F4-9D57-B1A25FC6127B}">
+					<ChildrenList>
+						<Action Name="" ID="{2DBCBB0D-6F78-4894-9D04-01727658CBB0}" ShortID="870995052">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TitleMusicContainer" ID="{656CC4B8-86BD-430E-8704-937A7DA56B19}" WorkUnitID="{D413CACA-AF7F-4D5C-B245-A7ABC8656A3F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TitleStop" ID="{DE9F9BEE-3483-49CF-AC97-B5B992C5567C}">
+					<ChildrenList>
+						<Action Name="" ID="{C1487569-9A35-4864-A524-16882548EE49}" ShortID="404333156">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TitleMusicContainer" ID="{656CC4B8-86BD-430E-8704-937A7DA56B19}" WorkUnitID="{D413CACA-AF7F-4D5C-B245-A7ABC8656A3F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TutorialStart" ID="{E5D62F6F-08F6-419E-96B7-7014E5C00631}">
+					<ChildrenList>
+						<Action Name="" ID="{4B2BF9A2-E48A-4811-B64E-705274F5A6A5}" ShortID="481268363">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TutorialMusicContainer" ID="{D6B8AE5B-73AD-43AA-A97A-A9BEEF682F40}" WorkUnitID="{D413CACA-AF7F-4D5C-B245-A7ABC8656A3F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TutorialStop" ID="{AD48CAE8-F868-4D83-A246-9C5DEFE2D174}">
+					<ChildrenList>
+						<Action Name="" ID="{09A8C8AC-3F2E-4168-9818-AFA923838973}" ShortID="364521549">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TutorialMusicContainer" ID="{D6B8AE5B-73AD-43AA-A97A-A9BEEF682F40}" WorkUnitID="{D413CACA-AF7F-4D5C-B245-A7ABC8656A3F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -49,7 +49,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 082876235f78da4190169cc04b15502e
     GuidInternal: 
-    m_lastTime: -8585518122462504979
+    m_lastTime: -8585512871474897341
     List:
     - name: GameScene
       guid: d69c70a08f4e5c458c4a05aecc75b2b1
@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 4c075f9c272ef9448a887b077fbb530b
     GuidInternal: 
-    m_lastTime: -8585518122462690580
+    m_lastTime: -8585512871693301071
     List:
     - name: BackToTitle
       guid: c200044ee013ce4f98ed4f9c2410f735
@@ -104,8 +104,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\GameOver
       maxAttenuation: 0
-      maxDuration: 4
-      minDuration: 4
+      maxDuration: -1
+      minDuration: -1
     - name: GameStart
       guid: e8da06462dcd40468a9e5d1767832129
       id: 4058101365
@@ -142,6 +142,54 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.223881
       minDuration: 1
+    - name: TitleStart
+      guid: 2d2633a77342f4409d57b1a25fc6127b
+      id: 1078416719
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: TitleStart
+        ObjectType: 3
+      Path: Default Work Unit\TitleStart
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: TitleStop
+      guid: ee9b9fde8334cf49ac97b5b992c5567c
+      id: 46678997
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: TitleStop
+        ObjectType: 3
+      Path: Default Work Unit\TitleStop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: TutorialStart
+      guid: 6f2fd6e5f6089e4196b77014e5c00631
+      id: 2433453369
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: TutorialStart
+        ObjectType: 3
+      Path: Default Work Unit\TutorialStart
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: TutorialStop
+      guid: e8ca48ad68f8834da2469c5defe2d174
+      id: 3782405011
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: TutorialStop
+        ObjectType: 3
+      Path: Default Work Unit\TutorialStop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -193,7 +241,5 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Capstone-II_WwiseProject
-  - /Capstone-II_WwiseProject/Events
-  - /Capstone-II_WwiseProject/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

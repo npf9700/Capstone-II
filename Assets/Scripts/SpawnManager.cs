@@ -160,11 +160,4 @@ public class SpawnManager : MonoBehaviour
             }
         }
     }
-
-    //HOW TO USE THIS TO GET RID OF EXTRA OBJECTS??
-    private void CleanUpAnimations()
-    {
-        pops.Clear();
-        trails.Clear();
-    }
 }

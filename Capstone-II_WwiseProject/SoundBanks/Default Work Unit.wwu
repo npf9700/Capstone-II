@@ -5,9 +5,13 @@
 			<ChildrenList>
 				<SoundBank Name="GameScene" ID="{A0709CD6-4E8F-455C-8C4A-05AECC75B2B1}">
 					<ObjectInclusionList>
+						<ObjectRef Name="TitleStart" ID="{A733262D-4273-40F4-9D57-B1A25FC6127B}" WorkUnitID="{9C5F074C-2E27-44F9-8A88-7B077FBB530B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="TutorialStart" ID="{E5D62F6F-08F6-419E-96B7-7014E5C00631}" WorkUnitID="{9C5F074C-2E27-44F9-8A88-7B077FBB530B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RemoveTrash" ID="{C6ED70DF-5AA5-41F2-8F6B-7FCF5D2A34DC}" WorkUnitID="{9C5F074C-2E27-44F9-8A88-7B077FBB530B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="GameOver" ID="{1C2E44F9-04CB-448D-A939-2C2880F5C9DC}" WorkUnitID="{9C5F074C-2E27-44F9-8A88-7B077FBB530B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="GameStart" ID="{4606DAE8-CD2D-4640-8A9E-5D1767832129}" WorkUnitID="{9C5F074C-2E27-44F9-8A88-7B077FBB530B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="TitleStop" ID="{DE9F9BEE-3483-49CF-AC97-B5B992C5567C}" WorkUnitID="{9C5F074C-2E27-44F9-8A88-7B077FBB530B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="TutorialStop" ID="{AD48CAE8-F868-4D83-A246-9C5DEFE2D174}" WorkUnitID="{9C5F074C-2E27-44F9-8A88-7B077FBB530B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PopBubble" ID="{EF1589B7-C024-4E6B-9562-FF575DA96736}" WorkUnitID="{9C5F074C-2E27-44F9-8A88-7B077FBB530B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ClickBubble" ID="{C0C51CE9-9AB3-4F0B-AF1B-1249B21B9C2F}" WorkUnitID="{9C5F074C-2E27-44F9-8A88-7B077FBB530B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="BackToTitle" ID="{4E0400C2-13E0-4FCE-98ED-4F9C2410F735}" WorkUnitID="{9C5F074C-2E27-44F9-8A88-7B077FBB530B}" Origin="Manual" Filter="7"/>

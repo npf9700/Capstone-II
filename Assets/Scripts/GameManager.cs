@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        AkSoundEngine.SetRTPCValue("TrashFallen", 0);
         playerScore = 0;
         trashNotCollected = 0;
         scoreText.text = "Score: " + playerScore;
@@ -155,6 +156,11 @@ public class GameManager : MonoBehaviour
         //Time.timeScale = 0;
         //Application.LoadLevel(Application.loadedLevel);
         //LoadStartScene();
+    }
+
+    public void StopAllMusic()
+    {
+        AkSoundEngine.PostEvent("BackToTitle", gameObject);
     }
 
 

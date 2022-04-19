@@ -1,8 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
+	46678997	TitleStop			\Default Work Unit\TitleStop	
 	209665745	ClickBubble			\Default Work Unit\ClickBubble	
 	951753125	RemoveTrash			\Default Work Unit\RemoveTrash	
 	1027931564	PopBubble			\Default Work Unit\PopBubble	
+	1078416719	TitleStart			\Default Work Unit\TitleStart	
 	1693860815	BackToTitle			\Default Work Unit\BackToTitle	
+	2433453369	TutorialStart			\Default Work Unit\TutorialStart	
+	3782405011	TutorialStop			\Default Work Unit\TutorialStop	
 	4058101365	GameStart			\Default Work Unit\GameStart	
 	4158285989	GameOver			\Default Work Unit\GameOver	
 
@@ -18,5 +22,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	581796996	TTTListOfX	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Mac\SFX\DeepSeaDefendersBubbleSounds_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\PopSoundsContainer\PopSound_00\TTTListOfX		2116864
 	591925539	DeepSeaDefendersMainLoopDrone	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Mac\SFX\DeepSeaDefendersMainLoopDrone_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\MainGameLoopContainer\MainGameLoopSegment\DeepSeaDefendersMainLoopDrone		4233664
 	800561047	DeepSeaDefendersGameOverMarimba	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Mac\SFX\DeepSeaDefendersGameOverMarimba_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\GameEndMusicContainer\GameEndSegment\DeepSeaDefendersGameOverMarimba		2822464
+	955172489	DeepSeaDefendersTitleDrone	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Mac\SFX\DeepSeaDefendersTitleDrone_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\TitleMusicContainer\TitleMusicSegment\DeepSeaDefendersTitleDrone		2822464
 	993249864	DeepSeaDefendersGameOverChimes	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Mac\SFX\DeepSeaDefendersGameOverChimes_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\GameEndMusicContainer\GameEndSegment\DeepSeaDefendersGameOverChimes		2822464
+	1048214576	DeepSeaDefendersTitleMelody	C:\Users\noahf\source\repos\Capstone-II\Capstone-II_WwiseProject\.cache\Mac\SFX\DeepSeaDefendersTitleMelody_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\TitleMusicContainer\TitleMusicSegment\DeepSeaDefendersTitleMelody		2822464
 
