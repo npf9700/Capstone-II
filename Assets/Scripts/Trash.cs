@@ -36,6 +36,15 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
         get { return isBehindOil; }
         set { isBehindOil = value; }
     }
+
+    public GameObject pointerManager;
+    public Vector2 p1_Cursor;
+    public bool usingMouse = false;
+    public bool grabbing = false;
+    public BoxCollider2D trash_Collider;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,29 +55,59 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
         isBehindOil = false;
         trashRend = gameObject.GetComponent<SpriteRenderer>();
         trashLight = gameObject.GetComponent<Light2D>();
+
+        pointerManager = GameObject.Find("PointerManager");
+        grabbing = pointerManager.GetComponent<PointerManager>().P1_Grabbing;
+        p1_Cursor = pointerManager.GetComponent<PointerManager>().P1_CursorPosition;
+        trash_Collider = GetComponent<BoxCollider2D>();
+        usingMouse = pointerManager.GetComponent<PointerManager>().usingMouse;
     }
+
+
 
     // Update is called once per frame
     void Update()
     {
+        p1_Cursor = pointerManager.GetComponent<PointerManager>().P1_CursorPosition;
+        grabbing = pointerManager.GetComponent<PointerManager>().P1_Grabbing;
+
         MoveTrash();
 
         if (isHeld)
         {
+            /*
             Vector3 mousePos = Input.mousePosition;
             mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-
             position = new Vector2(mousePos.x - startPosX, mousePos.y - startPosY);
-
+            */
+            position = new Vector2(p1_Cursor.x - startPosX, p1_Cursor.y - startPosY);
         }
+
+        if (usingMouse == false)
+        {
+            if (grabbing)
+            {
+                if (trash_Collider.bounds.Contains(p1_Cursor))
+                {
+                    WiiGrab();
+                }
+            }
+            else
+            {
+                WiiRelease();
+            }
+        }
+
     }
+
+
 
     public void OnMouseDown()
     {
+        
         //Getting mouse position in world
         Vector3 mousePos = Input.mousePosition;
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-
 
         if (isBehindOil == false)
         {
@@ -76,16 +115,21 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
             trashLight.intensity = 3f;
             startPosX = mousePos.x - transform.position.x;
             startPosY = mousePos.y - transform.position.y;
-
             isHeld = true;
         }
+        
+        //Debug.Log("mouseclick");
+        //WiiGrab();
     }
 
     public void OnMouseUp()
     {
+        
         trashRend.sprite = notClicked;
         isHeld = false;
         trashLight.intensity = 1f;
+        
+        //WiiRelease();
     }
 
     public void MoveTrash()
@@ -103,5 +147,28 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
         velocity = Vector2.zero;
         acceleration = Vector2.zero;
     }
+
+
+
+    public void WiiGrab ()
+    {
+        if (isBehindOil == false)
+        {
+            trashRend.sprite = clicked;
+            trashLight.intensity = 3f;
+            startPosX = p1_Cursor.x - transform.position.x;
+            startPosY = p1_Cursor.y - transform.position.y;
+
+            isHeld = true;
+        }
+    }
+
+    public void WiiRelease()
+    {
+        trashRend.sprite = notClicked;
+        isHeld = false;
+        trashLight.intensity = 1f;
+    }
+
 }
 

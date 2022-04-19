@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
     private bool isGameOver;
     public RawImage colorBackGround;
     public RawImage deadBackGround;
-    
+    public SpawnManager spm;
 
     public int PlayerScore
     {
@@ -66,6 +66,9 @@ public class GameManager : MonoBehaviour
         gameOverModal.SetActive(false);
         deadBackGround.color = new Color(1, 1, 1, 0);
         colorBackGround.color = new Color(1, 1, 1, 1);
+        spm = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
+        //ammoHandleArea = ammoSlider.GetComponentInChildren<HandleSlideArea>();
+
     }
 
     // Update is called once per frame
@@ -76,10 +79,19 @@ public class GameManager : MonoBehaviour
         {
             TriggerGameOver();
             isGameOver = true;
+            CancelInvoke("spm.IncreaseSpawnTime"); //just in case
         } else if(isGameOver == false)
         {
             currentTime -= 1 * Time.deltaTime;
             countdownText.text = Mathf.RoundToInt(currentTime).ToString();
+        }
+        if (ammoSlider.value == 0) //hide ammo slider handle if ammo value is zero
+        {
+            ammoSlider.handleRect.GetComponent<Image>().color = new Color(0, 0, 0, 0f);
+        }
+        else
+        {
+            ammoSlider.handleRect.GetComponent<Image>().color = new Color(255, 255, 255, 1f);
         }
     }
 

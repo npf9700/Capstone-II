@@ -43,6 +43,8 @@ public class Movement : MonoBehaviour
     public GameObject smallOtter;
     public GameObject smallRightWhale;
     public GameObject smallBlueWhale;
+    float frequency;
+    float magnitude;
 
     public bool IsBehindOil
     {
@@ -50,7 +52,12 @@ public class Movement : MonoBehaviour
         set { isBehindOil = value; }
     }
 
-    
+    public GameObject pointerManager;
+    public Vector2 p1_Cursor;
+    public bool popping = false;
+    public CircleCollider2D bubble_Collider;
+    public bool ableToPop = true;
+
 
     // Start is called before the first frame update
     void Start()
@@ -67,11 +74,12 @@ public class Movement : MonoBehaviour
         pingPongSpeed = Random.Range(0.4f, 0.8f);
         gmr = GameObject.Find("GameManager").GetComponent<GameManager>();
         bubbleRend = gameObject.GetComponent<SpriteRenderer>();
-
         animalState = (AnimalState)Random.Range(0, 10);
         size = DetermineSize();
         //ScaleBubble();
         GameObject childSprite;
+        magnitude = Random.Range(0.003f, 0.007f);
+        frequency = Random.Range(3f, 6f);
         switch ((int)animalState)
         {
             case 0:
@@ -109,33 +117,59 @@ public class Movement : MonoBehaviour
                 break;
         }
         childSprite.transform.parent = transform;
+
+        pointerManager = GameObject.Find("PointerManager");
+        popping = pointerManager.GetComponent<PointerManager>().P1_Popping;
+        p1_Cursor = pointerManager.GetComponent<PointerManager>().P1_CursorPosition;
+        bubble_Collider = GetComponent<CircleCollider2D>();
     }
+
+
 
     // Update is called once per frame
     void Update()
     {
-        
+        popping = pointerManager.GetComponent<PointerManager>().P1_Popping;
+        p1_Cursor = pointerManager.GetComponent<PointerManager>().P1_CursorPosition;
+
         //spawned boolean is set to true after initial call to FloatUp() method in SpawnManager.cs
         if (spm.spawned)
         {
-            FloatUp(pingPongSpeed);
+            FloatUp();
         }
         DespawnAtTop();
-       
+
+
+        if (ableToPop)
+        {
+            if (popping)
+            {
+                if (bubble_Collider.bounds.Contains(p1_Cursor))
+                {
+                    WiiPop();
+                    ableToPop = false;
+                }
+            }
+        }
+
+        if (popping == false)
+        {
+            ableToPop = true;
+        }
 
 
     }
 
 
-   public void FloatUp(float pingPongSpeed)
+   public void FloatUp()
    {
-        float time = Mathf.PingPong(Time.time * pingPongSpeed, 1);
         currentPos.y += speed.y; //change y coordinate based on speed
-        Vector2 newPos = new Vector2(currentPos.x + 2, currentPos.y + 0.5f);
-        transform.position = Vector2.Lerp(currentPos, newPos, time);
+        currentPos.x += Mathf.Sin(Time.time * frequency) * magnitude; //makes movement more sinwave/soundwave like
+        transform.position = currentPos;
    }
 
-   public void DespawnAtTop()
+
+    public void DespawnAtTop()
    {
         if (this.transform.position.y > cam.transform.position.y + cameraHeight / 2 + 1)
         {
@@ -151,11 +185,12 @@ public class Movement : MonoBehaviour
 
    public void OnMouseDown()
    {
+        /**
         if (gmr.ammoSlider.value != 0 && isBehindOil == false)
         {
             hitsLeft--;
         }
-        gmr.ammoSlider.value -= 1;
+       // gmr.ammoSlider.value -= 1;
         for (int j = 0; j < spm.bubbles.Count; j++)
         {
             if (spm.bubbles[j] == gameObject)
@@ -184,12 +219,16 @@ public class Movement : MonoBehaviour
                     bubbleRend.color = new Color(1, 0, 0, 0.5f);
                     ScaleBubble(3f);
                 }
+                gmr.ammoSlider.value -= 1;
             }
             
         }
+        
         gmr.ammoText.text = gmr.ammoSlider.value.ToString();
-        Debug.Log("Ammo: " + gmr.ammoSlider.value);
+      //  Debug.Log("Ammo: " + gmr.ammoSlider.value);
+      **/
 
+        WiiPop();
     }
 
     //Randomly determines if the bubble should be small, medium, or large
@@ -222,5 +261,47 @@ public class Movement : MonoBehaviour
         transform.localScale = newScale;
     }
 
-  
+    public void WiiPop()
+    {
+        if (gmr.ammoSlider.value != 0 && isBehindOil == false)
+        {
+            hitsLeft--;
+        }
+        // gmr.ammoSlider.value -= 1;
+        for (int j = 0; j < spm.bubbles.Count; j++)
+        {
+            if (spm.bubbles[j] == gameObject)
+            {
+                if (isBehindOil == false && hitsLeft <= 0)
+                {
+                    AkSoundEngine.PostEvent("PopBubble", gameObject);//Bubble Sound Effect
+                    spm.SpawnAnimal(spm.bubbles[j], (int)animalState);
+                }
+                else if (isBehindOil == true)
+                {
+                    AkSoundEngine.PostEvent("ClickBubble", gameObject);//Click Sound Effect
+                    gmr.ammoSlider.value += 1;
+                }
+                else
+                {
+                    AkSoundEngine.PostEvent("PopBubble", gameObject);//Bubble Sound Effect
+                }
+                if ((size == 3 && hitsLeft == 2) || (size == 2 && hitsLeft == 1))
+                {
+                    bubbleRend.color = new Color(1, 0, 1, 0.5f);
+                    ScaleBubble(2f);
+                }
+                else if (size == 3 && hitsLeft == 1)
+                {
+                    bubbleRend.color = new Color(1, 0, 0, 0.5f);
+                    ScaleBubble(3f);
+                }
+                gmr.ammoSlider.value -= 1;
+            }
+
+        }
+
+        gmr.ammoText.text = gmr.ammoSlider.value.ToString();
+        //  Debug.Log("Ammo: " + gmr.ammoSlider.value);
+    }
 }

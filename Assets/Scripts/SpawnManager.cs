@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SpawnManager : MonoBehaviour
 {
@@ -41,7 +42,7 @@ public class SpawnManager : MonoBehaviour
         gameMgr = GameObject.Find("GameManager").GetComponent<GameManager>();
         spawnTime = Random.Range(1.5f, 2.5f);
         Debug.Log("Spawn time: " + spawnTime);
-        InvokeRepeating("SetPingPongSpeed", 0.0f, spawnTime);
+        InvokeRepeating("SpawnBubbles", 0.0f, spawnTime);
         InvokeRepeating("IncreaseSpawnTime", 20.0f, 15f);
     }
 
@@ -56,18 +57,11 @@ public class SpawnManager : MonoBehaviour
     {
         float increment = 0.0003f;
         float newSpawnTime = spawnTime + increment;
-        Debug.Log("New Spawn Time: " + newSpawnTime);
-        InvokeRepeating("SetPingPongSpeed", 0.0f, newSpawnTime);
+       // Debug.Log("New Spawn Time: " + newSpawnTime);
+        InvokeRepeating("SpawnBubbles", 0.0f, newSpawnTime);
     }
 
-    public void SetPingPongSpeed()
-    {
-        float pingPongSpeed = Random.Range(0.4f, 0.8f); //was higher range before, decreased to make it seem less robotic
-        SpawnBubbles(pingPongSpeed);
-        
-    }
-
-    public void SpawnBubbles(float pingPongSpeed)
+    public void SpawnBubbles()
     {
         if(bubbles.Count >= 5) //cap number on screen to 5
         {
@@ -75,10 +69,10 @@ public class SpawnManager : MonoBehaviour
         } 
         else
         {
-            spawnPos = new Vector2(Random.Range(20, (cameraWidth - 90)), cameraHeight);
+            spawnPos = new Vector2(Random.Range(50, (cameraWidth - 120)), cameraHeight);
             local = Instantiate(bubblePrefab, spawnPos, Quaternion.identity);
             bubbles.Add(local);
-            movement.FloatUp(pingPongSpeed);
+            movement.FloatUp();
             spawned = true;
         }
         
@@ -102,7 +96,6 @@ public class SpawnManager : MonoBehaviour
         {
             //Spawns the animal sprite before the location is lost
             animalMgr.GetComponent<AnimalManager>().FreeAnimal(bubble.transform.position, animalOption);
-
             //Stores position of bubble
             Vector3 bubbleSpot = bubble.transform.position;
 
