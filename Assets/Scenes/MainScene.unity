@@ -1054,7 +1054,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2237645446747361166, guid: 81c91a69ce84adc4ebdd44a1f8b88334, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6219907180610551357, guid: 81c91a69ce84adc4ebdd44a1f8b88334, type: 3}
       propertyPath: m_LocalScale.x
@@ -1379,6 +1379,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2274746941592866036, guid: 572e16b452470364b959aad2d810bb20, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616168034364374049, guid: 572e16b452470364b959aad2d810bb20, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616168034364374049, guid: 572e16b452470364b959aad2d810bb20, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616168034364374049, guid: 572e16b452470364b959aad2d810bb20, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5374572812171823703, guid: 572e16b452470364b959aad2d810bb20, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5374572812171823703, guid: 572e16b452470364b959aad2d810bb20, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8012663052584304676, guid: 572e16b452470364b959aad2d810bb20, type: 3}
@@ -1752,7 +1772,7 @@ MonoBehaviour:
   P1_IRPosition: {x: 0, y: 0}
   P1_Cursor: {fileID: 1462593596}
   P1_CursorPosition: {x: 0, y: 0}
-  moveSpeed: 15
+  moveSpeed: 25
   P1_Popping: 0
   P1_Grabbing: 0
   P2_CursorLocation: {fileID: 787592907}

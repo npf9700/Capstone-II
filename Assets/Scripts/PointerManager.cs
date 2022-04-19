@@ -21,7 +21,7 @@ public class PointerManager : MonoBehaviour
     public Vector2 P1_IRPosition;
     public GameObject P1_Cursor;
     public Vector2 P1_CursorPosition;
-    public float moveSpeed = 10f;
+    public float moveSpeed = 20f;
     public bool P1_Popping = false;
     public bool P1_Grabbing = false;
 

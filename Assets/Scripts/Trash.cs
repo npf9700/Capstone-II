@@ -36,6 +36,17 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
         get { return isBehindOil; }
         set { isBehindOil = value; }
     }
+
+    public GameObject pointerManager;
+    public Vector2 p1_Cursor;
+    public bool grabbing = false;
+    //public float cameraWidth;
+    //public float cameraHeight;
+    public Transform m_NewTransform;
+    public Collider trash_Collider;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,7 +57,19 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
         isBehindOil = false;
         trashRend = gameObject.GetComponent<SpriteRenderer>();
         trashLight = gameObject.GetComponent<Light2D>();
+
+
+        pointerManager = GameObject.Find("PointerManager");
+        grabbing = pointerManager.GetComponent<PointerManager>().P1_Grabbing;
+        p1_Cursor = pointerManager.GetComponent<PointerManager>().P1_CursorPosition;
+        //Fetch the Collider from the GameObject this script is attached to
+        trash_Collider = GetComponent<Collider>();
+        //Assign the point to be that of the Transform you assign in the Inspector window
+        //p1_Point = m_NewTransform.position;
     }
+
+
+
 
     // Update is called once per frame
     void Update()
@@ -59,9 +82,27 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
             mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
             position = new Vector2(mousePos.x - startPosX, mousePos.y - startPosY);
-
         }
+
+
+        grabbing = pointerManager.GetComponent<PointerManager>().P1_Grabbing;
+        Debug.Log(p1_Cursor);
+        if (grabbing)
+        {
+            Debug.Log("Grabbing!");
+        }
+        if (trash_Collider.bounds.Contains(p1_Cursor))
+        {
+            Debug.Log("Bounds contain the point : " + p1_Cursor);
+        }
+
+
     }
+
+
+
+
+
 
     public void OnMouseDown()
     {
@@ -103,5 +144,13 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
         velocity = Vector2.zero;
         acceleration = Vector2.zero;
     }
+
+
+
+    public void WiiGrab ()
+    {
+
+    }
+
 }
 
