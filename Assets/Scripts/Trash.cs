@@ -39,6 +39,7 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
 
     public GameObject pointerManager;
     public Vector2 p1_Cursor;
+    public bool usingMouse = false;
     public bool grabbing = false;
     public BoxCollider2D trash_Collider;
 
@@ -59,6 +60,7 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
         grabbing = pointerManager.GetComponent<PointerManager>().P1_Grabbing;
         p1_Cursor = pointerManager.GetComponent<PointerManager>().P1_CursorPosition;
         trash_Collider = GetComponent<BoxCollider2D>();
+        usingMouse = pointerManager.GetComponent<PointerManager>().usingMouse;
     }
 
 
@@ -81,23 +83,28 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
             position = new Vector2(p1_Cursor.x - startPosX, p1_Cursor.y - startPosY);
         }
 
-        if (grabbing)
+        if (usingMouse == false)
         {
-            if (trash_Collider.bounds.Contains(p1_Cursor))
+            if (grabbing)
             {
-                WiiGrab();
+                if (trash_Collider.bounds.Contains(p1_Cursor))
+                {
+                    WiiGrab();
+                }
             }
-        } else
-        {
-            WiiRelease();
+            else
+            {
+                WiiRelease();
+            }
         }
+
     }
 
 
 
     public void OnMouseDown()
     {
-        /**
+        
         //Getting mouse position in world
         Vector3 mousePos = Input.mousePosition;
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
@@ -110,18 +117,19 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
             startPosY = mousePos.y - transform.position.y;
             isHeld = true;
         }
-        **/
-        WiiGrab();
+        
+        //Debug.Log("mouseclick");
+        //WiiGrab();
     }
 
     public void OnMouseUp()
     {
-        /**
+        
         trashRend.sprite = notClicked;
         isHeld = false;
         trashLight.intensity = 1f;
-        **/
-        WiiRelease();
+        
+        //WiiRelease();
     }
 
     public void MoveTrash()

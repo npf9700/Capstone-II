@@ -1777,7 +1777,7 @@ MonoBehaviour:
   P1_Grabbing: 0
   P2_CursorLocation: {fileID: 787592907}
   myPrefab: {fileID: 2237645446747361166, guid: 81c91a69ce84adc4ebdd44a1f8b88334, type: 3}
-  usingMouse: 0
+  usingMouse: 1
 --- !u!4 &1006688730
 Transform:
   m_ObjectHideFlags: 0

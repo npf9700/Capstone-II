@@ -70,6 +70,19 @@ public class PointerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /**
+        if (Input.GetMouseButtonDown(0))
+        {
+            P1_Popping = true;
+            P1_Grabbing = true;
+        } else
+        {
+            P1_Popping = false;
+            P1_Grabbing = false;
+        }
+        **/
+
+
         if (usingMouse == false)
         {
             //Reading Wiimote data
@@ -119,4 +132,5 @@ public class PointerManager : MonoBehaviour
         P1_CursorPosition = Vector2.Lerp(P1_CursorPosition, P1_IRPosition, Time.deltaTime * moveSpeed);
         P1_Cursor.transform.position = P1_CursorPosition;
     }
+
 }
