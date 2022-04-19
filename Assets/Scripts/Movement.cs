@@ -52,7 +52,12 @@ public class Movement : MonoBehaviour
         set { isBehindOil = value; }
     }
 
-    
+    public GameObject pointerManager;
+    public Vector2 p1_Cursor;
+    public bool popping = false;
+    public CircleCollider2D bubble_Collider;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -112,21 +117,35 @@ public class Movement : MonoBehaviour
                 break;
         }
         childSprite.transform.parent = transform;
+
+        pointerManager = GameObject.Find("PointerManager");
+        popping = pointerManager.GetComponent<PointerManager>().P1_Popping;
+        p1_Cursor = pointerManager.GetComponent<PointerManager>().P1_CursorPosition;
+        bubble_Collider = GetComponent<CircleCollider2D>();
     }
+
+
 
     // Update is called once per frame
     void Update()
     {
-        
+        popping = pointerManager.GetComponent<PointerManager>().P1_Popping;
+        p1_Cursor = pointerManager.GetComponent<PointerManager>().P1_CursorPosition;
+
         //spawned boolean is set to true after initial call to FloatUp() method in SpawnManager.cs
         if (spm.spawned)
         {
             FloatUp();
         }
         DespawnAtTop();
-       
 
-
+        if (popping)
+        {
+            if (bubble_Collider.bounds.Contains(p1_Cursor))
+            {
+                WiiPop();
+            }
+        }
     }
 
 
@@ -154,6 +173,7 @@ public class Movement : MonoBehaviour
 
    public void OnMouseDown()
    {
+        /**
         if (gmr.ammoSlider.value != 0 && isBehindOil == false)
         {
             hitsLeft--;
@@ -194,7 +214,8 @@ public class Movement : MonoBehaviour
         
         gmr.ammoText.text = gmr.ammoSlider.value.ToString();
       //  Debug.Log("Ammo: " + gmr.ammoSlider.value);
-
+      **/
+        WiiPop();
     }
 
     //Randomly determines if the bubble should be small, medium, or large
@@ -227,5 +248,47 @@ public class Movement : MonoBehaviour
         transform.localScale = newScale;
     }
 
-  
+    public void WiiPop()
+    {
+        if (gmr.ammoSlider.value != 0 && isBehindOil == false)
+        {
+            hitsLeft--;
+        }
+        // gmr.ammoSlider.value -= 1;
+        for (int j = 0; j < spm.bubbles.Count; j++)
+        {
+            if (spm.bubbles[j] == gameObject)
+            {
+                if (isBehindOil == false && hitsLeft <= 0)
+                {
+                    AkSoundEngine.PostEvent("PopBubble", gameObject);//Bubble Sound Effect
+                    spm.SpawnAnimal(spm.bubbles[j], (int)animalState);
+                }
+                else if (isBehindOil == true)
+                {
+                    AkSoundEngine.PostEvent("ClickBubble", gameObject);//Click Sound Effect
+                    gmr.ammoSlider.value += 1;
+                }
+                else
+                {
+                    AkSoundEngine.PostEvent("PopBubble", gameObject);//Bubble Sound Effect
+                }
+                if ((size == 3 && hitsLeft == 2) || (size == 2 && hitsLeft == 1))
+                {
+                    bubbleRend.color = new Color(1, 0, 1, 0.5f);
+                    ScaleBubble(2f);
+                }
+                else if (size == 3 && hitsLeft == 1)
+                {
+                    bubbleRend.color = new Color(1, 0, 0, 0.5f);
+                    ScaleBubble(3f);
+                }
+                gmr.ammoSlider.value -= 1;
+            }
+
+        }
+
+        gmr.ammoText.text = gmr.ammoSlider.value.ToString();
+        //  Debug.Log("Ammo: " + gmr.ammoSlider.value);
+    }
 }
