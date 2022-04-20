@@ -21,4 +21,9 @@ public class TitleMusicManager : MonoBehaviour
     {
         AkSoundEngine.PostEvent("TitleStop", gameObject);
     }
+
+    public void BubbleButton()
+    {
+        AkSoundEngine.PostEvent("PopBubble", gameObject);
+    }
 }

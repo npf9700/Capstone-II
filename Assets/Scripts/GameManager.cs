@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Cursor.visible = false;
         AkSoundEngine.SetRTPCValue("TrashFallen", 0);
         playerScore = 0;
         trashNotCollected = 0;
@@ -131,10 +132,7 @@ public class GameManager : MonoBehaviour
             float deadAlpha = deadBackGround.color.a;
             deadAlpha += 0.07f;
             deadBackGround.color = new Color(1, 1, 1, deadAlpha);
-        } else if(trashNotCollected == 28)
-        {
-            TriggerGameOver();
-        }
+        } 
 
         oilSlick.transform.position = oilPos;
     }

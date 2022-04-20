@@ -44,7 +44,7 @@ public class PointerManager : MonoBehaviour
         Debug.Log("camera width and height: " + cameraWidth + ", " + cameraHeight);
 
         // Bounds Calibration, shows current corners of camera and wiimote bounds
-        //Instantiate(myPrefab, new Vector2((0f * cameraWidth) - xOffset, (1f  *cameraHeight) - yOffset), Quaternion.identity);
+        //Instantiate(myPrefab, new Vector2((0f * cameraWidth) - xOffset, (1f * cameraHeight) - yOffset), Quaternion.identity);
         //Instantiate(myPrefab, new Vector2((0f * cameraWidth) - xOffset, (0f * cameraHeight) - yOffset), Quaternion.identity);
         //Instantiate(myPrefab, new Vector2((1f * cameraWidth) - xOffset, (1f * cameraHeight) - yOffset), Quaternion.identity);
         //Instantiate(myPrefab, new Vector2((1f * cameraWidth) - xOffset, (0f * cameraHeight) - yOffset), Quaternion.identity);

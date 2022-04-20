@@ -78,7 +78,7 @@ public class TrashManager : MonoBehaviour
         }
 
         //Despawns trash at the side of the screen, which increments the player's score
-        if(trashPiece.transform.position.x < cam.transform.position.x - (cameraWidth / 2) - 0.5 || trashPiece.transform.position.x > cam.transform.position.x + (cameraWidth / 2) + 0.5)
+        if(trashPiece.transform.position.x < cam.transform.position.x - (cameraWidth / 2) + 0.5 || trashPiece.transform.position.x > cam.transform.position.x + (cameraWidth / 2) - 0.5)
         {
             gameMgr.GetComponent<GameManager>().ammoSlider.value += 1;
             float sliderVal = gameMgr.GetComponent<GameManager>().ammoSlider.value;
