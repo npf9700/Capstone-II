@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bubble
+  - FinalScore
+  - NumSaved
+  - NoAmmoText
+  - TrashRemoved
   layers:
   - Default
   - TransparentFX

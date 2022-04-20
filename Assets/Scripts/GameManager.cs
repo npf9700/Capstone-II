@@ -35,7 +35,12 @@ public class GameManager : MonoBehaviour
     public RawImage colorBackGround;
     public RawImage deadBackGround;
     public SpawnManager spm;
-
+    public int numAnimalsSaved;
+    public TMP_Text finalScore;
+    public TMP_Text animalsSavedText;
+    public TMP_Text noAmmoText;
+    public TMP_Text trashRemovedText;
+    public int trashRemoved;
     public int PlayerScore
     {
         get { return playerScore; }
@@ -61,6 +66,8 @@ public class GameManager : MonoBehaviour
         ammoSlider = GUICanvas.GetComponentInChildren<Slider>();
         ammoText = ammoSlider.GetComponentInChildren<TMP_Text>();
         ammoText.text = ammoSlider.value.ToString();
+        noAmmoText = GameObject.FindGameObjectWithTag("NoAmmoText").GetComponent<TMP_Text>();
+        trashRemovedText = GameObject.FindGameObjectWithTag("TrashRemoved").GetComponent<TMP_Text>();
         isGameOver = false;
         currentTime = startingTime;
         //Time.timeScale = 1;
@@ -68,6 +75,7 @@ public class GameManager : MonoBehaviour
         deadBackGround.color = new Color(1, 1, 1, 0);
         colorBackGround.color = new Color(1, 1, 1, 1);
         spm = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
+        
         //ammoHandleArea = ammoSlider.GetComponentInChildren<HandleSlideArea>();
 
     }
@@ -88,10 +96,12 @@ public class GameManager : MonoBehaviour
         }
         if (ammoSlider.value == 0) //hide ammo slider handle if ammo value is zero
         {
+            noAmmoText.text = "Remove Trash to Raise Ammo!";
             ammoSlider.handleRect.GetComponent<Image>().color = new Color(0, 0, 0, 0f);
         }
         else
         {
+            noAmmoText.text = "";
             ammoSlider.handleRect.GetComponent<Image>().color = new Color(255, 255, 255, 1f);
         }
     }
@@ -161,6 +171,11 @@ public class GameManager : MonoBehaviour
         //Clicking button sends back to title screen
         Debug.Log("GAME OVER!");
         gameOverModal.SetActive(true);
+        finalScore = GameObject.FindGameObjectWithTag("FinalScore").GetComponent<TMP_Text>();
+        finalScore.text = "Final Score: " + playerScore;
+        animalsSavedText = GameObject.FindGameObjectWithTag("NumSaved").GetComponent<TMP_Text>();
+        animalsSavedText.text = "You rescued " + numAnimalsSaved + " animals!";
+        trashRemovedText.text = "You removed " + trashRemoved + " pieces of trash!";
         AkSoundEngine.PostEvent("GameOver", gameObject);
 
         //Time.timeScale = 0;

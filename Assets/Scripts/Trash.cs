@@ -44,7 +44,6 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
     public BoxCollider2D trash_Collider;
 
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -83,21 +82,44 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
             position = new Vector2(p1_Cursor.x - startPosX, p1_Cursor.y - startPosY);
         }
 
-        if (usingMouse == false)
+
+
+        //if (usingMouse == false)
+        //{
+        //    if (grabbing)
+        //    {
+        //        if (trash_Collider.bounds.Contains(p1_Cursor))
+        //        {
+        //            WiiGrab();
+        //        }
+        //    }
+        //    else
+        //    {
+        //        WiiRelease();
+        //    }
+        //}
+
+
+        if (trash_Collider.bounds.Contains(p1_Cursor))
         {
-            if (grabbing)
+            pointerManager.GetComponent<PointerManager>().CursorHover();
+            
+            if (usingMouse == false)
             {
-                if (trash_Collider.bounds.Contains(p1_Cursor))
+                if (grabbing)
                 {
                     WiiGrab();
                 }
+                else
+                {
+                    WiiRelease();
+                }
             }
-            else
-            {
-                WiiRelease();
-            }
-        }
 
+        } else
+        {
+            pointerManager.GetComponent<PointerManager>().CursorActive();
+        }
     }
 
 
@@ -117,9 +139,8 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
             startPosY = mousePos.y - transform.position.y;
             isHeld = true;
         }
-        
-        //Debug.Log("mouseclick");
-        //WiiGrab();
+
+        pointerManager.GetComponent<PointerManager>().CursorHoldTrash();
     }
 
     public void OnMouseUp()
@@ -128,8 +149,6 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
         trashRend.sprite = notClicked;
         isHeld = false;
         trashLight.intensity = 1f;
-        
-        //WiiRelease();
     }
 
     public void MoveTrash()
@@ -148,8 +167,6 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
         acceleration = Vector2.zero;
     }
 
-
-
     public void WiiGrab ()
     {
         if (isBehindOil == false)
@@ -158,7 +175,6 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
             trashLight.intensity = 3f;
             startPosX = p1_Cursor.x - transform.position.x;
             startPosY = p1_Cursor.y - transform.position.y;
-
             isHeld = true;
         }
     }
