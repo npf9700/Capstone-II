@@ -31,6 +31,14 @@ public class PointerManager : MonoBehaviour
     public GameObject myPrefab;
     public bool usingMouse;
 
+    public Sprite cursorActive;
+    public Sprite cursorHoldTrash;
+    public Sprite cursorHover;
+    public Sprite cursorPopBubble;
+
+    public bool popTimerRunning = false;
+    public float popTimer;
+
 
 
     // Start is called before the first frame update
@@ -82,7 +90,6 @@ public class PointerManager : MonoBehaviour
         }
         **/
 
-
         if (usingMouse == false)
         {
             //Reading Wiimote data
@@ -131,6 +138,38 @@ public class PointerManager : MonoBehaviour
         P1_IR.transform.position = P1_IRPosition;
         P1_CursorPosition = Vector2.Lerp(P1_CursorPosition, P1_IRPosition, Time.deltaTime * moveSpeed);
         P1_Cursor.transform.position = P1_CursorPosition;
+
+        if(popTimerRunning)
+        {
+            popTimer -= Time.deltaTime;
+        }
+       
+    }
+
+
+    public void CursorActive()
+    {
+        P1_Cursor.GetComponentInChildren<SpriteRenderer>().sprite = cursorActive;
+    }
+    public void CursorHoldTrash()
+    {
+        P1_Cursor.GetComponentInChildren<SpriteRenderer>().sprite = cursorHoldTrash;
+    }
+    public void CursorHover()
+    {
+        P1_Cursor.GetComponentInChildren<SpriteRenderer>().sprite = cursorHover;
+    }
+    public void CursorPopBubble()
+    {
+        P1_Cursor.GetComponentInChildren<SpriteRenderer>().sprite = cursorPopBubble;
+        ////start timer
+        //popTimer = 0.4f;
+        //popTimerRunning = true;
+        //if (popTimer <= 0)
+        //{
+        //    popTimerRunning = false;
+        //    CursorActive();
+        //}
     }
 
 }

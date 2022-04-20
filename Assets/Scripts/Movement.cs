@@ -303,5 +303,7 @@ public class Movement : MonoBehaviour
 
         gmr.ammoText.text = gmr.ammoSlider.value.ToString();
         //  Debug.Log("Ammo: " + gmr.ammoSlider.value);
+
+        pointerManager.GetComponent<PointerManager>().CursorPopBubble();
     }
 }
