@@ -135,6 +135,7 @@ public class SpawnManager : MonoBehaviour
 
             //Increments score
             gameMgr.IncrementScore(100);
+            gameMgr.numAnimalsSaved += 1;
         }
     }
 
