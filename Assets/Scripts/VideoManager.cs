@@ -29,6 +29,7 @@ public class VideoManager : MonoBehaviour
         tutorial.color = new Color(1f, 1f, 1f, 0f);
         videos.Add(introPlayer);
         videos.Add(tutorialPlayer);
+        videos.Add(tutorialPlayer);
         vidIndex = 0;
         StartCoroutine(PlayNextVid());//Recursively calls PlayNextVid
     }
@@ -62,12 +63,27 @@ public class VideoManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Does this happen?");
             tutMusicMgr.StopTutorialMusic();
-            sceneLdr.GetComponent<SceneLoader>().LoadNextScene();
+            sceneLdr.GetComponent<SceneLoader>().LoadNextScene(0f);
         }
         yield return null;
         
+    }
+
+    public void StartNextVid()
+    {
+        vidIndex++;
+        tutorial.color = new Color(1f, 1f, 1f, 1f);
+        intro.color = new Color(1f, 1f, 1f, 0f);
+        if (vidIndex == 2)
+        {
+            tutMusicMgr.StopTutorialMusic();
+            sceneLdr.GetComponent<SceneLoader>().LoadNextScene(1.5f);
+        }
+        else
+        {
+            StartCoroutine(PlayNextVid());
+        }
     }
 
 }

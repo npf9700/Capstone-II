@@ -21,4 +21,9 @@ public class TutorialMusicManager : MonoBehaviour
     {
         AkSoundEngine.PostEvent("TutorialStop", gameObject);
     }
+
+    public void ButtonClick()
+    {
+        AkSoundEngine.PostEvent("PopBubble", gameObject);
+    }
 }
