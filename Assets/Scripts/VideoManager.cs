@@ -46,6 +46,7 @@ public class VideoManager : MonoBehaviour
 
     IEnumerator PlayNextVid()
     {
+        Debug.Log("vidIndex: " + vidIndex);
         videos[vidIndex].Play();
         while (Time.time - start < videos[vidIndex].length)
         {
@@ -61,6 +62,7 @@ public class VideoManager : MonoBehaviour
         }
         else
         {
+            Debug.Log("Does this happen?");
             tutMusicMgr.StopTutorialMusic();
             sceneLdr.GetComponent<SceneLoader>().LoadNextScene();
         }
