@@ -42,7 +42,7 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
     public bool usingMouse = false;
     public bool grabbing = false;
     public BoxCollider2D trash_Collider;
-
+    public string cursorState;
 
     // Start is called before the first frame update
     void Start()
@@ -69,6 +69,12 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
     {
         p1_Cursor = pointerManager.GetComponent<PointerManager>().P1_CursorPosition;
         grabbing = pointerManager.GetComponent<PointerManager>().P1_Grabbing;
+        cursorState = "";
+
+        if (trash_Collider.bounds.Contains(p1_Cursor))
+        {
+            cursorState = "hover";
+        }
 
         MoveTrash();
 
@@ -80,46 +86,44 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
             position = new Vector2(mousePos.x - startPosX, mousePos.y - startPosY);
             */
             position = new Vector2(p1_Cursor.x - startPosX, p1_Cursor.y - startPosY);
+            cursorState = "grab";
         }
 
-
-
-        //if (usingMouse == false)
-        //{
-        //    if (grabbing)
-        //    {
-        //        if (trash_Collider.bounds.Contains(p1_Cursor))
-        //        {
-        //            WiiGrab();
-        //        }
-        //    }
-        //    else
-        //    {
-        //        WiiRelease();
-        //    }
-        //}
-
-
-        if (trash_Collider.bounds.Contains(p1_Cursor))
+        if (usingMouse == false)
         {
-            pointerManager.GetComponent<PointerManager>().CursorHover();
-            
-            if (usingMouse == false)
+            if (grabbing)
             {
-                if (grabbing)
+                if (trash_Collider.bounds.Contains(p1_Cursor))
                 {
                     WiiGrab();
-                }
-                else
-                {
-                    WiiRelease();
+                    cursorState = "grab";
                 }
             }
+            else
+            {
+                WiiRelease();
+                cursorState = "";
+            }
+        }
 
-        } else
+
+        if (cursorState == "grab")
+        {
+            pointerManager.GetComponent<PointerManager>().CursorHoldTrash();
+            pointerManager.GetComponent<PointerManager>().isBeingAltered = true;
+        }
+        else if (cursorState == "hover")
+        {
+            pointerManager.GetComponent<PointerManager>().CursorHover();
+            pointerManager.GetComponent<PointerManager>().isBeingAltered = true;
+        } 
+        else
         {
             pointerManager.GetComponent<PointerManager>().CursorActive();
+            pointerManager.GetComponent<PointerManager>().isBeingAltered = false;
+
         }
+
     }
 
 
@@ -140,7 +144,7 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
             isHeld = true;
         }
 
-        pointerManager.GetComponent<PointerManager>().CursorHoldTrash();
+        //pointerManager.GetComponent<PointerManager>().CursorHoldTrash();
     }
 
     public void OnMouseUp()
@@ -149,6 +153,7 @@ public class Trash : MonoBehaviour/*, IPointerDownHandler, IBeginDragHandler, IE
         trashRend.sprite = notClicked;
         isHeld = false;
         trashLight.intensity = 1f;
+        //pointerManager.GetComponent<PointerManager>().CursorActive();
     }
 
     public void MoveTrash()

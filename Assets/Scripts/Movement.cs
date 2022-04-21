@@ -57,7 +57,7 @@ public class Movement : MonoBehaviour
     public bool popping = false;
     public CircleCollider2D bubble_Collider;
     public bool ableToPop = true;
-
+    public string cursorState;
 
     // Start is called before the first frame update
     void Start()
@@ -131,6 +131,9 @@ public class Movement : MonoBehaviour
     {
         popping = pointerManager.GetComponent<PointerManager>().P1_Popping;
         p1_Cursor = pointerManager.GetComponent<PointerManager>().P1_CursorPosition;
+        bubble_Collider = GetComponent<CircleCollider2D>();
+        cursorState = "";
+
 
         //spawned boolean is set to true after initial call to FloatUp() method in SpawnManager.cs
         if (spm.spawned)
@@ -157,7 +160,47 @@ public class Movement : MonoBehaviour
             ableToPop = true;
         }
 
+        /**
+        if (bubble_Collider.bounds.Contains(p1_Cursor))
+        {
+            pointerManager.GetComponent<PointerManager>().CursorHover();
+        } else if (pointerManager.GetComponent<PointerManager>().isBeingAltered == false)
+        {
+            pointerManager.GetComponent<PointerManager>().CursorActive();
+        }
+        **/
 
+        /**
+        if (bubble_Collider.bounds.Contains(p1_Cursor))
+        {
+            cursorState = "hover";
+        }
+        if (Input.GetMouseButtonDown(0))
+        {
+            cursorState = "pop";
+        } 
+        if (bubble_Collider.bounds.Contains(p1_Cursor) == false && Input.GetMouseButtonDown(0) == false)
+        {
+            cursorState = "";
+        }
+
+
+        if (cursorState == "pop")
+        {
+            pointerManager.GetComponent<PointerManager>().CursorPopBubble();
+            pointerManager.GetComponent<PointerManager>().isBeingAltered = true;
+        }
+        else if (cursorState == "hover")
+        {
+            pointerManager.GetComponent<PointerManager>().CursorHover();
+            pointerManager.GetComponent<PointerManager>().isBeingAltered = true;
+        }
+        else
+        {
+            pointerManager.GetComponent<PointerManager>().isBeingAltered = false;
+            pointerManager.GetComponent<PointerManager>().CursorActive();
+        }
+        **/
     }
 
 
@@ -302,8 +345,6 @@ public class Movement : MonoBehaviour
         }
 
         gmr.ammoText.text = gmr.ammoSlider.value.ToString();
-        //  Debug.Log("Ammo: " + gmr.ammoSlider.value);
 
-        pointerManager.GetComponent<PointerManager>().CursorPopBubble();
     }
 }

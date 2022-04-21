@@ -68,6 +68,12 @@ MonoBehaviour:
   smallOtter: {fileID: 2584604859733940135, guid: 409ec6bd3a5641e4b814161f21442a07, type: 3}
   smallRightWhale: {fileID: 7172815081314332289, guid: b4e1174dfb917954586f80e6d7b23ce9, type: 3}
   smallBlueWhale: {fileID: 1061818216637981218, guid: 777598969b8662a43a50558557dcce2a, type: 3}
+  pointerManager: {fileID: 0}
+  p1_Cursor: {x: 0, y: 0}
+  popping: 0
+  bubble_Collider: {fileID: 0}
+  ableToPop: 1
+  cursorState: 
 --- !u!222 &7682001888031642652
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -89,9 +95,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.13107856, y: -0.21846493}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 4.4323606
+  m_Radius: 4.6
 --- !u!114 &3570474799431749733
 MonoBehaviour:
   m_ObjectHideFlags: 0

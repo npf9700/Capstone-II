@@ -30,6 +30,10 @@ public class TrashManager : MonoBehaviour
         get { return trashPile; }
     }
 
+    public GameObject pointerManager;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +43,7 @@ public class TrashManager : MonoBehaviour
         cameraHeight = cam.orthographicSize * 2f;
         cameraWidth = cameraHeight * cam.aspect;
         InvokeRepeating("SpawnTrash", timeStart, timeDelay);
+        pointerManager = GameObject.Find("PointerManager");
     }
 
     // Update is called once per frame
@@ -89,7 +94,9 @@ public class TrashManager : MonoBehaviour
             Destroy(trashPiece);//Trash is removed from the list and hierarchy
             AkSoundEngine.PostEvent("RemoveTrash", gameObject);
             Instantiate(starGauge, new Vector3(8.5f, -4.8f + (sliderVal * 0.8f), 0f), Quaternion.identity);
+            pointerManager.GetComponent<PointerManager>().CursorActive();
         }
+
     }
     //-.4, -1.4, -2.4, -3.4, -4.4
     //Checking if the trash in the trashPile is behind the oil and changing their respective bool values to show that

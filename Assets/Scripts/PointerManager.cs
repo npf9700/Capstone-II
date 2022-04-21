@@ -38,7 +38,7 @@ public class PointerManager : MonoBehaviour
 
     public bool popTimerRunning = false;
     public float popTimer;
-
+    public bool isBeingAltered = false;
 
 
     // Start is called before the first frame update
@@ -112,11 +112,13 @@ public class PointerManager : MonoBehaviour
                 {
                     P1_Grabbing = true;
                     P1_Popping = false;
+
                 }
                 else
                 {
                     P1_Popping = true;
                     P1_Grabbing = false;
+
                 }
             }
             else
@@ -126,13 +128,39 @@ public class PointerManager : MonoBehaviour
             }
 
         }
-        else if (usingMouse == true) 
+
+        else if (usingMouse == true)
         {
             // Gets mouse and instead uses mouse position to guide the cursor
             Vector3 mousePos = Input.mousePosition;
             mousePos = Camera.main.ScreenToWorldPoint(mousePos);
             P1_IRPosition = new Vector2(mousePos.x, mousePos.y);
         }
+            /**
+            if (Input.GetMouseButtonDown(0))
+            {
+                if (Input.GetMouseButtonDown(1))
+                {
+                    P1_Grabbing = true;
+                }
+                else
+                {
+                    P1_Popping = true;
+                }
+            }
+        
+        }
+
+        if (P1_Popping)
+        {
+            CursorPopBubble();
+        } 
+        else if (P1_Grabbing)
+        {
+            CursorHoldTrash();
+        }
+        **/
+
 
         // Final movement of IR pointer and cursor
         P1_IR.transform.position = P1_IRPosition;
@@ -149,27 +177,31 @@ public class PointerManager : MonoBehaviour
 
     public void CursorActive()
     {
-        P1_Cursor.GetComponentInChildren<SpriteRenderer>().sprite = cursorActive;
+        if (isBeingAltered == false)
+        {
+            P1_Cursor.GetComponentInChildren<SpriteRenderer>().sprite = cursorActive;
+        }
     }
     public void CursorHoldTrash()
     {
-        P1_Cursor.GetComponentInChildren<SpriteRenderer>().sprite = cursorHoldTrash;
+        if (isBeingAltered == false)
+        {
+            P1_Cursor.GetComponentInChildren<SpriteRenderer>().sprite = cursorHoldTrash;
+        }
     }
     public void CursorHover()
     {
-        P1_Cursor.GetComponentInChildren<SpriteRenderer>().sprite = cursorHover;
+        if (isBeingAltered == false)
+        {
+            P1_Cursor.GetComponentInChildren<SpriteRenderer>().sprite = cursorHover;
+        }
     }
     public void CursorPopBubble()
     {
-        P1_Cursor.GetComponentInChildren<SpriteRenderer>().sprite = cursorPopBubble;
-        ////start timer
-        //popTimer = 0.4f;
-        //popTimerRunning = true;
-        //if (popTimer <= 0)
-        //{
-        //    popTimerRunning = false;
-        //    CursorActive();
-        //}
+        if (isBeingAltered == false)
+        {
+            P1_Cursor.GetComponentInChildren<SpriteRenderer>().sprite = cursorPopBubble;
+        }
     }
 
 }
