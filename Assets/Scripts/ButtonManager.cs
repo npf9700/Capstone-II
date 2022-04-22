@@ -28,11 +28,19 @@ public class ButtonManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public void OnPointerExit(PointerEventData eventData)
     {
         buttonAnim.SetBool("isMouseOver", false);
-        buttonAnim.SetBool("isPressed", false);
+        
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
         buttonAnim.SetBool("isPressed", true);
+        StartCoroutine(PressedToActive());
+    }
+
+    IEnumerator PressedToActive()
+    {
+        yield return new WaitForSeconds(1.5f);
+
+        buttonAnim.SetBool("isPressed", false);
     }
 }

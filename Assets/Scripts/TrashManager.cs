@@ -87,6 +87,7 @@ public class TrashManager : MonoBehaviour
         {
             gameMgr.GetComponent<GameManager>().ammoSlider.value += 2;
             gameMgr.trashRemoved += 1;
+            gameMgr.MoveOilUp();
             float sliderVal = gameMgr.GetComponent<GameManager>().ammoSlider.value;
             gameMgr.GetComponent<GameManager>().ammoText.text = gameMgr.GetComponent<GameManager>().ammoSlider.value.ToString();
             

@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
     public TMP_Text noAmmoText;
     public TMP_Text trashRemovedText;
     public int trashRemoved;
+    private float oilStartY;
     public int PlayerScore
     {
         get { return playerScore; }
@@ -56,6 +57,7 @@ public class GameManager : MonoBehaviour
         trashNotCollected = 0;
         scoreText.text = "Score: " + playerScore;
         oilPos = oilSlick.transform.position;
+        oilStartY = oilSlick.transform.position.y;
         halfTrashHeight = trashRend.bounds.size.x / 2;
         halfOilHeight = oilRend.bounds.size.y / 2;
         halfTrashWidth = trashRend.bounds.size.y / 2;
@@ -142,6 +144,7 @@ public class GameManager : MonoBehaviour
             float deadAlpha = deadBackGround.color.a;
             deadAlpha += 0.07f;
             deadBackGround.color = new Color(1, 1, 1, deadAlpha);
+            oilPos.y -= 0.35f;
         } 
 
         oilSlick.transform.position = oilPos;
@@ -188,5 +191,12 @@ public class GameManager : MonoBehaviour
         AkSoundEngine.PostEvent("BackToTitle", gameObject);
     }
 
-
+    public void MoveOilUp()
+    {
+        if (oilPos.y < oilStartY)
+        {
+            oilPos.y += 0.3f;
+        }
+        oilSlick.transform.position = oilPos;
+    }
 }
