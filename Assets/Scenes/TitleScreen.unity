@@ -1525,6 +1525,7 @@ MonoBehaviour:
   popTimerRunning: 0
   popTimer: 0
   isBeingAltered: 0
+  myButton: {fileID: 2065719183}
 --- !u!4 &2031653267
 Transform:
   m_ObjectHideFlags: 0
@@ -1553,6 +1554,7 @@ GameObject:
   - component: {fileID: 2065719185}
   - component: {fileID: 2065719188}
   - component: {fileID: 2065719189}
+  - component: {fileID: 2065719190}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1729,3 +1731,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08e0011ee050b844c8e59504866bf624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &2065719190
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065719183}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.51733017}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 281.1351, y: 124.889946}
+  m_EdgeRadius: 0

@@ -71,7 +71,6 @@ public class SpawnManager : MonoBehaviour
         {
             spawnPos = new Vector2(Random.Range(50, (cameraWidth - 120)), cameraHeight);
             local = Instantiate(bubblePrefab, spawnPos, Quaternion.identity);
-            Debug.Log(local);
             bubbles.Add(local);
             movement.FloatUp();
             spawned = true;
@@ -135,7 +134,19 @@ public class SpawnManager : MonoBehaviour
             trails.Add(trailBubbles);
 
             //Increments score
-            gameMgr.IncrementScore(100);
+            if (animalOption == 2 || animalOption == 3)
+            {
+                gameMgr.IncrementScore(100);
+            }
+            else if (animalOption == 0 || animalOption == 1 || animalOption == 4)
+            {
+                gameMgr.IncrementScore(250);
+            }
+            else
+            {
+                gameMgr.IncrementScore(500);
+            }
+            //gameMgr.IncrementScore(100);
             gameMgr.numAnimalsSaved += 1;
         }
     }

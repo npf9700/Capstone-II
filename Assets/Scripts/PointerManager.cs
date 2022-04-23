@@ -40,6 +40,8 @@ public class PointerManager : MonoBehaviour
     public float popTimer;
     public bool isBeingAltered = false;
 
+    public GameObject myButton;
+    public BoxCollider2D buttonCollider;
 
     // Start is called before the first frame update
     void Start()
@@ -72,6 +74,12 @@ public class PointerManager : MonoBehaviour
             Debug.Log("No Wiimotes found.");
             usingMouse = true;
         }
+
+        if (myButton != null)
+        {
+            buttonCollider = myButton.GetComponent<BoxCollider2D>();
+        }
+        
     }
 
 
@@ -128,6 +136,41 @@ public class PointerManager : MonoBehaviour
                 P1_Grabbing = false;
             }
 
+
+            if (myButton != null)
+            {
+                if (buttonCollider.bounds.Contains(P1_CursorPosition))
+                {
+                    myButton.GetComponent<Animator>().Play("Hover");
+                    if (wiimote1.Button.a == true)
+                    {
+                        myButton.GetComponent<Animator>().Play("Pressed");
+                        myButton.GetComponent<Button>().onClick.Invoke();
+                    }
+                }
+            } else
+            {
+
+            }
+
+            if (Input.GetKeyDown("m"))
+            {
+                if (usingMouse)
+                {
+                    WiimoteManager.FindWiimotes();
+                    if (WiimoteManager.Wiimotes.Count != 0)
+                    {
+                        Debug.Log("Wiimote found!");
+                        usingMouse = false;
+                        wiimote1 = WiimoteManager.Wiimotes[0];
+                        wiimote1.SetupIRCamera(IRDataType.BASIC);
+                    }
+                    usingMouse = false;
+                } else
+                {
+                    usingMouse = true;
+                }
+            }
         }
 
         else if (usingMouse == true)

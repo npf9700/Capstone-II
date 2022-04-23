@@ -2103,6 +2103,8 @@ MonoBehaviour:
   popTimerRunning: 0
   popTimer: 0
   isBeingAltered: 0
+  myButton: {fileID: 1809321718}
+  buttonCollider: {fileID: 0}
 --- !u!4 &1006688730
 Transform:
   m_ObjectHideFlags: 0
@@ -2751,7 +2753,7 @@ MonoBehaviour:
   bag: {fileID: 2666575312460740971, guid: 1843ebc7b2b9c84448321a7ed1274787, type: 3}
   straws: {fileID: 8270290050943206827, guid: 9fe6b034e546e494182d1dec518234ca, type: 3}
   timeStart: 1
-  timeDelay: 3
+  timeDelay: 2
   cam: {fileID: 976226467}
   gameMgr: {fileID: 1853467279}
   starGauge: {fileID: 1659341629878936059, guid: 119a58abeef1b2f42824d69419dc8e29, type: 3}
@@ -3072,6 +3074,7 @@ GameObject:
   - component: {fileID: 1809321722}
   - component: {fileID: 1809321721}
   - component: {fileID: 1809321720}
+  - component: {fileID: 1809321723}
   m_Layer: 3
   m_Name: Button
   m_TagString: Untagged
@@ -3205,6 +3208,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809321718}
   m_CullTransparentMesh: 1
+--- !u!61 &1809321723
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809321718}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 205.90988, y: 61.643295}
+  m_EdgeRadius: 0
 --- !u!114 &1853467279 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2782947822820187574, guid: 973f042c6cffd9e42b4c4d8a7d39f18a, type: 3}
