@@ -68,8 +68,11 @@ public class Movement : MonoBehaviour
         cam = Camera.main;
         cameraHeight = cam.orthographicSize * 2f;
         cameraWidth = cameraHeight * cam.aspect;
-        speed = new Vector3(0f, Random.Range(0f, cameraHeight)) * Time.deltaTime;
+
+        //speed = new Vector3(0f, Random.Range(0f, cameraHeight)) * Time.deltaTime;
+        speed = new Vector3(0f, Random.Range(0.005f, cameraHeight)) * Time.deltaTime;
         speed = Vector3.ClampMagnitude(speed, 0.005f);
+
         currentPos = new Vector2(Random.Range(cam.transform.position.x - cameraWidth / 2, cam.transform.position.x + cameraWidth / 2), cam.transform.position.y - cameraHeight / 2 - 1);
         pingPongSpeed = Random.Range(0.4f, 0.8f);
         gmr = GameObject.Find("GameManager").GetComponent<GameManager>();

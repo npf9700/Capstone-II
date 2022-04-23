@@ -16,6 +16,7 @@ public class VideoManager : MonoBehaviour
     public SceneLoader sceneLdr;
     private int vidIndex;
     private float start;
+    //public AudioSource audioPlayer;
 
     public TutorialMusicManager tutMusicMgr;
 
@@ -29,7 +30,12 @@ public class VideoManager : MonoBehaviour
         tutorial.color = new Color(1f, 1f, 1f, 0f);
         videos.Add(introPlayer);
         videos.Add(tutorialPlayer);
-        videos.Add(tutorialPlayer);
+
+        //tutorialPlayer.EnableAudioTrack(0, true);
+        //tutorialPlayer.SetTargetAudioSource(0, audioPlayer);
+        //tutorialPlayer.controlledAudioTrackCount = 1;
+
+        //videos.Add(tutorialPlayer);
         vidIndex = 0;
         StartCoroutine(PlayNextVid());//Recursively calls PlayNextVid
     }
@@ -47,7 +53,7 @@ public class VideoManager : MonoBehaviour
 
     IEnumerator PlayNextVid()
     {
-        Debug.Log("vidIndex: " + vidIndex);
+        //Debug.Log("vidIndex: " + vidIndex);
         videos[vidIndex].Play();
         while (Time.time - start < videos[vidIndex].length)
         {

@@ -98,13 +98,18 @@ public class GameManager : MonoBehaviour
         }
         if (ammoSlider.value == 0) //hide ammo slider handle if ammo value is zero
         {
-            noAmmoText.text = "Remove Trash to Raise Ammo!";
+            noAmmoText.text = "Remove Trash to Restore Power!";
             ammoSlider.handleRect.GetComponent<Image>().color = new Color(0, 0, 0, 0f);
         }
         else
         {
             noAmmoText.text = "";
             ammoSlider.handleRect.GetComponent<Image>().color = new Color(255, 255, 255, 1f);
+        }
+
+        if (Input.GetKeyDown("g"))
+        {
+            TriggerGameOver();
         }
     }
 

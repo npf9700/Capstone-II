@@ -41,8 +41,8 @@ public class SpawnManager : MonoBehaviour
         trails = new List<GameObject>();
         gameMgr = GameObject.Find("GameManager").GetComponent<GameManager>();
         spawnTime = Random.Range(1.5f, 2.5f);
-        Debug.Log("Spawn time: " + spawnTime);
-        InvokeRepeating("SpawnBubbles", 0.0f, spawnTime);
+        //Debug.Log("Spawn time: " + spawnTime);
+        InvokeRepeating("SpawnBubbles", 0f, 1f + spawnTime);
         InvokeRepeating("IncreaseSpawnTime", 20.0f, 15f);
     }
 
@@ -55,7 +55,7 @@ public class SpawnManager : MonoBehaviour
     }
     public void IncreaseSpawnTime()
     {
-        float increment = 0.0003f;
+        float increment = 0.000001f;
         float newSpawnTime = spawnTime + increment;
        // Debug.Log("New Spawn Time: " + newSpawnTime);
         InvokeRepeating("SpawnBubbles", 0.0f, newSpawnTime);
@@ -63,7 +63,7 @@ public class SpawnManager : MonoBehaviour
 
     public void SpawnBubbles()
     {
-        if(bubbles.Count >= 5) //cap number on screen to 5
+        if(bubbles.Count >= 10) //cap number on screen to 5->10
         {
             return;
         } 
@@ -71,6 +71,7 @@ public class SpawnManager : MonoBehaviour
         {
             spawnPos = new Vector2(Random.Range(50, (cameraWidth - 120)), cameraHeight);
             local = Instantiate(bubblePrefab, spawnPos, Quaternion.identity);
+            Debug.Log(local);
             bubbles.Add(local);
             movement.FloatUp();
             spawned = true;
@@ -81,7 +82,7 @@ public class SpawnManager : MonoBehaviour
     public void Despawn(GameObject bubble)
     {
         Destroy(bubble);
-        Debug.Log(bubbles.Count);
+        //Debug.Log(bubbles.Count);
         bubbles.Remove(bubble);
         
     }

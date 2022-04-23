@@ -66,7 +66,7 @@ public class TrashManager : MonoBehaviour
         int trashOption = Random.Range(0, trashObjects.Count);
 
         //Gets a random value to spawn the trash above the camera window
-        deviation = Random.Range(-10f, 10f);
+        deviation = Random.Range(-9f, 9f);
         Vector2 spawnLoc = new Vector2(transform.position.x + deviation, transform.position.y);
         trashPile.Add(Instantiate(trashObjects[trashOption], spawnLoc, transform.rotation));
         //gameMgr.GetComponent<GameManager>().AddTrash(newTrash);

@@ -1287,11 +1287,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8392657455794886479, guid: df4545add4552ef49b623001ac65527a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.25
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 8392657455794886479, guid: df4545add4552ef49b623001ac65527a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.25
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 8392657455794886479, guid: df4545add4552ef49b623001ac65527a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1578,7 +1578,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -221}
-  m_SizeDelta: {x: 819.46, y: 499.15}
+  m_SizeDelta: {x: 833.33325, y: 468.34308}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2065719185
 MonoBehaviour:
@@ -1607,7 +1607,7 @@ MonoBehaviour:
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
+    m_FadeDuration: 0.5
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
@@ -1682,13 +1682,13 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 3280432510119947278, guid: 0cd12ae2f58295240a00f81d4b227125, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &2065719187
 CanvasRenderer:
