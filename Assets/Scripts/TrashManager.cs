@@ -86,7 +86,7 @@ public class TrashManager : MonoBehaviour
         if(trashPiece.transform.position.x < cam.transform.position.x - (cameraWidth / 2) + 0.5 || trashPiece.transform.position.x > cam.transform.position.x + (cameraWidth / 2) - 0.5)
         {
             gameMgr.GetComponent<GameManager>().ammoSlider.value += 2;
-            gameMgr.trashRemoved += 1;
+            gameMgr.trashRemoved += 2;
             gameMgr.MoveOilUp();
             float sliderVal = gameMgr.GetComponent<GameManager>().ammoSlider.value;
             gameMgr.GetComponent<GameManager>().ammoText.text = gameMgr.GetComponent<GameManager>().ammoSlider.value.ToString();

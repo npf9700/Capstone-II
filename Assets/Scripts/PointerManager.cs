@@ -141,10 +141,17 @@ public class PointerManager : MonoBehaviour
             {
                 if (buttonCollider.bounds.Contains(P1_CursorPosition))
                 {
-                    myButton.GetComponent<Animator>().Play("Hover");
+                    if (myButton.GetComponent<Animator>() != null)
+                    {
+                        myButton.GetComponent<Animator>().Play("Hover");
+                    }
+                    
                     if (wiimote1.Button.a == true)
                     {
-                        myButton.GetComponent<Animator>().Play("Pressed");
+                        if (myButton.GetComponent<Animator>() != null)
+                        {
+                            myButton.GetComponent<Animator>().Play("Pressed");
+                        }
                         myButton.GetComponent<Button>().onClick.Invoke();
                     }
                 }
