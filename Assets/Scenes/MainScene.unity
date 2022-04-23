@@ -944,11 +944,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2782947822820187574, guid: 973f042c6cffd9e42b4c4d8a7d39f18a, type: 3}
       propertyPath: currentTime
-      value: 120
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2782947822820187574, guid: 973f042c6cffd9e42b4c4d8a7d39f18a, type: 3}
       propertyPath: startingTime
-      value: 120
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2782947822820187574, guid: 973f042c6cffd9e42b4c4d8a7d39f18a, type: 3}
       propertyPath: countdownText
