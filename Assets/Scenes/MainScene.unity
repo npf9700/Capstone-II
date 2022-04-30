@@ -2753,7 +2753,7 @@ MonoBehaviour:
   bag: {fileID: 2666575312460740971, guid: 1843ebc7b2b9c84448321a7ed1274787, type: 3}
   straws: {fileID: 8270290050943206827, guid: 9fe6b034e546e494182d1dec518234ca, type: 3}
   timeStart: 1
-  timeDelay: 2
+  timeDelay: 2.5
   cam: {fileID: 976226467}
   gameMgr: {fileID: 1853467279}
   starGauge: {fileID: 1659341629878936059, guid: 119a58abeef1b2f42824d69419dc8e29, type: 3}
